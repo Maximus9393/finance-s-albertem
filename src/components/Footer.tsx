@@ -1,0 +1,100 @@
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-foreground text-background py-16">
+      <div className="container mx-auto px-4">
+        <div className="grid md:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div>
+            <h3 className="text-2xl font-bold mb-6 text-primary">FinanceGuide</h3>
+            <p className="text-background/80 mb-6 leading-relaxed">
+              Váš důvěryhodný partner pro finanční poradenství s lidským přístupem. 
+              Pomáháme vám dosáhnout finančních cílů bezpečně a transparentně.
+            </p>
+            <div className="flex space-x-4">
+              <a href="#" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
+                <Facebook className="w-5 h-5 text-primary" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
+                <Instagram className="w-5 h-5 text-primary" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
+                <Linkedin className="w-5 h-5 text-primary" />
+              </a>
+            </div>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Naše služby</h4>
+            <ul className="space-y-3">
+              <li><a href="#services" className="text-background/80 hover:text-primary transition-colors">Pojištění</a></li>
+              <li><a href="#services" className="text-background/80 hover:text-primary transition-colors">Investice</a></li>
+              <li><a href="#services" className="text-background/80 hover:text-primary transition-colors">Hypotéky</a></li>
+              <li><a href="#services" className="text-background/80 hover:text-primary transition-colors">Finanční plánování</a></li>
+              <li><a href="#services" className="text-background/80 hover:text-primary transition-colors">Spoření</a></li>
+            </ul>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Rychlé odkazy</h4>
+            <ul className="space-y-3">
+              <li><a href="#about" className="text-background/80 hover:text-primary transition-colors">O nás</a></li>
+              <li><a href="#testimonials" className="text-background/80 hover:text-primary transition-colors">Reference</a></li>
+              <li><a href="#contact" className="text-background/80 hover:text-primary transition-colors">Kontakt</a></li>
+              <li><a href="#" className="text-background/80 hover:text-primary transition-colors">Ochrana údajů</a></li>
+              <li><a href="#" className="text-background/80 hover:text-primary transition-colors">Obchodní podmínky</a></li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6">Kontakt</h4>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <Phone className="w-5 h-5 text-primary" />
+                <span className="text-background/80">+420 123 456 789</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="w-5 h-5 text-primary" />
+                <span className="text-background/80">info@financeguide.cz</span>
+              </div>
+              <div className="flex items-start space-x-3">
+                <MapPin className="w-5 h-5 text-primary mt-0.5" />
+                <span className="text-background/80">
+                  Václavské náměstí 123<br />
+                  110 00 Praha 1
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-background/20 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-background/60 text-sm">
+              © {currentYear} FinanceGuide. Všechna práva vyhrazena.
+            </p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" className="text-background/60 hover:text-primary transition-colors text-sm">
+                Zásady ochrany osobních údajů
+              </a>
+              <a href="#" className="text-background/60 hover:text-primary transition-colors text-sm">
+                Cookies
+              </a>
+              <a href="#" className="text-background/60 hover:text-primary transition-colors text-sm">
+                Mapa stránek
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
