@@ -15,13 +15,13 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-              Vaše finance.{" "}
-              <span className="text-primary">Naše starost.</span>
+              Vaše finance{" "}
+              <span className="text-primary">s Albertem</span>
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Poskytujeme komplexní finanční poradenství s lidským přístupem. 
-              Pomáháme vám dosáhnout finančních cílů bezpečně a transparentně.
+              Albert Gurdžjan - váš osobní finanční poradce. Komplexní analýza a optimalizace 
+              rodinných financí pod záštitou 4fin s.r.o.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

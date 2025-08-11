@@ -38,11 +38,11 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Naše <span className="text-primary">služby</span>
+            Co pro vás <span className="text-primary">mohu udělat</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Poskytujeme komplexní finanční služby přizpůsobené vašim potřebám. 
-            Od základní ochrany po sofistikované investiční strategie.
+            Jako člen týmu 4fin s.r.o. poskytuju kompletní spektrum finančních služeb. 
+            Od komplexní analýzy současného stavu až po optimalizaci a nové produkty.
           </p>
         </div>
 

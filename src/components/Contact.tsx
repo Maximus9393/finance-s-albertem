@@ -55,10 +55,10 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Kontaktujte <span className="text-primary">nás</span>
+            Kontaktujte <span className="text-primary">Alberta</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Rádi s vámi prodiskutujeme vaše finanční cíle a najdeme nejlepší řešení pro vaši situaci.
+            Rádi si s vámi promluvím o vašich finančních cílech a najdeme nejlepší řešení pro vaši situaci.
           </p>
         </div>
 
@@ -177,7 +177,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">E-mail</h4>
-                    <p className="text-muted-foreground">info@financeguide.cz</p>
+                    <p className="text-muted-foreground">albert@4fin.cz</p>
                     <p className="text-sm text-muted-foreground">Odpovídáme do 24 hodin</p>
                   </div>
                 </div>

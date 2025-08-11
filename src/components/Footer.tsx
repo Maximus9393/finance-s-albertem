@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-primary">FinanceGuide</h3>
+            <h3 className="text-2xl font-bold mb-6 text-primary">Finance s Albertem</h3>
             <p className="text-background/80 mb-6 leading-relaxed">
-              Váš důvěryhodný partner pro finanční poradenství s lidským přístupem. 
-              Pomáháme vám dosáhnout finančních cílů bezpečně a transparentně.
+              Albert Gurdžjan - váš osobní finanční poradce pod záštitou 4fin s.r.o. 
+              Komplexní analýza a optimalizace rodinných financí.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
@@ -61,7 +61,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-background/80">info@financeguide.cz</span>
+                <span className="text-background/80">albert@4fin.cz</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5" />
@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="border-t border-background/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-background/60 text-sm">
-              © {currentYear} FinanceGuide. Všechna práva vyhrazena.
+              © {currentYear} Finance s Albertem | 4fin s.r.o. Všechna práva vyhrazena.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-background/60 hover:text-primary transition-colors text-sm">

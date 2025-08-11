@@ -6,11 +6,11 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Proč si vybrat <span className="text-primary">naše služby</span>
+            Proč si vybrat <span className="text-primary">Alberta Gurdžjana</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Věříme v férový a srozumitelný přístup k financím. Naším cílem je 
-            poskytnout vám personalizované řešení, které odpovídá vašim potřebám a životní situaci.
+            Jako člen týmu 4fin s.r.o. nabízím transparentní a srozumitelné finanční poradenství. 
+            Specializuji se na rodinné finance a komplexní analýzu vašich potřeb.
           </p>
         </div>
 
@@ -59,31 +59,30 @@ const About = () => {
         <div className="mt-20 bg-gradient-subtle rounded-2xl p-8 md:p-12 shadow-card">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold text-foreground mb-6">Naše mise</h3>
+              <h3 className="text-3xl font-bold text-foreground mb-6">Můj přístup</h3>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Chceme změnit způsob, jakým lidé vnímají finanční poradenství. 
-                Bez složitého žargonu, bez skrytých poplatků - jen férová a srozumitelná pomoc 
-                s vašimi financemi.
+                Jako finanční poradce 4fin s.r.o. se specializuji na komplexní analýzu rodinných financí. 
+                Zjistím, jaké produkty již máte, a navrhnu optimalizaci pro vaši konkrétní situaci.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-success" />
-                  <span className="text-foreground">Transparentní komunikace</span>
+                  <span className="text-foreground">Komplexní analýza současného stavu</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-success" />
-                  <span className="text-foreground">Žádné skryté poplatky</span>
+                  <span className="text-foreground">Individuální řešení pro každou rodinu</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-success" />
-                  <span className="text-foreground">Dlouhodobé partnerství</span>
+                  <span className="text-foreground">Podpora profesionální agentury 4fin s.r.o.</span>
                 </div>
               </div>
             </div>
             <div className="text-center">
               <div className="inline-block p-8 bg-primary/5 rounded-full">
-                <div className="text-6xl font-bold text-primary mb-2">15+</div>
-                <div className="text-muted-foreground">let na trhu</div>
+                <div className="text-4xl font-bold text-primary mb-2">4fin</div>
+                <div className="text-muted-foreground">profesionální agentura</div>
               </div>
             </div>
           </div>
