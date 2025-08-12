@@ -35,6 +35,17 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
+    // Prevent submission if Supabase isn't configured
+    if (!supabase) {
+      toast({
+        title: "Služba není dostupná",
+        description: "Supabase není nakonfigurovaný. Klikněte na zelené tlačítko Supabase vpravo nahoře a připojte integraci.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       const contactData: Omit<ContactFormData, 'created_at'> = {
         name: formData.name,
@@ -45,7 +56,7 @@ const Contact = () => {
         gdpr_consent: formData.gdprConsent,
       };
 
-      const { error } = await supabase
+      const { error } = await supabase!
         .from('contacts')
         .insert([contactData]);
 
