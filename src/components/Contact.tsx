@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase, type ContactFormData } from "@/lib/supabase";
 
@@ -211,7 +211,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Telefon</h4>
                     <p className="text-muted-foreground">+420 123 456 789</p>
-                    <p className="text-sm text-muted-foreground">Po-Pá: 8:00 - 18:00</p>
+                    
                   </div>
                 </div>
 
@@ -236,19 +236,6 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg">
-                    <Clock className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-1">Ordinační hodiny</h4>
-                    <p className="text-muted-foreground">
-                      Po-Čt: 8:00 - 18:00<br />
-                      Pá: 8:00 - 16:00<br />
-                      So-Ne: Pouze po domluvě
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
 
