@@ -6,7 +6,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { supabase, type ContactFormData } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
+import type { ContactFormData } from "@/lib/supabase";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -35,16 +36,6 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    // Prevent submission if Supabase isn't configured
-    if (!supabase) {
-      toast({
-        title: "Služba není dostupná",
-        description: "Supabase není nakonfigurovaný. Klikněte na zelené tlačítko Supabase vpravo nahoře a připojte integraci.",
-        variant: "destructive",
-      });
-      setIsSubmitting(false);
-      return;
-    }
 
     try {
       const contactData: Omit<ContactFormData, 'created_at'> = {
@@ -56,7 +47,7 @@ const Contact = () => {
         gdpr_consent: formData.gdprConsent,
       };
 
-      const { error } = await supabase!
+      const { error } = await supabase
         .from('contacts')
         .insert([contactData]);
 
