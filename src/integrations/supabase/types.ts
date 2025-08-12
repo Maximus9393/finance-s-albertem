@@ -14,18 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
-      "formular odpovedi": {
+      contacts: {
         Row: {
           created_at: string
-          id: number
+          email: string
+          gdpr_consent: boolean
+          id: string
+          message: string | null
+          name: string
+          phone: string | null
+          service: string | null
         }
         Insert: {
           created_at?: string
-          id?: number
+          email: string
+          gdpr_consent?: boolean
+          id?: string
+          message?: string | null
+          name: string
+          phone?: string | null
+          service?: string | null
         }
         Update: {
           created_at?: string
-          id?: number
+          email?: string
+          gdpr_consent?: boolean
+          id?: string
+          message?: string | null
+          name?: string
+          phone?: string | null
+          service?: string | null
         }
         Relationships: []
       }
