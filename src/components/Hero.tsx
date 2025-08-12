@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
+import albertPhoto from "@/assets/albert-photo.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -61,8 +62,8 @@ const Hero = () => {
           <div className="relative animate-scale-in">
             <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl blur-3xl"></div>
             <img 
-              src={heroImage} 
-              alt="Finanční poradenství s lidským přístupem"
+              src={albertPhoto} 
+              alt="Albert Gurdžjan - finanční poradce"
               className="relative rounded-2xl shadow-elegant w-full h-auto object-cover"
             />
           </div>
