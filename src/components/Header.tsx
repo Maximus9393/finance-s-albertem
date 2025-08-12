@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src={logo4fin} alt="4fin logo" className="h-8" />
+            <img src={logo4fin} alt="4fin logo" className="h-12" />
             <div className="text-xl font-bold text-primary">
               Finance s Albertem
             </div>
