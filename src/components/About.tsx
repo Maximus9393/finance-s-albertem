@@ -1,4 +1,5 @@
 import { CheckCircle, Users, Shield, TrendingUp } from "lucide-react";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 const About = () => {
   return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -55,27 +56,59 @@ const About = () => {
         </div>
 
         <div className="mt-20 bg-gradient-subtle rounded-2xl p-8 md:p-12 shadow-card">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-start">
             <div>
               <h3 className="text-3xl font-bold text-foreground mb-6">Můj přístup</h3>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Jako finanční poradce 4fin s.r.o. se specializuji na komplexní analýzu rodinných financí. 
-                Zjistím, jaké produkty již máte, a navrhnu optimalizaci pro vaši konkrétní situaci.
-              </p>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-success" />
-                  <span className="text-foreground">Komplexní analýza současného stavu</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-success" />
-                  <span className="text-foreground">Individuální řešení pro každou rodinu</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-success" />
-                  <span className="text-foreground">Podpora profesionální agentury 4fin s.r.o.</span>
-                </div>
-              </div>
+              <Accordion type="single" collapsible={false} defaultValue="item-1" className="w-full">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>
+                    Představení konzultanta a společnosti 4fin
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Než začneme analyzovat vaše finance, vysvětlíme vám způsob naší práce a hodnoty, které pro vztah s klientem uznáváme. Jedině po vzájemné důvěře můžeme řešit finanční otázky.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>
+                    Podrobná finanční analýza
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Zanalyzujeme pro vás a připravíme profesionální finanční analýzu, abychom zoptimalizovali a nastavili vaše finance podle vašich potřeb.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>
+                    Navržení a vysvětlení řešení
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Na základě analýzy potřeb vám vypracujeme, představíme a vysvětlíme komplexní optimalizaci vašich financí.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-4">
+                  <AccordionTrigger>
+                    Administrace smluv spojená s finančními produkty
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Zajistíme vám kompletní administrativu vašich finančních produktů.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-5">
+                  <AccordionTrigger>
+                    Uspořádání a archivace veškerých dokumentů
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Uspořádáme vám všechny smlouvy a související dokumenty do přehledného šanonu, abyste je vždy měli po ruce.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-6">
+                  <AccordionTrigger>
+                    Nepřetržitá následná péče
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    Postaráme se o vás a neustále budeme monitorovat růst vašeho majetku podle stanovených cílů a přání. Servisní schůzku doporučujeme vždy po 12 měsících.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
             <div className="text-center">
               <div className="inline-block p-8 bg-primary/5 rounded-full">
