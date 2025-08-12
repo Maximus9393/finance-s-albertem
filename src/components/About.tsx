@@ -1,8 +1,6 @@
 import { CheckCircle, Users, Shield, TrendingUp } from "lucide-react";
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 bg-background">
+  return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-6">
@@ -81,15 +79,13 @@ const About = () => {
             </div>
             <div className="text-center">
               <div className="inline-block p-8 bg-primary/5 rounded-full">
-                <div className="text-4xl font-bold text-primary mb-2">4fin</div>
+                <div className="text-4xl font-bold text-primary mb-2">4fin s.r.o.</div>
                 <div className="text-muted-foreground">profesionální agentura</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
