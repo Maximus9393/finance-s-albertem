@@ -62,7 +62,7 @@ const About = () => {
               <Accordion type="single" collapsible={false} defaultValue="item-1" className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
-                    Představení konzultanta a společnosti 4fin
+                    1. Představení konzultanta a společnosti 4fin
                   </AccordionTrigger>
                   <AccordionContent>
                     Než začneme analyzovat vaše finance, vysvětlíme vám způsob naší práce a hodnoty, které pro vztah s klientem uznáváme. Jedině po vzájemné důvěře můžeme řešit finanční otázky.
@@ -70,7 +70,7 @@ const About = () => {
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger>
-                    Podrobná finanční analýza
+                    2. Podrobná finanční analýza
                   </AccordionTrigger>
                   <AccordionContent>
                     Zanalyzujeme pro vás a připravíme profesionální finanční analýzu, abychom zoptimalizovali a nastavili vaše finance podle vašich potřeb.
@@ -78,7 +78,7 @@ const About = () => {
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger>
-                    Navržení a vysvětlení řešení
+                    3. Navržení a vysvětlení řešení
                   </AccordionTrigger>
                   <AccordionContent>
                     Na základě analýzy potřeb vám vypracujeme, představíme a vysvětlíme komplexní optimalizaci vašich financí.
@@ -86,7 +86,7 @@ const About = () => {
                 </AccordionItem>
                 <AccordionItem value="item-4">
                   <AccordionTrigger>
-                    Administrace smluv spojená s finančními produkty
+                    4. Administrace smluv spojená s finančními produkty
                   </AccordionTrigger>
                   <AccordionContent>
                     Zajistíme vám kompletní administrativu vašich finančních produktů.
@@ -94,7 +94,7 @@ const About = () => {
                 </AccordionItem>
                 <AccordionItem value="item-5">
                   <AccordionTrigger>
-                    Uspořádání a archivace veškerých dokumentů
+                    5. Uspořádání a archivace veškerých dokumentů
                   </AccordionTrigger>
                   <AccordionContent>
                     Uspořádáme vám všechny smlouvy a související dokumenty do přehledného šanonu, abyste je vždy měli po ruce.
@@ -102,7 +102,7 @@ const About = () => {
                 </AccordionItem>
                 <AccordionItem value="item-6">
                   <AccordionTrigger>
-                    Nepřetržitá následná péče
+                    6. Nepřetržitá následná péče
                   </AccordionTrigger>
                   <AccordionContent>
                     Postaráme se o vás a neustále budeme monitorovat růst vašeho majetku podle stanovených cílů a přání. Servisní schůzku doporučujeme vždy po 12 měsících.
