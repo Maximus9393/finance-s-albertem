@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase, type ContactFormData } from "@/lib/supabase";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -17,33 +18,65 @@ const Contact = () => {
     message: "",
     gdprConsent: false
   });
+  
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
     if (!formData.gdprConsent) {
       toast({
-        title: "Chyba",
-        description: "Musíte souhlasit se zpracováním osobních údajů.",
-        variant: "destructive"
+        title: "GDPR souhlas",
+        description: "Prosím, odsouhlaste zpracování osobních údajů.",
+        variant: "destructive",
       });
       return;
     }
-    
-    // Here you would normally send the form data to your backend
-    toast({
-      title: "Děkujeme za váš zájem!",
-      description: "Brzy se vám ozveme s nabídkou nezávazné konzultace.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      message: "",
-      gdprConsent: false
-    });
+
+    setIsSubmitting(true);
+
+    try {
+      const contactData: Omit<ContactFormData, 'created_at'> = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        message: formData.message,
+        gdpr_consent: formData.gdprConsent,
+      };
+
+      const { error } = await supabase
+        .from('contacts')
+        .insert([contactData]);
+
+      if (error) {
+        throw error;
+      }
+
+      toast({
+        title: "Formulář odeslán",
+        description: "Děkujeme za vaši zprávu. Ozveme se vám co nejdříve.",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: "",
+        gdprConsent: false,
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Chyba při odesílání",
+        description: "Něco se pokazilo. Zkuste to prosím znovu.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -148,8 +181,8 @@ const Contact = () => {
                 </label>
               </div>
 
-              <Button type="submit" variant="hero" size="lg" className="w-full">
-                Odeslat poptávku
+              <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Odesílám..." : "Odeslat poptávku"}
               </Button>
             </form>
           </div>
