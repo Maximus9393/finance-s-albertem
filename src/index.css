@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @font-face {
   font-family: 'Bill Corporate Narrow';
-  src: url('/AnyConv.com__Písmo- Bill Corporate Narrow- Book.woff') format('woff');
+  src: url('/Písmo- Bill Corporate Narrow- Book.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@ All colors MUST be HSL.
 
 @font-face {
   font-family: 'Bill Corporate Narrow';
-  src: url('/AnyConv.com__Písmo- Bill Corporate Narrow- Bold.woff') format('woff');
+  src: url('/Písmo- Bill Corporate Narrow- Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
