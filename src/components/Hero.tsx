@@ -101,8 +101,8 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl blur-3xl animate-pulse"></div>
             <div className="flip-card relative max-w-md mx-auto group">
               {/* Hover hint */}
-              <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-muted-foreground animate-bounce opacity-70 group-hover:opacity-0 transition-opacity duration-300 z-10">
-                <span className="bg-background/80 px-3 py-1 rounded-full shadow-soft">
+              <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm animate-bounce opacity-90 group-hover:opacity-0 transition-opacity duration-300 z-10">
+                <span className="bg-card text-card-foreground px-4 py-2 rounded-full shadow-elegant border border-border/20">
                   <span className="hidden sm:inline">✨ Najeď myší pro citát</span>
                   <span className="sm:hidden">✨ Klikni na fotku pro citát</span>
                 </span>
