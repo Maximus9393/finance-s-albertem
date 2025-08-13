@@ -1,22 +1,18 @@
 import { Button } from "@/components/ui/button";
-
 const Cooperation = () => {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    if (el) el.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <section id="cooperation" className="py-20">
+  return <section id="cooperation" className="py-20">
       <div className="container mx-auto px-4">
         <header className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-4">
             Spolupráce – finanční poradce nebo leadař
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Zajímá vás podnikání v oblasti finančního poradenství? Nebo chcete jen doporučovat poradce jako leadař? 
-            Ozvěte se a probereme, jak můžeme spolupracovat.
-          </p>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Zajímá vás podnikání v oblasti finančního poradenství? Nebo chcete jen doporučovat klienty jako leadař? Ozvěte se a probereme, jak můžeme spolupracovat.</p>
         </header>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -57,8 +53,6 @@ const Cooperation = () => {
           </p>
         </aside>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Cooperation;
