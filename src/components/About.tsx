@@ -1,5 +1,6 @@
 import { CheckCircle, Users, Shield, TrendingUp } from "lucide-react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import logo4fin from "@/assets/4fin-logo.png";
 const About = () => {
   return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -112,7 +113,12 @@ const About = () => {
             </div>
             <div className="flex items-center justify-center h-full">
               <div className="inline-block p-8 bg-primary/5 rounded-full">
-                <div className="text-4xl font-bold text-primary mb-2">4fin s.r.o.</div>
+                <img 
+                  src={logo4fin} 
+                  alt="4fin s.r.o. logo" 
+                  className="w-[113px] h-[53px] mx-auto mb-2"
+                  style={{ objectFit: 'contain' }}
+                />
                 <div className="text-muted-foreground">profesionální agentura</div>
               </div>
             </div>
