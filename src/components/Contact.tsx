@@ -102,12 +102,15 @@ const Contact = () => {
           <img 
             src="/cara_kontakt2.png"
             alt="Naše hodnoty - partnerství, inovace, kvalita, růst" 
-            className="max-w-full h-auto"
+            className="max-w-full h-auto rounded-lg shadow-soft"
             loading="lazy"
             decoding="async"
             width="800"
             height="400"
-            style={{ aspectRatio: '2/1' }}
+            onError={(e) => {
+              console.log('Image failed to load:', e.currentTarget.src);
+              e.currentTarget.style.display = 'none';
+            }}
           />
         </div>
 
