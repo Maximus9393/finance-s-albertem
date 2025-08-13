@@ -56,10 +56,10 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-20 bg-gradient-subtle rounded-2xl p-8 md:p-12 shadow-card">
+        <div className="mt-20 bg-gradient-subtle rounded-2xl p-8 md:p-12 shadow-card text-white">
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div>
-              <h3 className="text-3xl font-bold text-foreground mb-6">Můj přístup</h3>
+              <h3 className="text-3xl font-bold text-white mb-6">Můj přístup</h3>
               <Accordion type="single" collapsible={false} defaultValue="item-1" className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
@@ -119,7 +119,7 @@ const About = () => {
                   className="w-[170px] h-[80px] mx-auto mb-6"
                   style={{ objectFit: 'contain' }}
                 />
-                <div className="text-muted-foreground">profesionální agentura</div>
+                <div className="text-white/80">profesionální agentura</div>
               </div>
             </div>
           </div>
