@@ -74,22 +74,21 @@ const Hero = () => {
                      </div>
                    )}
                    
-                   <img 
-                     src={albertPhoto} 
-                     alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
-                     className={`rounded-2xl shadow-elegant w-full h-auto object-cover transition-opacity duration-500 ${
-                       imageLoaded ? 'opacity-100' : 'opacity-0'
-                     }`}
-                     loading="eager"
-                     decoding="async"
-                     fetchPriority="high"
-                     width="400"
-                     height="500"
-                     style={{ aspectRatio: '4/5' }}
-                     onLoad={() => setImageLoaded(true)}
-                     onError={() => setImageLoaded(true)}
-                   />
-                 </div>
+                    <img 
+                      src={albertPhoto} 
+                      alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
+                      className={`rounded-2xl shadow-elegant w-full h-full object-cover transition-opacity duration-500 ${
+                        imageLoaded ? 'opacity-100' : 'opacity-0'
+                      }`}
+                      loading="eager"
+                      decoding="async"
+                      fetchPriority="high"
+                      width="400"
+                      height="500"
+                      onLoad={() => setImageLoaded(true)}
+                      onError={() => setImageLoaded(true)}
+                    />
+                  </div>
                 <div className="flip-card-back">
                   <div className="bg-gradient-primary rounded-2xl shadow-elegant w-full h-full flex items-center justify-center p-8">
                     <blockquote className="text-white text-center">

@@ -147,7 +147,8 @@ All colors MUST be HSL.
   .flip-card {
     perspective: 1000px;
     width: 100%;
-    height: 500px;
+    aspect-ratio: 4/5;
+    max-height: 500px;
   }
 
   .flip-card-inner {
@@ -165,10 +166,13 @@ All colors MUST be HSL.
 
   .flip-card-front, .flip-card-back {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 1rem;
   }
 
   .flip-card-back {
