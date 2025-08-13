@@ -28,10 +28,10 @@ All colors MUST be HSL.
     --foreground: 4 3% 28%;
 
     --card: 330 100% 35%;
-    --card-foreground: 0 0% 100%;
+    --card-foreground: 0 0% 98%;
 
     --popover: 330 100% 35%;
-    --popover-foreground: 0 0% 100%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 338 100% 35%;
     --primary-foreground: 0 0% 100%;
@@ -40,8 +40,8 @@ All colors MUST be HSL.
     --secondary: 0 0% 92%;
     --secondary-foreground: 4 3% 28%;
 
-    --muted: 0 0% 92%;
-    --muted-foreground: 4 3% 28%;
+    --muted: 330 80% 45%;
+    --muted-foreground: 0 0% 95%;
 
     --accent: 0 0% 92%;
     --accent-foreground: 4 3% 28%;
@@ -81,10 +81,10 @@ All colors MUST be HSL.
     --foreground: 0 0% 98%;
 
     --card: 330 100% 35%;
-    --card-foreground: 0 0% 100%;
+    --card-foreground: 0 0% 98%;
 
     --popover: 330 100% 35%;
-    --popover-foreground: 0 0% 100%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 338 100% 35%;
     --primary-foreground: 0 0% 98%;
