@@ -110,7 +110,7 @@ const About = () => {
                 </AccordionItem>
               </Accordion>
             </div>
-            <div className="text-center">
+            <div className="flex items-center justify-center h-full">
               <div className="inline-block p-8 bg-primary/5 rounded-full">
                 <div className="text-4xl font-bold text-primary mb-2">4fin s.r.o.</div>
                 <div className="text-muted-foreground">profesionální agentura</div>
