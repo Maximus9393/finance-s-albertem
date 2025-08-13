@@ -63,8 +63,14 @@ const Hero = () => {
           </div>
 
           <div className="relative animate-scale-in">
-            <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl blur-3xl"></div>
-            <div className="flip-card relative max-w-md mx-auto">
+            <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl blur-3xl animate-pulse"></div>
+            <div className="flip-card relative max-w-md mx-auto group">
+              {/* Hover hint */}
+              <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm text-muted-foreground animate-bounce opacity-70 group-hover:opacity-0 transition-opacity duration-300 z-10">
+                <span className="bg-background/80 px-3 py-1 rounded-full shadow-soft">
+                  ✨ Najeď myší pro citát
+                </span>
+              </div>
               <div className="flip-card-inner">
                  <div className="flip-card-front relative">
                    {/* Loading placeholder */}
