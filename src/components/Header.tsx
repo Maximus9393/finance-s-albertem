@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import logo4fin from "@/assets/4fin-logo.png";
+import prihlasitIcon from "@/assets/prihlasit-icon.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,7 +51,21 @@ const Header = () => {
             </button>
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center space-x-3">
+            <a 
+              href="https://crm.4fin.cz" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors duration-300"
+              title="Přihlásit se do CRM"
+            >
+              <img 
+                src={prihlasitIcon} 
+                alt="Přihlásit se do CRM" 
+                className="w-5 h-5"
+                decoding="async"
+              />
+            </a>
             <Button variant="cta" onClick={() => scrollToSection('contact')} className="animate-scale-in">
               Nezávazná konzultace
             </Button>
