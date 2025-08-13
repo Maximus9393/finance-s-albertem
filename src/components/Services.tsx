@@ -70,8 +70,8 @@ const Services = () => {
               </ul>
               
               <Button 
-                variant="outline" 
-                className="w-full text-white border-white hover:bg-white hover:text-primary transition-all duration-300"
+                variant="secondary" 
+                className="w-full bg-black text-white border-black hover:bg-white hover:text-black transition-all duration-300"
                 onClick={scrollToContact}
               >
                 Zjistit více
