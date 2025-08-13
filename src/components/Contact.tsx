@@ -98,20 +98,22 @@ const Contact = () => {
         </div>
 
         {/* Values Section */}
-        <div className="mb-16 flex justify-center animate-scale-in">
-          <img 
-            src="/cara_kontakt2.png"
-            alt="Naše hodnoty - partnerství, inovace, kvalita, růst" 
-            className="max-w-full h-auto rounded-lg shadow-soft"
-            loading="lazy"
-            decoding="async"
-            width="800"
-            height="400"
-            onError={(e) => {
-              console.log('Image failed to load:', e.currentTarget.src);
-              e.currentTarget.style.display = 'none';
-            }}
-          />
+        <div className="mb-16 w-full animate-scale-in">
+          <div className="flex justify-center">
+            <img 
+              src="/cara_kontakt2.png"
+              alt="Naše hodnoty - partnerství, inovace, kvalita, růst" 
+              className="max-w-none w-full max-w-6xl h-auto rounded-lg shadow-soft"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="600"
+              onError={(e) => {
+                console.log('Image failed to load:', e.currentTarget.src);
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
