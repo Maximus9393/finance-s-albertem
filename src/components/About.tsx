@@ -116,7 +116,7 @@ const About = () => {
                 <img 
                   src={logo4fin} 
                   alt="4fin s.r.o. logo" 
-                  className="w-[113px] h-[53px] mx-auto mb-6"
+                  className="w-[170px] h-[80px] mx-auto mb-6"
                   style={{ objectFit: 'contain' }}
                 />
                 <div className="text-muted-foreground">profesionální agentura</div>
