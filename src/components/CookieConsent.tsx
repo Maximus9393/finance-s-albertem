@@ -81,12 +81,12 @@ const CookieConsent = () => {
     <>
       {/* Cookie Banner */}
       {showBanner && (
-        <div className="fixed bottom-0 left-0 right-0 bg-background border-t border-border shadow-lg z-50 p-4">
+        <div className="fixed bottom-0 left-0 right-0 bg-card border-t border-border shadow-lg z-50 p-4">
           <div className="container mx-auto max-w-4xl">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
               <div className="flex-1">
-                <h3 className="font-semibold mb-2">Používáme cookies</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="font-semibold mb-2 text-card-foreground">Používáme cookies</h3>
+                <p className="text-sm text-card-foreground/80">
                   Používáme cookies k personalizaci obsahu a reklam, poskytování funkcí sociálních médií a analýze našeho provozu. 
                   Informace o vašem používání našich stránek také sdílíme s našimi partnery.
                 </p>
