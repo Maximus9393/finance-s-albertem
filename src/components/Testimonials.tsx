@@ -17,7 +17,7 @@ const Testimonials = () => {
     content: "Pomohli mi s refinancováním hypotéky a ušetřila jsem značnou částku na úrocích. Jednání bylo rychlé a bez zbytečných formalit.",
     rating: 5
   }];
-  return <section id="testimonials" className="py-20 bg-background">
+  return <section id="testimonials" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-6">
