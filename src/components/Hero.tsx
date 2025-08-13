@@ -63,16 +63,17 @@ const Hero = () => {
             <div className="flip-card relative max-w-md mx-auto">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <img 
-                    src={albertPhoto} 
-                    alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
-                    className="rounded-2xl shadow-elegant w-full h-auto object-cover" 
-                    loading="eager"
-                    decoding="async"
-                    fetchPriority="high"
-                    width="400"
-                    height="500"
-                  />
+                   <img 
+                     src={albertPhoto} 
+                     alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
+                     className="rounded-2xl shadow-elegant w-full h-auto object-cover" 
+                     loading="eager"
+                     decoding="async"
+                     fetchPriority="high"
+                     width="400"
+                     height="500"
+                     style={{ aspectRatio: '4/5' }}
+                   />
                 </div>
                 <div className="flip-card-back">
                   <div className="bg-gradient-primary rounded-2xl shadow-elegant w-full h-full flex items-center justify-center p-8">

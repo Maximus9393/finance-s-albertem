@@ -28,7 +28,7 @@ const Header = () => {
       <div className={`container mx-auto px-4 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src={logo4fin} alt="4fin logo" className={`transition-all duration-300 ${isScrolled ? 'h-8' : 'h-12'}`} decoding="async" />
+            <img src={logo4fin} alt="4fin logo" className={`transition-all duration-300 ${isScrolled ? 'h-8' : 'h-12'}`} decoding="async" loading="eager" width="48" height="48" />
             <div className={`font-bold text-primary transition-all duration-300 ${isScrolled ? 'text-lg' : 'text-xl'}`}>
               Finance s Albertem
             </div>
@@ -67,6 +67,9 @@ const Header = () => {
                 alt="Přihlásit se do CRM" 
                 className="w-5 h-5"
                 decoding="async"
+                loading="lazy"
+                width="20"
+                height="20"
               />
             </a>
           </div>

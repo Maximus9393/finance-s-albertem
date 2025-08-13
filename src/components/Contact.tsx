@@ -103,6 +103,11 @@ const Contact = () => {
             src="/cara_kontakt2.png"
             alt="Naše hodnoty - partnerství, inovace, kvalita, růst" 
             className="max-w-full h-auto"
+            loading="lazy"
+            decoding="async"
+            width="800"
+            height="400"
+            style={{ aspectRatio: '2/1' }}
           />
         </div>
 
