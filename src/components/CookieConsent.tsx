@@ -112,7 +112,7 @@ const CookieConsent = () => {
         <DialogContent className="max-w-md">
           <DialogHeader>
             <DialogTitle>
-              Cookie settings
+              Cookie nastavení
             </DialogTitle>
           </DialogHeader>
           
