@@ -63,6 +63,10 @@ All colors MUST be HSL.
     --shadow-elegant: 0 10px 30px -10px hsl(338 100% 35% / 0.15);
     --shadow-soft: 0 4px 12px -4px hsl(338 100% 35% / 0.08);
     --shadow-card: 0 2px 8px -2px hsl(4 3% 28% / 0.05);
+    
+    /* Background textures */
+    --bg-texture-light: url('/src/assets/background-texture-light.png');
+    --bg-texture-dark: url('/src/assets/background-texture-dark.png');
 
     --radius: 0.5rem;
 
@@ -136,6 +140,10 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     font-family: 'Bill Corporate Narrow', system-ui, sans-serif;
+    background-image: var(--bg-texture-light);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -205,5 +213,38 @@ All colors MUST be HSL.
   @keyframes glow-hint {
     0%, 70%, 100% { opacity: 0; }
     35% { opacity: 0.3; }
+  }
+
+  /* Background texture utility classes */
+  .bg-texture-light {
+    background-image: var(--bg-texture-light);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .bg-texture-dark {
+    background-image: var(--bg-texture-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .bg-texture-overlay {
+    position: relative;
+  }
+
+  .bg-texture-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--bg-texture-dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    pointer-events: none;
   }
 }
