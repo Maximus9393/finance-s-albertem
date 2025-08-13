@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Phone, Mail, MapPin, Equal, ChevronRight, Plus, TrendingUp } from "lucide-react";
+import { Phone, Mail, MapPin, Equal, ChevronRight, Plus, BarChart3 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import type { ContactFormData } from "@/lib/supabase";
@@ -130,7 +130,7 @@ const Contact = () => {
             <div className="space-y-4">
               <div className="flex justify-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-                  <TrendingUp className="w-8 h-8 text-primary" />
+                  <BarChart3 className="w-8 h-8 text-primary" />
                 </div>
               </div>
               <h3 className="text-lg font-bold text-primary">růst</h3>
