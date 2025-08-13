@@ -112,11 +112,11 @@ const About = () => {
               </Accordion>
             </div>
             <div className="flex items-center justify-center h-full">
-              <div className="inline-block p-8 bg-primary/5 rounded-full">
+              <div className="inline-block p-12 bg-primary/5 rounded-full">
                 <img 
                   src={logo4fin} 
                   alt="4fin s.r.o. logo" 
-                  className="w-[113px] h-[53px] mx-auto mb-2"
+                  className="w-[113px] h-[53px] mx-auto mb-6"
                   style={{ objectFit: 'contain' }}
                 />
                 <div className="text-muted-foreground">profesionální agentura</div>
