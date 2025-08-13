@@ -19,10 +19,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'playfair': ['Playfair Display', 'serif'],
-				'montserrat': ['Montserrat', 'sans-serif'],
-				'sans': ['Montserrat', 'sans-serif'],
-				'serif': ['Playfair Display', 'serif'],
+				'bill': ['Bill Corporate Narrow', 'system-ui', 'sans-serif'],
+				'sans': ['Bill Corporate Narrow', 'system-ui', 'sans-serif'],
+				'serif': ['Bill Corporate Narrow', 'Georgia', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
