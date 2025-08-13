@@ -9,8 +9,8 @@ const Cooperation = () => {
   return <section id="cooperation" className="py-20">
       <div className="container mx-auto px-4">
         <header className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Spolupráce – finanční poradce nebo leadař
+          <h2 className="text-4xl font-bold text-foreground mb-4">
+            Spolupráce – <span className="text-primary">finanční poradce</span> nebo leadař
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Zajímá vás podnikání v oblasti finančního poradenství? Nebo chcete jen doporučovat klienty jako leadař? Ozvěte se a probereme, jak můžeme spolupracovat.</p>
         </header>
