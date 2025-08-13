@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,14 +15,17 @@ const Footer = () => {
               Komplexní analýza a optimalizace rodinných financí.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
+              <a href="https://www.facebook.com/albi.gurdzjan/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
                 <Facebook className="w-5 h-5 text-primary" />
               </a>
-              <a href="#" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
+              <a href="https://www.instagram.com/albert_gurdzjan_finance/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
                 <Instagram className="w-5 h-5 text-primary" />
               </a>
-              <a href="#" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
+              <a href="https://www.linkedin.com/in/albert-gurdzjan/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
                 <Linkedin className="w-5 h-5 text-primary" />
+              </a>
+              <a href="https://linktr.ee/albertgurdzjan" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
+                <ExternalLink className="w-5 h-5 text-primary" />
               </a>
             </div>
           </div>

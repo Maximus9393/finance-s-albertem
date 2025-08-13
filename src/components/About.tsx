@@ -116,10 +116,9 @@ const About = () => {
                 <img 
                   src="/4FIN_H_Bold_Negativ.png" 
                   alt="4fin s.r.o. logo" 
-                  className="w-[170px] h-[80px] mx-auto mb-6"
+                  className="w-[170px] h-[80px] mx-auto"
                   style={{ objectFit: 'contain' }}
                 />
-                <div className="text-white/80">profesionální agentura</div>
               </div>
             </div>
           </div>
