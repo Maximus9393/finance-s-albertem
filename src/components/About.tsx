@@ -2,7 +2,7 @@ import { CheckCircle, Users, Shield, TrendingUp } from "lucide-react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import logo4fin from "@/assets/4fin-logo.png";
 const About = () => {
-  return <section id="about" className="py-20 bg-background">
+  return <section id="about" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-6">
@@ -56,10 +56,10 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-20 bg-gradient-subtle rounded-2xl p-8 md:p-12 shadow-card">
+        <div className="mt-20 bg-gradient-subtle rounded-2xl p-8 md:p-12 shadow-card text-white">
           <div className="grid md:grid-cols-2 gap-8 items-start">
             <div>
-              <h3 className="text-3xl font-bold text-foreground mb-6">Můj přístup</h3>
+              <h3 className="text-3xl font-bold text-white mb-6">Můj přístup</h3>
               <Accordion type="single" collapsible={false} defaultValue="item-1" className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
@@ -113,10 +113,13 @@ const About = () => {
             </div>
             <div className="flex items-center justify-center h-full">
               <div className="inline-block p-12 bg-primary/5 rounded-full">
-                <img src={logo4fin} alt="4fin s.r.o. logo" className="w-[170px] h-[80px] mx-auto mb-6" style={{
-                objectFit: 'contain'
-              }} />
-                
+                <img 
+                  src="/4FIN_H_Bold_Negativ.png" 
+                  alt="4fin s.r.o. logo" 
+                  className="w-[170px] h-[80px] mx-auto mb-6"
+                  style={{ objectFit: 'contain' }}
+                />
+                <div className="text-white/80">profesionální agentura</div>
               </div>
             </div>
           </div>
