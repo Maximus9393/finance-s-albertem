@@ -28,7 +28,7 @@ const Header = () => {
       <div className={`container mx-auto px-4 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img src={logo4fin} alt="4fin logo" className={`transition-all duration-300 ${isScrolled ? 'h-8' : 'h-12'}`} decoding="async" loading="eager" width="48" height="48" />
+            <img src={logo4fin} alt="4fin logo" className={`transition-all duration-300 ${isScrolled ? 'w-[85px] h-[40px]' : 'w-[113px] h-[53px]'}`} decoding="async" loading="eager" width="113" height="53" style={{ objectFit: 'contain' }} />
             <div className={`font-bold text-primary transition-all duration-300 ${isScrolled ? 'text-lg' : 'text-xl'}`}>
               Finance s Albertem
             </div>
