@@ -71,7 +71,7 @@ const Services = () => {
               
               <Button 
                 variant="outline" 
-                className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+                className="w-full text-white border-white hover:bg-white hover:text-primary transition-all duration-300"
                 onClick={scrollToContact}
               >
                 Zjistit více
