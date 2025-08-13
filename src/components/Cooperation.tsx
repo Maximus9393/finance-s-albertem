@@ -17,11 +17,11 @@ const Cooperation = () => {
 
         <div className="grid md:grid-cols-2 gap-8">
           <article className="bg-card rounded-2xl p-8 shadow-card animate-scale-in">
-            <h3 className="text-2xl font-semibold text-foreground mb-3">Finanční poradce</h3>
-            <p className="text-muted-foreground mb-6">
+            <h3 className="text-2xl font-semibold text-white mb-3">Finanční poradce</h3>
+            <p className="text-white/80 mb-6">
               Budujte vlastní klientské portfolio, poskytujte komplexní finanční řešení a získávejte odpovídající odměnu i kariérní růst.
             </p>
-            <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+            <ul className="list-disc pl-5 space-y-2 text-white/70">
               <li>Mentoring a zázemí silné značky 4fin</li>
               <li>Široké produktové portfolio (pojištění, investice, hypotéky…)</li>
               <li>Transparentní a férový provizní systém</li>
@@ -29,12 +29,12 @@ const Cooperation = () => {
           </article>
 
           <article className="bg-card rounded-2xl p-8 shadow-card animate-scale-in">
-            <h3 className="text-2xl font-semibold text-foreground mb-3">Leadař (doporučitel)</h3>
-            <p className="text-muted-foreground mb-6">
+            <h3 className="text-2xl font-semibold text-white mb-3">Leadař (doporučitel)</h3>
+            <p className="text-white/80 mb-6">
               Leadař je ten, kdo doporučí finančnímu poradci člověka, který řeší finance. 
               Odbornou část a servis zajistí náš tým, vy získáte odměnu za doporučení.
             </p>
-            <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+            <ul className="list-disc pl-5 space-y-2 text-white/70">
               <li>Bez nutnosti odborných zkoušek</li>
               <li>Flexibilní spolupráce – jen doporučujete</li>
               <li>Odměna za úspěšně zrealizované obchody</li>
