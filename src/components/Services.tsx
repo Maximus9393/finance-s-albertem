@@ -71,7 +71,7 @@ const Services = () => {
               
               <Button 
                 variant="secondary" 
-                className="w-full bg-green-600 text-white border-green-600 hover:bg-green-700 hover:text-white transition-all duration-300"
+                className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300"
                 onClick={scrollToContact}
               >
                 Zjistit více
