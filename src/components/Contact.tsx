@@ -190,16 +190,16 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="flex items-start space-x-3 p-4 rounded-lg border border-border/30 bg-card/30">
+              <div className="flex items-start space-x-3 p-4 rounded-lg border border-primary/20 bg-background/95 shadow-soft">
                 <Checkbox
                   id="gdpr"
                   checked={formData.gdprConsent}
                   onCheckedChange={(checked) => setFormData(prev => ({ ...prev, gdprConsent: !!checked }))}
-                  className="mt-1"
+                  className="mt-1 border-2 border-foreground data-[state=checked]:bg-primary data-[state=checked]:border-primary"
                 />
-                <label htmlFor="gdpr" className="text-sm text-card-foreground leading-relaxed cursor-pointer">
+                <label htmlFor="gdpr" className="text-sm text-foreground leading-relaxed cursor-pointer">
                   Souhlasím se zpracováním osobních údajů za účelem kontaktování a poskytnutí nabídky služeb. 
-                  Více informací v našich <span className="text-primary cursor-pointer hover:underline">zásadách ochrany osobních údajů</span>.
+                  Více informací v našich <span className="text-primary font-medium cursor-pointer hover:underline hover:text-primary-hover">zásadách ochrany osobních údajů</span>.
                 </label>
               </div>
 
