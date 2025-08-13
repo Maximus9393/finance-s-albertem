@@ -60,16 +60,31 @@ const Hero = () => {
 
           <div className="relative animate-scale-in">
             <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl blur-3xl"></div>
-            <img 
-              src={albertPhoto} 
-              alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
-              className="relative rounded-2xl shadow-elegant w-full h-auto object-cover max-w-md mx-auto" 
-              loading="eager"
-              decoding="async"
-              fetchPriority="high"
-              width="400"
-              height="500"
-            />
+            <div className="flip-card relative max-w-md mx-auto">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <img 
+                    src={albertPhoto} 
+                    alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
+                    className="rounded-2xl shadow-elegant w-full h-auto object-cover" 
+                    loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
+                    width="400"
+                    height="500"
+                  />
+                </div>
+                <div className="flip-card-back">
+                  <div className="bg-gradient-primary rounded-2xl shadow-elegant w-full h-full flex items-center justify-center p-8">
+                    <blockquote className="text-white text-center">
+                      <p className="text-2xl font-bold mb-4">„Peníze umí plavat.</p>
+                      <p className="text-xl">Naučím je plavat k vám."</p>
+                      <footer className="mt-6 text-lg opacity-90">— Albert Gurdžjan</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
