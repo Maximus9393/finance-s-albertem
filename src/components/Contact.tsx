@@ -203,7 +203,7 @@ const Contact = () => {
                 </label>
               </div>
 
-              <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting}>
+              <Button type="submit" variant="hero" size="lg" className="w-full shadow-elegant border border-primary/20 hover:shadow-soft hover:scale-105" disabled={isSubmitting}>
                 {isSubmitting ? "Odesílám..." : "Odeslat poptávku"}
               </Button>
             </form>
