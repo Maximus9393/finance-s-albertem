@@ -83,21 +83,21 @@ const Services = () => {
         {/* Additional Services */}
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 transition-all duration-300">
-            <Calculator className="w-8 h-8 text-primary mb-4" />
-            <h4 className="text-lg font-semibold text-foreground mb-2">Finanční plánování</h4>
-            <p className="text-muted-foreground text-sm">Strategické plánování vašich financí pro dosažení životních cílů.</p>
+            <Calculator className="w-8 h-8 text-white mb-4" />
+            <h4 className="text-lg font-semibold text-white mb-2">Finanční plánování</h4>
+            <p className="text-white/90 text-sm">Strategické plánování vašich financí pro dosažení životních cílů.</p>
           </div>
           
           <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 transition-all duration-300">
-            <PiggyBank className="w-8 h-8 text-primary mb-4" />
-            <h4 className="text-lg font-semibold text-foreground mb-2">Spoření</h4>
-            <p className="text-muted-foreground text-sm">Efektivní spořicí produkty pro různé životní situace.</p>
+            <PiggyBank className="w-8 h-8 text-white mb-4" />
+            <h4 className="text-lg font-semibold text-white mb-2">Spoření</h4>
+            <p className="text-white/90 text-sm">Efektivní spořicí produkty pro různé životní situace.</p>
           </div>
           
           <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 transition-all duration-300">
-            <FileText className="w-8 h-8 text-primary mb-4" />
-            <h4 className="text-lg font-semibold text-foreground mb-2">Daňové poradenství</h4>
-            <p className="text-muted-foreground text-sm">Optimalizace daňových povinností a využití úlev.</p>
+            <FileText className="w-8 h-8 text-white mb-4" />
+            <h4 className="text-lg font-semibold text-white mb-2">Daňové poradenství</h4>
+            <p className="text-white/90 text-sm">Optimalizace daňových povinností a využití úlev.</p>
           </div>
         </div>
       </div>
