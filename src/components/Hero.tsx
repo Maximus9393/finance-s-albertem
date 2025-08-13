@@ -2,7 +2,10 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
 import albertPhoto from "@/assets/albert-photo.jpg";
 import CountUp from "@/components/CountUp";
+import { useState } from "react";
 const Hero = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -11,6 +14,7 @@ const Hero = () => {
       });
     }
   };
+  
   return <section className="min-h-screen flex items-center justify-center bg-gradient-subtle pt-20">
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -62,19 +66,30 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl blur-3xl"></div>
             <div className="flip-card relative max-w-md mx-auto">
               <div className="flip-card-inner">
-                <div className="flip-card-front">
+                 <div className="flip-card-front relative">
+                   {/* Loading placeholder */}
+                   {!imageLoaded && (
+                     <div className="absolute inset-0 bg-muted rounded-2xl animate-pulse flex items-center justify-center">
+                       <div className="w-16 h-16 bg-primary/20 rounded-full animate-ping"></div>
+                     </div>
+                   )}
+                   
                    <img 
                      src={albertPhoto} 
                      alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
-                     className="rounded-2xl shadow-elegant w-full h-auto object-cover" 
+                     className={`rounded-2xl shadow-elegant w-full h-auto object-cover transition-opacity duration-500 ${
+                       imageLoaded ? 'opacity-100' : 'opacity-0'
+                     }`}
                      loading="eager"
                      decoding="async"
                      fetchPriority="high"
                      width="400"
                      height="500"
                      style={{ aspectRatio: '4/5' }}
+                     onLoad={() => setImageLoaded(true)}
+                     onError={() => setImageLoaded(true)}
                    />
-                </div>
+                 </div>
                 <div className="flip-card-back">
                   <div className="bg-gradient-primary rounded-2xl shadow-elegant w-full h-full flex items-center justify-center p-8">
                     <blockquote className="text-white text-center">
