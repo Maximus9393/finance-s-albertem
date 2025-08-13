@@ -220,7 +220,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">Telefon</h4>
-                    <p className="text-white/80">+420 123 456 789</p>
+                    <p className="text-white/80">+420 728 271 275</p>
                     
                   </div>
                 </div>
@@ -231,7 +231,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">E-mail</h4>
-                    <p className="text-white/80">albert@4fin.cz</p>
+                    <p className="text-white/80">albert.gurdzjan@4fin.cz</p>
                     <p className="text-sm text-white/60">Odpovídáme do 24 hodin</p>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white mb-1">Adresa</h4>
-                    <p className="text-white/80">Václavské náměstí 123<br />110 00 Praha 1</p>
+                    <p className="text-white/80">Chrastavská 231/32A<br />460 01 Liberec</p>
                   </div>
                 </div>
 

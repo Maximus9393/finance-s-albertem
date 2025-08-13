@@ -57,17 +57,17 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <span className="text-background/80">+420 123 456 789</span>
+                <span className="text-background/80">+420 728 271 275</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-background/80">albert@4fin.cz</span>
+                <span className="text-background/80">albert.gurdzjan@4fin.cz</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5" />
                 <span className="text-background/80">
-                  Václavské náměstí 123<br />
-                  110 00 Praha 1
+                  Chrastavská 231/32A<br />
+                  460 01 Liberec
                 </span>
               </div>
             </div>
