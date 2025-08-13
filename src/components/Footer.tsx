@@ -49,7 +49,7 @@ const Footer = () => {
               <li><a href="#about" className="text-background/80 hover:text-primary transition-colors">O nás</a></li>
               <li><a href="#testimonials" className="text-background/80 hover:text-primary transition-colors">Reference</a></li>
               <li><a href="#contact" className="text-background/80 hover:text-primary transition-colors">Kontakt</a></li>
-              <li><a href="https://www.4fin.cz/ochrana-osobnich-udaju" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-primary transition-colors">Ochrana údajů</a></li>
+              <li><a href="https://www.4fin.cz/ochrana-osobnich-udaju" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-primary transition-colors">Zásady ochrany osobních údajů</a></li>
             </ul>
           </div>
 
@@ -82,9 +82,6 @@ const Footer = () => {
               © {currentYear} Finance s Albertem | 4fin s.r.o. Všechna práva vyhrazena.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="https://www.4fin.cz/ochrana-osobnich-udaju" target="_blank" rel="noopener noreferrer" className="text-background/60 hover:text-primary transition-colors text-sm">
-                Zásady ochrany osobních údajů
-              </a>
               <a href="#" className="text-background/60 hover:text-primary transition-colors text-sm">
                 Cookies
               </a>
