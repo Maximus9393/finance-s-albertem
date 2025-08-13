@@ -100,7 +100,7 @@ const Contact = () => {
         {/* Values Section */}
         <div className="mb-16 flex justify-center animate-scale-in">
           <img 
-            src="/cara_kontakt2.png" 
+            src="/cara_kontakt2.png"
             alt="Naše hodnoty - partnerství, inovace, kvalita, růst" 
             className="max-w-full h-auto"
           />

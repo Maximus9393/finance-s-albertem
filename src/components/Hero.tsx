@@ -55,11 +55,13 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-2xl blur-3xl"></div>
             <img 
               src={albertPhoto} 
-              alt="Albert Gurdžjan - finanční poradce" 
-              className="relative rounded-2xl shadow-elegant w-full h-auto object-cover" 
+              alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
+              className="relative rounded-2xl shadow-elegant w-full h-auto object-cover max-w-md mx-auto" 
               loading="eager"
               decoding="async"
               fetchPriority="high"
+              width="400"
+              height="500"
             />
           </div>
         </div>
