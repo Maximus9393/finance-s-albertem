@@ -6,6 +6,41 @@ import { useState } from "react";
 const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   
+  const quotes = [
+    "Peníze umí plavat. Naučím je plavat k vám.",
+    "Ve financích jsem doma – pojďte dál.",
+    "Umím zkrotit i rozjetý rozpočet.",
+    "Vaše finance? Moje hobby i profese.",
+    "Jistoty, zisky a klidný spánek – v balíčku na míru.",
+    "Chytré peníze patří chytrým lidem. Jste mezi nimi?",
+    "Investice nejsou nuda. Ukažu vám proč.",
+    "Ztráty nechávám konkurenci.",
+    "Když jde o peníze, mám plán A… i plán Z.",
+    "Vaše cíle, moje strategie.",
+    "Mluvím plynule jazykem hypoték, pojistek i investic.",
+    "Finanční proud znám zpaměti – přidáte se na palubu?",
+    "Vaše budoucnost? Lepší, než si myslíte.",
+    "Nebojte se snít. Já vám to spočítám.",
+    "Společně uděláme z vašich financí silný příběh.",
+    "Úroky mohou růst, ale vaše starosti klesnou.",
+    "Miluju čísla – a ony milují přesnost.",
+    "Finance jsou hra. Já znám pravidla.",
+    "Každá koruna má svůj cíl. Pomůžu jí ho najít.",
+    "Váš majetek – moje zodpovědnost.",
+    "Když se čísla usmějí, je to správná cesta.",
+    "Bezpečí a růst – dvě věci, které umím spojit.",
+    "Vaše peníze nemusí spát – naučím je pracovat.",
+    "V investicích nečekám na zázrak. Tvořím ho.",
+    "Strategie, která se vyplatí – doslova.",
+    "Rozumím riziku, ale sázím na jistotu.",
+    "Vím, kam peníze tečou – a dokážu je tam nasměrovat.",
+    "Každý finanční plán je jako otisk prstu – jedinečný.",
+    "Vy plánujete život, já naplánuju finance.",
+    "Když je rozpočet v kondici, zvládne všechno."
+  ];
+  
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -99,9 +134,9 @@ const Hero = () => {
                 <div className="flip-card-back">
                   <div className="bg-gradient-primary rounded-2xl shadow-elegant w-full h-full flex items-center justify-center p-8">
                     <blockquote className="text-white text-center">
-                      <p className="text-xl md:text-2xl font-medium italic leading-relaxed">
-                        „Peníze umí plavat. Naučím je plavat k vám."
-                      </p>
+                       <p className="text-xl md:text-2xl font-medium italic leading-relaxed">
+                         „{randomQuote}"
+                       </p>
                       <footer className="mt-6 text-lg opacity-90">— Albert Gurdžjan</footer>
                     </blockquote>
                   </div>
