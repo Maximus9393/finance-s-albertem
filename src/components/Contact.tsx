@@ -119,12 +119,12 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-card rounded-2xl p-8 shadow-card animate-scale-in">
-            <h3 className="text-2xl font-bold text-foreground mb-6">Nezávazná konzultace</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Nezávazná konzultace</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-sm font-medium text-white mb-2">
                     Jméno a příjmení *
                   </label>
                   <Input
@@ -135,7 +135,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-sm font-medium text-white mb-2">
                     E-mail *
                   </label>
                   <Input
@@ -150,7 +150,7 @@ const Contact = () => {
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-sm font-medium text-white mb-2">
                     Telefon
                   </label>
                   <Input
@@ -160,7 +160,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-sm font-medium text-white mb-2">
                     Oblast zájmu
                   </label>
                   <Select value={formData.service} onValueChange={(value) => handleInputChange('service', value)}>
@@ -179,7 +179,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
+                <label className="block text-sm font-medium text-white mb-2">
                   Zpráva
                 </label>
                 <Textarea
@@ -196,7 +196,7 @@ const Contact = () => {
                   checked={formData.gdprConsent}
                   onCheckedChange={(checked) => setFormData(prev => ({ ...prev, gdprConsent: !!checked }))}
                 />
-                <label htmlFor="gdpr" className="text-sm text-muted-foreground leading-relaxed">
+                <label htmlFor="gdpr" className="text-sm text-white/80 leading-relaxed">
                   Souhlasím se zpracováním osobních údajů za účelem kontaktování a poskytnutí nabídky služeb. 
                   Více informací v našich <span className="text-primary cursor-pointer hover:underline">zásadách ochrany osobních údajů</span>.
                 </label>
