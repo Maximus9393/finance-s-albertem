@@ -50,21 +50,21 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group animate-scale-in border border-border/50"
+              className="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group animate-scale-in border border-border/50 text-white"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 <service.icon className="w-8 h-8 text-primary" />
               </div>
               
-              <h3 className="text-2xl font-bold text-foreground mb-4">{service.title}</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
+              <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
+              <p className="text-white/90 mb-6 leading-relaxed">{service.description}</p>
               
               <ul className="space-y-3 mb-8">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-foreground">{feature}</span>
+                    <span className="text-white">{feature}</span>
                   </li>
                 ))}
               </ul>
