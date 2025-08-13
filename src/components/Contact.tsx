@@ -97,6 +97,54 @@ const Contact = () => {
           </p>
         </div>
 
+        {/* Values Section */}
+        <div className="mb-16 bg-background/50 rounded-2xl p-8 animate-scale-in">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div className="space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-1 bg-primary rounded-full"></div>
+                  <div className="w-1 h-8 bg-primary rounded-full ml-1"></div>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-primary">partnerství</h3>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-primary">inovace</h3>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-primary">kvalita</h3>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M3 18h4l1-4h4l1 4h8v-2h-7l-1-4h3v-2h-4l-1-4H6l-1 4H2v2h3l1 4h-3v2z M7 8h2l1 4H8l-1-4z"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-primary">růst</h3>
+            </div>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-card rounded-2xl p-8 shadow-card animate-scale-in">
