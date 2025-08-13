@@ -77,8 +77,9 @@ const Hero = () => {
                 <div className="flip-card-back">
                   <div className="bg-gradient-primary rounded-2xl shadow-elegant w-full h-full flex items-center justify-center p-8">
                     <blockquote className="text-white text-center">
-                      <p className="text-2xl font-bold mb-4">„Peníze umí plavat.</p>
-                      <p className="text-xl">Naučím je plavat k vám."</p>
+                      <p className="text-xl md:text-2xl font-medium italic leading-relaxed">
+                        „Peníze umí plavat. Naučím je plavat k vám."
+                      </p>
                       <footer className="mt-6 text-lg opacity-90">— Albert Gurdžjan</footer>
                     </blockquote>
                   </div>
