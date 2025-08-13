@@ -8,10 +8,9 @@ import { Phone, Mail, MapPin, Equal, ChevronRight, Plus, BarChart3 } from "lucid
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import type { ContactFormData } from "@/lib/supabase";
+
 const Contact = () => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,18 +19,24 @@ const Contact = () => {
     message: "",
     gdprConsent: false
   });
+  
   const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
     if (!formData.gdprConsent) {
       toast({
         title: "GDPR souhlas",
         description: "Prosím, odsouhlaste zpracování osobních údajů.",
-        variant: "destructive"
+        variant: "destructive",
       });
       return;
     }
+
     setIsSubmitting(true);
+
+
     try {
       const contactData: Omit<ContactFormData, 'created_at'> = {
         name: formData.name,
@@ -39,17 +44,20 @@ const Contact = () => {
         phone: formData.phone,
         service: formData.service,
         message: formData.message,
-        gdpr_consent: formData.gdprConsent
+        gdpr_consent: formData.gdprConsent,
       };
-      const {
-        error
-      } = await supabase.from('contacts').insert([contactData]);
+
+      const { error } = await supabase
+        .from('contacts')
+        .insert([contactData]);
+
       if (error) {
         throw error;
       }
+
       toast({
         title: "Formulář odeslán",
-        description: "Děkujeme za vaši zprávu. Ozveme se vám co nejdříve."
+        description: "Děkujeme za vaši zprávu. Ozveme se vám co nejdříve.",
       });
 
       // Reset form
@@ -59,26 +67,26 @@ const Contact = () => {
         phone: "",
         service: "",
         message: "",
-        gdprConsent: false
+        gdprConsent: false,
       });
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
         title: "Chyba při odesílání",
         description: "Něco se pokazilo. Zkuste to prosím znovu.",
-        variant: "destructive"
+        variant: "destructive",
       });
     } finally {
       setIsSubmitting(false);
     }
   };
+
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({
-      ...prev,
-      [field]: value
-    }));
+    setFormData(prev => ({ ...prev, [field]: value }));
   };
-  return <section id="contact" className="py-20 bg-gradient-subtle">
+
+  return (
+    <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-6">
@@ -92,46 +100,70 @@ const Contact = () => {
         {/* Values Section */}
         <div className="mb-16 w-full animate-scale-in">
           <div className="flex justify-center">
-            <img src="/cara_kontakt2.png" alt="Naše hodnoty - partnerství, inovace, kvalita, růst" className="max-w-none w-full max-w-6xl h-auto rounded-lg shadow-soft" loading="lazy" decoding="async" width="1200" height="600" onError={e => {
-            console.log('Image failed to load:', e.currentTarget.src);
-            e.currentTarget.style.display = 'none';
-          }} />
+            <img 
+              src="/cara_kontakt2.png"
+              alt="Naše hodnoty - partnerství, inovace, kvalita, růst" 
+              className="max-w-none w-full max-w-6xl h-auto rounded-lg shadow-soft"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="600"
+              onError={(e) => {
+                console.log('Image failed to load:', e.currentTarget.src);
+                e.currentTarget.style.display = 'none';
+              }}
+            />
           </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-card rounded-2xl p-8 shadow-card animate-scale-in">
-            <h3 className="text-2xl font-bold text-foreground mb-6">Nezávazná konzultace</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Nezávazná konzultace</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-sm font-medium text-white mb-2">
                     Jméno a příjmení *
                   </label>
-                  <Input value={formData.name} onChange={e => handleInputChange('name', e.target.value)} required placeholder="Vaše jméno" />
+                  <Input
+                    value={formData.name}
+                    onChange={(e) => handleInputChange('name', e.target.value)}
+                    required
+                    placeholder="Vaše jméno"
+                  />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-sm font-medium text-white mb-2">
                     E-mail *
                   </label>
-                  <Input type="email" value={formData.email} onChange={e => handleInputChange('email', e.target.value)} required placeholder="vas@email.cz" />
+                  <Input
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => handleInputChange('email', e.target.value)}
+                    required
+                    placeholder="vas@email.cz"
+                  />
                 </div>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-sm font-medium text-white mb-2">
                     Telefon
                   </label>
-                  <Input value={formData.phone} onChange={e => handleInputChange('phone', e.target.value)} placeholder="+420 123 456 789" />
+                  <Input
+                    value={formData.phone}
+                    onChange={(e) => handleInputChange('phone', e.target.value)}
+                    placeholder="+420 123 456 789"
+                  />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label className="block text-sm font-medium text-white mb-2">
                     Oblast zájmu
                   </label>
-                  <Select value={formData.service} onValueChange={value => handleInputChange('service', value)}>
+                  <Select value={formData.service} onValueChange={(value) => handleInputChange('service', value)}>
                     <SelectTrigger>
                       <SelectValue placeholder="Vyberte službu" />
                     </SelectTrigger>
@@ -147,18 +179,24 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
+                <label className="block text-sm font-medium text-white mb-2">
                   Zpráva
                 </label>
-                <Textarea value={formData.message} onChange={e => handleInputChange('message', e.target.value)} placeholder="Popište nám svou situaci a požadavky..." rows={4} />
+                <Textarea
+                  value={formData.message}
+                  onChange={(e) => handleInputChange('message', e.target.value)}
+                  placeholder="Popište nám svou situaci a požadavky..."
+                  rows={4}
+                />
               </div>
 
               <div className="flex items-start space-x-3">
-                <Checkbox id="gdpr" checked={formData.gdprConsent} onCheckedChange={checked => setFormData(prev => ({
-                ...prev,
-                gdprConsent: !!checked
-              }))} />
-                <label htmlFor="gdpr" className="text-sm text-muted-foreground leading-relaxed">
+                <Checkbox
+                  id="gdpr"
+                  checked={formData.gdprConsent}
+                  onCheckedChange={(checked) => setFormData(prev => ({ ...prev, gdprConsent: !!checked }))}
+                />
+                <label htmlFor="gdpr" className="text-sm text-white/80 leading-relaxed">
                   Souhlasím se zpracováním osobních údajů za účelem kontaktování a poskytnutí nabídky služeb. 
                   Více informací v našich <span className="text-primary cursor-pointer hover:underline">zásadách ochrany osobních údajů</span>.
                 </label>
@@ -173,38 +211,38 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8 animate-fade-in">
             <div className="bg-card rounded-2xl p-8 shadow-card">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Kontaktní údaje</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Kontaktní údaje</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg">
-                    <Phone className="w-6 h-6 text-primary" />
+                    <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Telefon</h4>
-                    <p className="text-muted-foreground">+420 728 271 275</p>
+                    <h4 className="font-semibold text-white mb-1">Telefon</h4>
+                    <p className="text-white/80">+420 123 456 789</p>
                     
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg">
-                    <Mail className="w-6 h-6 text-primary" />
+                    <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">E-mail</h4>
-                    <p className="text-muted-foreground">albert.gurdzjan@4fin.cz</p>
-                    <p className="text-sm text-muted-foreground">Odpovídáme do 24 hodin</p>
+                    <h4 className="font-semibold text-white mb-1">E-mail</h4>
+                    <p className="text-white/80">albert@4fin.cz</p>
+                    <p className="text-sm text-white/60">Odpovídáme do 24 hodin</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg">
-                    <MapPin className="w-6 h-6 text-primary" />
+                    <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Adresa</h4>
-                    <p className="text-muted-foreground">Václavské náměstí 123<br />110 00 Praha 1</p>
+                    <h4 className="font-semibold text-white mb-1">Adresa</h4>
+                    <p className="text-white/80">Václavské náměstí 123<br />110 00 Praha 1</p>
                   </div>
                 </div>
 
@@ -232,6 +270,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;
