@@ -24,7 +24,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 95%;
     --foreground: 4 3% 28%;
 
     --card: 0 0% 100%;
@@ -37,13 +37,13 @@ All colors MUST be HSL.
     --primary-foreground: 0 0% 100%;
     --primary-hover: 338 100% 30%;
 
-    --secondary: 60 9% 81%;
+    --secondary: 0 0% 92%;
     --secondary-foreground: 4 3% 28%;
 
-    --muted: 60 9% 81%;
+    --muted: 0 0% 92%;
     --muted-foreground: 4 3% 28%;
 
-    --accent: 60 9% 81%;
+    --accent: 0 0% 92%;
     --accent-foreground: 4 3% 28%;
 
     --success: 142 76% 36%;
@@ -52,13 +52,13 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 60 9% 81%;
-    --input: 60 9% 81%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
     --ring: 338 100% 35%;
 
     --gradient-primary: linear-gradient(135deg, hsl(338 100% 35%), hsl(338 100% 30%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%), hsl(60 9% 81%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(60 9% 81%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 95%), hsl(0 0% 90%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 95%), hsl(0 0% 90%));
 
     --shadow-elegant: 0 10px 30px -10px hsl(338 100% 35% / 0.15);
     --shadow-soft: 0 4px 12px -4px hsl(338 100% 35% / 0.08);
