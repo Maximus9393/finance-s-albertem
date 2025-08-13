@@ -124,7 +124,6 @@ const Hero = () => {
                       }`}
                       loading="eager"
                       decoding="async"
-                      fetchPriority="high"
                       width="400"
                       height="500"
                       onLoad={() => setImageLoaded(true)}
