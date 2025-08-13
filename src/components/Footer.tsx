@@ -1,5 +1,4 @@
-import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-import linktreeSymbol from "@/assets/linktree-symbol.svg";
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,7 +25,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5 text-primary" />
               </a>
               <a href="https://linktr.ee/albertgurdzjan" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition-colors">
-                <img src={linktreeSymbol} alt="Linktree" className="w-5 h-5" />
+                <ExternalLink className="w-5 h-5 text-primary" />
               </a>
             </div>
           </div>
