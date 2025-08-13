@@ -50,7 +50,7 @@ const Hero = () => {
     }
   };
   
-  return <section className="min-h-screen flex items-center justify-center bg-gradient-subtle pt-20">
+  return <section className="min-h-screen flex items-center justify-center pt-20">
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
