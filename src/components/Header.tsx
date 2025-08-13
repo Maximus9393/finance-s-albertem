@@ -52,6 +52,9 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-3">
+            <Button variant="cta" onClick={() => scrollToSection('contact')} className="animate-scale-in">
+              Nezávazná konzultace
+            </Button>
             <a 
               href="https://crm.4fin.cz" 
               target="_blank" 
@@ -66,9 +69,6 @@ const Header = () => {
                 decoding="async"
               />
             </a>
-            <Button variant="cta" onClick={() => scrollToSection('contact')} className="animate-scale-in">
-              Nezávazná konzultace
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
