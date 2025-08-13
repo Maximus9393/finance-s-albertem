@@ -93,7 +93,7 @@ const Contact = () => {
             Kontaktujte <span className="text-primary">Alberta</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Rádi si s vámi promluvím o vašich finančních cílech a najdeme nejlepší řešení pro vaši situaci.
+            Rád si s vámi promluvím o vašich finančních cílech a najdeme nejlepší řešení pro vaši situaci.
           </p>
         </div>
 
@@ -190,13 +190,14 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="flex items-start space-x-3">
+              <div className="flex items-start space-x-3 p-4 rounded-lg border border-border/30 bg-card/30">
                 <Checkbox
                   id="gdpr"
                   checked={formData.gdprConsent}
                   onCheckedChange={(checked) => setFormData(prev => ({ ...prev, gdprConsent: !!checked }))}
+                  className="mt-1"
                 />
-                <label htmlFor="gdpr" className="text-sm text-white/80 leading-relaxed">
+                <label htmlFor="gdpr" className="text-sm text-card-foreground leading-relaxed cursor-pointer">
                   Souhlasím se zpracováním osobních údajů za účelem kontaktování a poskytnutí nabídky služeb. 
                   Více informací v našich <span className="text-primary cursor-pointer hover:underline">zásadách ochrany osobních údajů</span>.
                 </label>
