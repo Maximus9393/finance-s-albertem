@@ -45,7 +45,7 @@ const Testimonials = () => {
               </p>
               
               <div className="border-t border-border pt-4">
-                <h4 className="text-lg font-semibold text-foreground">{testimonial.name}</h4>
+                <h4 className="text-lg font-semibold text-white">{testimonial.name}</h4>
                 <p className="text-sm text-muted-foreground">{testimonial.role}</p>
               </div>
             </div>)}
