@@ -101,39 +101,39 @@ const Contact = () => {
         <div className="mb-16 bg-background/50 rounded-2xl p-8 animate-scale-in">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div className="space-y-4">
+              <h3 className="text-lg font-bold text-primary">partnerství</h3>
               <div className="flex justify-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                   <Equal className="w-8 h-8 text-primary" />
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-primary">partnerství</h3>
             </div>
 
             <div className="space-y-4">
+              <h3 className="text-lg font-bold text-primary">inovace</h3>
               <div className="flex justify-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                   <ChevronRight className="w-8 h-8 text-primary" />
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-primary">inovace</h3>
             </div>
 
             <div className="space-y-4">
+              <h3 className="text-lg font-bold text-primary">kvalita</h3>
               <div className="flex justify-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                   <Plus className="w-8 h-8 text-primary" />
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-primary">kvalita</h3>
             </div>
 
             <div className="space-y-4">
+              <h3 className="text-lg font-bold text-primary">růst</h3>
               <div className="flex justify-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                   <BarChart3 className="w-8 h-8 text-primary" />
                 </div>
               </div>
-              <h3 className="text-lg font-bold text-primary">růst</h3>
             </div>
           </div>
         </div>
