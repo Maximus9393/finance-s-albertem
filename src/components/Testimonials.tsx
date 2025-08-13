@@ -1,4 +1,5 @@
 import { Star, Quote } from "lucide-react";
+import CountUp from "@/components/CountUp";
 const Testimonials = () => {
   const testimonials = [{
     name: "Jana Novotná",
@@ -54,25 +55,33 @@ const Testimonials = () => {
         <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="animate-fade-in">
-              <div className="text-4xl font-bold mb-2">200+</div>
+              <div className="text-4xl font-bold mb-2">
+                <CountUp end={200} suffix="+" />
+              </div>
               <div className="text-white/80">Spokojených klientů</div>
             </div>
             <div className="animate-fade-in" style={{
             animationDelay: '0.2s'
           }}>
-              <div className="text-4xl font-bold mb-2">5+</div>
+              <div className="text-4xl font-bold mb-2">
+                <CountUp end={5} suffix="+" duration={2200} />
+              </div>
               <div className="text-white/80">Let zkušeností</div>
             </div>
             <div className="animate-fade-in" style={{
             animationDelay: '0.4s'
           }}>
-              <div className="text-4xl font-bold mb-2">3M+</div>
+              <div className="text-4xl font-bold mb-2">
+                <CountUp end={3} suffix="M+" duration={2400} />
+              </div>
               <div className="text-white/80">Korun spravovaných</div>
             </div>
             <div className="animate-fade-in" style={{
             animationDelay: '0.6s'
           }}>
-              <div className="text-4xl font-bold mb-2">99%</div>
+              <div className="text-4xl font-bold mb-2">
+                <CountUp end={99} suffix="%" duration={2600} />
+              </div>
               <div className="text-white/80">Spokojenost klientů</div>
             </div>
           </div>

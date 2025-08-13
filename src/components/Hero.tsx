@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
 import albertPhoto from "@/assets/albert-photo.jpg";
+import CountUp from "@/components/CountUp";
 const Hero = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
@@ -37,15 +38,21 @@ const Hero = () => {
 
             <div className="flex items-center space-x-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">200+</div>
+                <div className="text-3xl font-bold text-primary">
+                  <CountUp end={200} suffix="+" />
+                </div>
                 <div className="text-sm text-muted-foreground">Spokojených klientů</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">5+</div>
+                <div className="text-3xl font-bold text-primary">
+                  <CountUp end={5} suffix="+" />
+                </div>
                 <div className="text-sm text-muted-foreground">Let zkušeností</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">3M+</div>
+                <div className="text-3xl font-bold text-primary">
+                  <CountUp end={3} suffix="M+" />
+                </div>
                 <div className="text-sm text-muted-foreground">korun ve správě</div>
               </div>
             </div>
