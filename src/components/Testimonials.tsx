@@ -66,7 +66,7 @@ const Testimonials = () => {
             <div className="animate-fade-in" style={{
             animationDelay: '0.4s'
           }}>
-              <div className="text-4xl font-bold mb-2">30M+</div>
+              <div className="text-4xl font-bold mb-2">3M+</div>
               <div className="text-white/80">Korun spravovaných</div>
             </div>
             <div className="animate-fade-in" style={{
