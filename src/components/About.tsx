@@ -114,7 +114,7 @@ const About = () => {
             <div className="flex items-center justify-center h-full">
               <div className="inline-block p-12 bg-primary/5 rounded-full">
                 <img 
-                  src={logo4fin} 
+                  src="/4FIN_H_Bold_Negativ.png" 
                   alt="4fin s.r.o. logo" 
                   className="w-[170px] h-[80px] mx-auto mb-6"
                   style={{ objectFit: 'contain' }}
