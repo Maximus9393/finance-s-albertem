@@ -211,7 +211,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8 animate-fade-in">
             <div className="bg-card rounded-2xl p-8 shadow-card">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Kontaktní údaje</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Kontaktní údaje</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -219,8 +219,8 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Telefon</h4>
-                    <p className="text-muted-foreground">+420 123 456 789</p>
+                    <h4 className="font-semibold text-white mb-1">Telefon</h4>
+                    <p className="text-white/80">+420 123 456 789</p>
                     
                   </div>
                 </div>
@@ -230,9 +230,9 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">E-mail</h4>
-                    <p className="text-muted-foreground">albert@4fin.cz</p>
-                    <p className="text-sm text-muted-foreground">Odpovídáme do 24 hodin</p>
+                    <h4 className="font-semibold text-white mb-1">E-mail</h4>
+                    <p className="text-white/80">albert@4fin.cz</p>
+                    <p className="text-sm text-white/60">Odpovídáme do 24 hodin</p>
                   </div>
                 </div>
 
@@ -241,8 +241,8 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Adresa</h4>
-                    <p className="text-muted-foreground">Václavské náměstí 123<br />110 00 Praha 1</p>
+                    <h4 className="font-semibold text-white mb-1">Adresa</h4>
+                    <p className="text-white/80">Václavské náměstí 123<br />110 00 Praha 1</p>
                   </div>
                 </div>
 
