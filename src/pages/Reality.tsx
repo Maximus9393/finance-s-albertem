@@ -260,7 +260,7 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <Button asChild variant="cta" className="w-full">
+                      <Button asChild variant="outline" className="w-full bg-white text-primary border-white hover:bg-white/90 hover:text-primary">
                         <a 
                           href="https://www.century21.cz/makler/vladimir-rehak" 
                           target="_blank" 
@@ -326,7 +326,7 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <Button asChild variant="cta" className="w-full">
+                      <Button asChild variant="outline" className="w-full bg-white text-primary border-white hover:bg-white/90 hover:text-primary">
                         <a 
                           href="https://www.century21.cz/makler/martin-petrik" 
                           target="_blank" 
