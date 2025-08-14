@@ -76,7 +76,7 @@ const Reality = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-card-foreground mb-4">Výhodné hypotéky</h3>
                   <p className="text-card-foreground/90 mb-6 leading-relaxed">
-                    Pomozheme vám najít tu nejlepší hypotéku na trhu. Porovnáme nabídky všech bank 
+                    Pomůžeme vám najít tu nejlepší hypotéku na trhu. Porovnáme nabídky všech bank 
                     a zajistíme vám ty nejlepší podmínky pro financování vaší nemovitosti.
                   </p>
                   <ul className="space-y-3 mb-6">
