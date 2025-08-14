@@ -14,7 +14,7 @@ const Services = () => {
       icon: CreditCard,
       title: "Úvěry",
       description: "Rychlé řešení pro vaše potřeby",
-      features: ["Spotřebitelské úvěry", "Kontokorentní úvěry", "Refinancování", "Výhodné podmínky"],
+      features: ["Spotřebitelské úvěry", "Úvěr s dotacemi", "Refinancování", "Výhodné podmínky"],
       gradient: "from-orange-500/10 to-orange-600/10"
     },
     {
