@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo4fin from "@/assets/4fin-logo.png";
 import prihlasitIcon from "@/assets/prihlasit-icon.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -12,26 +15,33 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
+    // Pokud jsme na hlavní stránce, scrollujeme
+    if (location.pathname === '/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      // Pokud jsme na jiné stránce, přejdeme na hlavní stránku s hashem
+      window.location.href = `/#${sectionId}`;
     }
     setIsMenuOpen(false);
   };
   return <header className={`fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
       <div className={`container mx-auto px-4 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3">
             <img src={logo4fin} alt="4fin logo" className={`transition-all duration-300 ${isScrolled ? 'w-[85px] h-[40px]' : 'w-[113px] h-[53px]'}`} decoding="async" loading="eager" width="113" height="53" style={{
             objectFit: 'contain'
           }} />
             <div className={`font-bold text-primary transition-all duration-300 ${isScrolled ? 'text-lg' : 'text-xl'}`}>
               Finance s Albertem
             </div>
-          </div>
+          </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -45,9 +55,9 @@ const Header = () => {
             <button onClick={() => scrollToSection('testimonials')} className="text-foreground hover:text-primary transition-colors duration-300">
               Reference
             </button>
-            <a href="/reality" className="text-foreground hover:text-primary transition-colors duration-300">
+            <Link to="/reality" className="text-foreground hover:text-primary transition-colors duration-300">
               Reality
-            </a>
+            </Link>
             <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors duration-300">
               Kontakt
             </button>
@@ -85,9 +95,9 @@ const Header = () => {
               <button onClick={() => scrollToSection('testimonials')} className="text-left text-foreground hover:text-primary transition-colors duration-300">
                 Reference
               </button>
-              <a href="/reality" className="text-left text-foreground hover:text-primary transition-colors duration-300">
+              <Link to="/reality" className="text-left text-foreground hover:text-primary transition-colors duration-300">
                 Reality
-              </a>
+              </Link>
               <button onClick={() => scrollToSection('contact')} className="text-left text-foreground hover:text-primary transition-colors duration-300">
                 Kontakt
               </button>
