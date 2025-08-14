@@ -70,31 +70,31 @@ const Reality = () => {
               </div>
               
               <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                <div className="bg-background/95 backdrop-blur-sm rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-green-500/10 to-green-600/10 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Home className="w-6 h-6 text-primary" />
+                <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Home className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">Výhodné hypotéky</h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <h3 className="text-2xl font-bold text-card-foreground mb-4">Výhodné hypotéky</h3>
+                  <p className="text-card-foreground/90 mb-6 leading-relaxed">
                     Pomozheme vám najít tu nejlepší hypotéku na trhu. Porovnáme nabídky všech bank 
                     a zajistíme vám ty nejlepší podmínky pro financování vaší nemovitosti.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Porovnání všech bank na trhu</span>
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                      <span className="text-card-foreground">Porovnání všech bank na trhu</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Individuální posouzení vaší situace</span>
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                      <span className="text-card-foreground">Individuální posouzení vaší situace</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Asistence při vyřizování</span>
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                      <span className="text-card-foreground">Asistence při vyřizování</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Poradenství při výběru hypotéky</span>
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                      <span className="text-card-foreground">Poradenství při výběru hypotéky</span>
                     </li>
                   </ul>
                   <Button 
@@ -106,31 +106,31 @@ const Reality = () => {
                   </Button>
                 </div>
 
-                <div className="bg-background/95 backdrop-blur-sm rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500/10 to-blue-600/10 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Calculator className="w-6 h-6 text-primary" />
+                <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Calculator className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">Refinancování</h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <h3 className="text-2xl font-bold text-card-foreground mb-4">Refinancování</h3>
+                  <p className="text-card-foreground/90 mb-6 leading-relaxed">
                     Máte již hypotéku a chcete ušetřit? Pomozheme vám s refinancováním 
                     a převedením k výhodnější bance s lepšími podmínkami.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Analýza současné hypotéky</span>
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                      <span className="text-card-foreground">Analýza současné hypotéky</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Výpočet možných úspor</span>
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                      <span className="text-card-foreground">Výpočet možných úspor</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Kompletní vyřízení přechodu</span>
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                      <span className="text-card-foreground">Kompletní vyřízení přechodu</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground">Bez starostí a poplatků</span>
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                      <span className="text-card-foreground">Bez starostí a poplatků</span>
                     </li>
                   </ul>
                   <Button 
@@ -213,7 +213,7 @@ const Reality = () => {
 
                 <div className="grid lg:grid-cols-2 gap-8">
                   {/* Vladimír Řehák */}
-                  <div className="bg-background/95 backdrop-blur-sm rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50 overflow-hidden">
+                  <div className="bg-card rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50 overflow-hidden">
                     <div className="aspect-[4/3] relative overflow-hidden">
                       <img 
                         src={vladimirPhoto} 
@@ -275,7 +275,7 @@ const Reality = () => {
                   </div>
 
                   {/* Martin Petřík */}
-                  <div className="bg-background/95 backdrop-blur-sm rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50 overflow-hidden">
+                  <div className="bg-card rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50 overflow-hidden">
                     <div className="aspect-[4/3] relative overflow-hidden">
                       <img 
                         src={martinPhoto} 
