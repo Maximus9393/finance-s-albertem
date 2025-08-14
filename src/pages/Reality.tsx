@@ -243,7 +243,7 @@ const Reality = () => {
                           <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                             <Mail className="w-4 h-4 text-primary" />
                           </div>
-                          <a href="mailto:vladimir.rehak@century21.cz" className="text-foreground hover:text-primary transition-colors font-medium text-sm">
+                          <a href="mailto:vladimir.rehak@century21.cz" className="text-white hover:text-white/80 transition-colors font-medium text-sm">
                             vladimir.rehak@century21.cz
                           </a>
                         </div>
