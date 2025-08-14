@@ -260,15 +260,15 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <Button asChild variant="outline" className="w-full bg-white text-primary border-white hover:bg-white/90 hover:text-primary">
+                      <Button asChild variant="outline" className="w-full bg-white/95 text-primary border-white/50 hover:bg-white hover:text-primary-hover hover:border-white transition-all duration-300 hover:shadow-soft hover:scale-[1.02]">
                         <a 
                           href="https://www.century21.cz/makler/vladimir-rehak" 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2"
+                          className="inline-flex items-center justify-center gap-2 font-medium"
                         >
                           Zobrazit profil
-                          <ExternalLink className="w-4 h-4" />
+                          <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                         </a>
                       </Button>
                     </div>
@@ -326,15 +326,15 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <Button asChild variant="outline" className="w-full bg-white text-primary border-white hover:bg-white/90 hover:text-primary">
+                      <Button asChild variant="outline" className="w-full bg-white/95 text-primary border-white/50 hover:bg-white hover:text-primary-hover hover:border-white transition-all duration-300 hover:shadow-soft hover:scale-[1.02]">
                         <a 
                           href="https://www.century21.cz/makler/martin-petrik" 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2"
+                          className="inline-flex items-center justify-center gap-2 font-medium"
                         >
                           Zobrazit profil
-                          <ExternalLink className="w-4 h-4" />
+                          <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                         </a>
                       </Button>
                     </div>
