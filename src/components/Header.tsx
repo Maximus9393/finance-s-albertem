@@ -45,6 +45,9 @@ const Header = () => {
             <button onClick={() => scrollToSection('testimonials')} className="text-foreground hover:text-primary transition-colors duration-300">
               Reference
             </button>
+            <a href="/reality" className="text-foreground hover:text-primary transition-colors duration-300">
+              Reality
+            </a>
             <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors duration-300">
               Kontakt
             </button>
@@ -82,6 +85,9 @@ const Header = () => {
               <button onClick={() => scrollToSection('testimonials')} className="text-left text-foreground hover:text-primary transition-colors duration-300">
                 Reference
               </button>
+              <a href="/reality" className="text-left text-foreground hover:text-primary transition-colors duration-300">
+                Reality
+              </a>
               <button onClick={() => scrollToSection('contact')} className="text-left text-foreground hover:text-primary transition-colors duration-300">
                 Kontakt
               </button>
