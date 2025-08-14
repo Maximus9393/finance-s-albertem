@@ -5,8 +5,12 @@ import Footer from "@/components/Footer";
 import { ExternalLink, Phone, Mail, Home, Calculator, Building, Shield, Star, Award } from "lucide-react";
 import vladimirPhoto from "@/assets/vladimir-rehak.jpg";
 import martinPhoto from "@/assets/martin-petrik.jpg";
+import { useEffect } from "react";
 
 const Reality = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
