@@ -98,8 +98,8 @@ const Reality = () => {
                     </li>
                   </ul>
                   <Button 
-                    variant="cta" 
-                    className="w-full"
+                    variant="default" 
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3"
                     onClick={scrollToContact}
                   >
                     Zjistit více
@@ -134,8 +134,8 @@ const Reality = () => {
                     </li>
                   </ul>
                   <Button 
-                    variant="cta" 
-                    className="w-full"
+                    variant="default" 
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3"
                     onClick={scrollToContact}
                   >
                     Zjistit více
