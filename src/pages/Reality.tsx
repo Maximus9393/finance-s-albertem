@@ -203,8 +203,8 @@ const Reality = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16 animate-fade-in">
-                  <h2 className="text-4xl font-bold text-white mb-6">
-                     Naši <span className="text-white/90">realitní makléři</span>
+                  <h2 className="text-4xl font-bold text-foreground mb-6">
+                     Naši <span className="text-primary">realitní makléři</span>
                    </h2>
                    <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
                      Spolupracujeme s renomovanými makléři z Century 21, kteří vám pomohou najít tu pravou nemovitost
