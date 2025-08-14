@@ -53,32 +53,32 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group animate-scale-in border border-border/50 text-white"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="bg-card rounded-2xl p-6 shadow-card hover:shadow-elegant transition-all duration-300 group animate-scale-in border border-border/50 text-white h-full flex flex-col"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <service.icon className="w-8 h-8 text-white" />
+              <div className={`inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br ${service.gradient} rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
+                <service.icon className="w-6 h-6 text-white" />
               </div>
               
-              <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-              <p className="text-white/90 mb-6 leading-relaxed">{service.description}</p>
+              <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
+              <p className="text-white/90 mb-4 leading-relaxed text-sm flex-grow">{service.description}</p>
               
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-2 mb-6 flex-grow">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-white">{feature}</span>
+                  <li key={featureIndex} className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <span className="text-white text-sm leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
               
               <Button 
                 variant="secondary" 
-                className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300"
+                className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300 mt-auto"
                 onClick={scrollToContact}
               >
                 Zjistit více
