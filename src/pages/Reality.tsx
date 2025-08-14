@@ -235,7 +235,7 @@ const Reality = () => {
                           <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                             <Phone className="w-4 h-4 text-primary" />
                           </div>
-                          <a href="tel:+420731334373" className="text-foreground hover:text-primary transition-colors font-medium">
+                          <a href="tel:+420731334373" className="text-white hover:text-white/80 transition-colors font-medium">
                             +420 731 334 373
                           </a>
                         </div>
