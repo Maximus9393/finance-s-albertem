@@ -70,7 +70,7 @@ const Reality = () => {
               </div>
               
               <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50">
+                <div className="bg-background/95 backdrop-blur-sm rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-green-500/10 to-green-600/10 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Home className="w-6 h-6 text-primary" />
                   </div>
@@ -98,15 +98,15 @@ const Reality = () => {
                     </li>
                   </ul>
                   <Button 
-                    variant="secondary" 
-                    className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white"
+                    variant="cta" 
+                    className="w-full"
                     onClick={scrollToContact}
                   >
                     Zjistit více
                   </Button>
                 </div>
 
-                <div className="bg-card rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50">
+                <div className="bg-background/95 backdrop-blur-sm rounded-2xl p-8 shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50">
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500/10 to-blue-600/10 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Calculator className="w-6 h-6 text-primary" />
                   </div>
@@ -134,8 +134,8 @@ const Reality = () => {
                     </li>
                   </ul>
                   <Button 
-                    variant="secondary" 
-                    className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white"
+                    variant="cta" 
+                    className="w-full"
                     onClick={scrollToContact}
                   >
                     Zjistit více
@@ -213,7 +213,7 @@ const Reality = () => {
 
                 <div className="grid lg:grid-cols-2 gap-8">
                   {/* Vladimír Řehák */}
-                  <div className="bg-card rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50 overflow-hidden">
+                  <div className="bg-background/95 backdrop-blur-sm rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50 overflow-hidden">
                     <div className="aspect-[4/3] relative overflow-hidden">
                       <img 
                         src={vladimirPhoto} 
@@ -260,7 +260,7 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <Button asChild variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                      <Button asChild variant="cta" className="w-full">
                         <a 
                           href="https://www.century21.cz/makler/vladimir-rehak" 
                           target="_blank" 
@@ -275,7 +275,7 @@ const Reality = () => {
                   </div>
 
                   {/* Martin Petřík */}
-                  <div className="bg-card rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50 overflow-hidden">
+                  <div className="bg-background/95 backdrop-blur-sm rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50 overflow-hidden">
                     <div className="aspect-[4/3] relative overflow-hidden">
                       <img 
                         src={martinPhoto} 
@@ -326,7 +326,7 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <Button asChild variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                      <Button asChild variant="cta" className="w-full">
                         <a 
                           href="https://www.century21.cz/makler/martin-petrik" 
                           target="_blank" 
