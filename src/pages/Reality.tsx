@@ -112,7 +112,7 @@ const Reality = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-card-foreground mb-4">Refinancování</h3>
                   <p className="text-card-foreground/90 mb-6 leading-relaxed">
-                    Máte již hypotéku a chcete ušetřit? Pomozheme vám s refinancováním 
+                    Máte již hypotéku a chcete ušetřit? Pomůžeme vám s refinancováním 
                     a převedením k výhodnější bance s lepšími podmínkami.
                   </p>
                   <ul className="space-y-3 mb-6">
