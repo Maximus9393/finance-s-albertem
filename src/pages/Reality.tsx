@@ -285,42 +285,42 @@ const Reality = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
                     </div>
                     <div className="p-8">
-                      <h3 className="text-2xl font-bold text-foreground mb-2">Martin Petřík</h3>
-                      <p className="text-primary font-semibold mb-4">CENTURY 21 Synergy Liberec</p>
+                      <h3 className="text-2xl font-bold text-white mb-2">Martin Petřík</h3>
+                      <p className="text-white/90 font-semibold mb-4">CENTURY 21 Synergy Liberec</p>
                       
-                      <blockquote className="text-muted-foreground mb-6 italic leading-relaxed border-l-4 border-primary pl-4">
+                      <blockquote className="text-white/80 mb-6 italic leading-relaxed border-l-4 border-white/40 pl-4">
                         "Mám vysoké nároky na svou práci, protože věřím, že jen tak mohou moji klienti získat to nejlepší."
                       </blockquote>
 
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                            <Phone className="w-4 h-4 text-primary" />
+                          <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                            <Phone className="w-4 h-4 text-white" />
                           </div>
-                          <a href="tel:+420725813283" className="text-foreground hover:text-primary transition-colors font-medium">
+                          <a href="tel:+420725813283" className="text-white hover:text-white/80 transition-colors font-medium">
                             +420 725 813 283
                           </a>
                         </div>
                         <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                            <Mail className="w-4 h-4 text-primary" />
+                          <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                            <Mail className="w-4 h-4 text-white" />
                           </div>
-                          <a href="mailto:martin.petrik@century21.cz" className="text-foreground hover:text-primary transition-colors font-medium text-sm">
+                          <a href="mailto:martin.petrik@century21.cz" className="text-white hover:text-white/80 transition-colors font-medium text-sm">
                             martin.petrik@century21.cz
                           </a>
                         </div>
                       </div>
 
                       <div className="flex flex-wrap gap-2 mb-6">
-                        <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-3 py-1 bg-white/20 text-white text-sm rounded-full font-medium flex items-center gap-1">
                           <Shield className="w-3 h-3" />
                           Makléř pojištěn
                         </span>
-                        <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-3 py-1 bg-white/20 text-white text-sm rounded-full font-medium flex items-center gap-1">
                           <Star className="w-3 h-3" />
                           Klienti doporučují
                         </span>
-                        <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-3 py-1 bg-white/20 text-white text-sm rounded-full font-medium flex items-center gap-1">
                           <Award className="w-3 h-3" />
                           Certifikovaný
                         </span>
