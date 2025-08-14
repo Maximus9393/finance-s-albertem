@@ -14,28 +14,28 @@ const Services = () => {
       icon: CreditCard,
       title: "Úvěry",
       description: "Rychlé řešení pro vaše potřeby",
-      features: ["Spotřebitelské úvěry", "Úvěr s dotacemi", "Refinancování", "Výhodné podmínky"],
+      features: ["Spotřebitelské úvěry", "Úvěr s dotacemi", "Refinancování", "Výhodné podmínky", "Poradenství při výběru úvěru"],
       gradient: "from-orange-500/10 to-orange-600/10"
     },
     {
       icon: Shield,
       title: "Pojištění",
       description: "Komplexní ochrana vás a vaší rodiny",
-      features: ["Životní pojištění", "Majetkové pojištění", "Pojištění odpovědnosti", "Cestovní pojištění"],
+      features: ["Životní pojištění", "Pojištění vozidel", "Majetkové pojištění", "Pojištění odpovědnosti", "Cestovní pojištění"],
       gradient: "from-blue-500/10 to-blue-600/10"
     },
     {
       icon: TrendingUp,
       title: "Investice",
       description: "Růst vašeho kapitálu do budoucnosti",
-      features: ["Dlouhodobé investování", "Pravidelné investování", "Penzijní připojištění", "Investiční poradenství"],
+      features: ["Dlouhodobé investování", "Pravidelné investování", "Penzijní připojištění", "Investiční poradenství", "Správa majetku a portfolia"],
       gradient: "from-green-500/10 to-green-600/10"
     },
     {
       icon: Home,
       title: "Hypotéky",
       description: "Cesta k vašemu vlastnímu bydlení",
-      features: ["Hypoteční kalkulace", "Refinancování", "Pomoc s vyřízením", "Výhodné úrokové sazby"],
+      features: ["Hypoteční kalkulace", "Refinancování", "Pomoc s vyřízením", "Výhodné úrokové sazby", "Poradenství při výběru hypotéky"],
       gradient: "from-purple-500/10 to-purple-600/10"
     }
   ];
