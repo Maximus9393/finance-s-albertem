@@ -258,6 +258,10 @@ const Reality = () => {
                           <Shield className="w-3 h-3" />
                           Partner při koupi
                         </span>
+                        <span className="px-3 py-1 bg-white/20 text-white text-sm rounded-full font-medium flex items-center gap-1">
+                          <Award className="w-3 h-3" />
+                          Zkušený makléř
+                        </span>
                       </div>
 
                       <Button asChild variant="outline" className="w-full bg-white/95 text-primary border-white/50 hover:bg-white hover:text-primary-hover hover:border-white transition-all duration-300 hover:shadow-soft hover:scale-[1.02]">
