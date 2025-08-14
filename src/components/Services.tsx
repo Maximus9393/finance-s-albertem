@@ -1,4 +1,4 @@
-import { Shield, TrendingUp, Home, Calculator, PiggyBank, FileText } from "lucide-react";
+import { Shield, TrendingUp, Home, Calculator, PiggyBank, FileText, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Services = () => {
@@ -10,6 +10,13 @@ const Services = () => {
   };
 
   const services = [
+    {
+      icon: CreditCard,
+      title: "Úvěry",
+      description: "Rychlé řešení pro vaše potřeby",
+      features: ["Spotřebitelské úvěry", "Kontokorentní úvěry", "Refinancování", "Výhodné podmínky"],
+      gradient: "from-orange-500/10 to-orange-600/10"
+    },
     {
       icon: Shield,
       title: "Pojištění",
@@ -46,7 +53,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {services.map((service, index) => (
             <div 
               key={index} 
