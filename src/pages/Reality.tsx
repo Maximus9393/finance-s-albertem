@@ -227,7 +227,7 @@ const Reality = () => {
                       <p className="text-white/90 font-semibold mb-4">CENTURY 21 Synergy Liberec</p>
                       
                       <blockquote className="text-white/80 mb-6 italic leading-relaxed border-l-4 border-white/40 pl-4">
-                        "Má služba nespočívá jen v prodeji nemovitostí, přesvědčte se."
+                        "Má služba nespočívá jen v prodeji nemovitostí, ale v komplexním poradenství pro každého klienta."
                       </blockquote>
 
                       <div className="space-y-3 mb-6">
@@ -293,7 +293,7 @@ const Reality = () => {
                       <p className="text-white/90 font-semibold mb-4">CENTURY 21 Synergy Liberec</p>
                       
                       <blockquote className="text-white/80 mb-6 italic leading-relaxed border-l-4 border-white/40 pl-4">
-                        "Mám vysoké nároky na svou práci, protože věřím, že jen tak mohou moji klienti získat to nejlepší."
+                        "Mám vysoké nároky na svou práci, protože věřím v individuální přístup ke každému klientovi."
                       </blockquote>
 
                       <div className="space-y-3 mb-6">
