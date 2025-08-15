@@ -103,7 +103,7 @@ const Contact = () => {
             <img 
               src="/cara_kontakt2.png"
               alt="Naše hodnoty - partnerství, inovace, kvalita, růst" 
-              className="max-w-none w-full max-w-6xl h-auto rounded-lg shadow-soft"
+              className="max-w-none w-full max-w-6xl h-auto rounded-lg shadow-soft sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] object-cover"
               loading="lazy"
               decoding="async"
               width="1200"
