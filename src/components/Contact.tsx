@@ -194,7 +194,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-white mb-1">E-mail</h4>
                     <p className="text-white/80">albert.gurdzjan@4fin.cz</p>
-                    <p className="text-sm text-white/60">Odpovídáme do 24 hodin</p>
+                    <p className="text-sm text-white/60">Odpovídám do 24 hodin</p>
                   </div>
                 </div>
 
