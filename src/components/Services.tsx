@@ -83,7 +83,7 @@ const Services = () => {
             <p className="text-white/90 text-sm">Strategické plánování vašich financí pro dosažení životních cílů.</p>
           </div>
           
-          <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 transition-all duration-300 cursor-pointer" onClick={navigateToReality}>
+          <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 hover:scale-105 hover:shadow-lg hover:bg-card/60 transition-all duration-300 cursor-pointer" onClick={navigateToReality}>
             <Home className="w-8 h-8 text-white mb-4" />
             <h4 className="text-lg font-semibold text-white mb-2">Reality</h4>
             <p className="text-white/90 text-sm">Ve spolupráci s renomovanými realitními makléři jsme Vám schopni zajistit profesionální servis při prodeji nebo pronájmu Vaší nemovitosti.</p>
