@@ -45,9 +45,7 @@ const About = () => {
               <CheckCircle className="w-8 h-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-foreground">Komplexní řešení</h3>
-            <p className="text-muted-foreground">
-              Od pojištění po investice - poskytujeme kompletní finanční poradenství.
-            </p>
+            <p className="text-muted-foreground">Od analýzy po nastavení produktu a následný pravidelný servis. Od toho jsem tu pro Vás!</p>
           </div>
         </div>
 
