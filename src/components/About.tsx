@@ -27,9 +27,7 @@ const About = () => {
               <Shield className="w-8 h-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-foreground">Důvěryhodnost</h3>
-            <p className="text-muted-foreground">
-              Transparentnost a bezpečnost jsou základem naší práce. Vaše důvěra je naší prioritou.
-            </p>
+            <p className="text-muted-foreground">N</p>
           </div>
 
           <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
