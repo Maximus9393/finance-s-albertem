@@ -1,6 +1,9 @@
 import { Shield, TrendingUp, Home, Calculator, PiggyBank, FileText, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 const Services = () => {
+  const navigate = useNavigate();
+  
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -8,6 +11,10 @@ const Services = () => {
         behavior: 'smooth'
       });
     }
+  };
+
+  const navigateToReality = () => {
+    navigate('/reality');
   };
   const services = [{
     icon: CreditCard,
@@ -78,8 +85,8 @@ const Services = () => {
             <p className="text-white/90 text-sm">Strategické plánování vašich financí pro dosažení životních cílů.</p>
           </div>
           
-          <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 transition-all duration-300">
-            <PiggyBank className="w-8 h-8 text-white mb-4" />
+          <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 transition-all duration-300 cursor-pointer" onClick={navigateToReality}>
+            <Home className="w-8 h-8 text-white mb-4" />
             <h4 className="text-lg font-semibold text-white mb-2">Reality</h4>
             <p className="text-white/90 text-sm">Ve spolupráci s renomovanými realitními makléřy jsme Vám schopni zajistit profesionální servis při prodeji nebo pronájmu Vaší nemovitosti.</p>
           </div>
