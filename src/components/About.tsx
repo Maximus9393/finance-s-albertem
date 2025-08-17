@@ -27,7 +27,7 @@ const About = () => {
               <Shield className="w-8 h-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-foreground">Důvěryhodnost</h3>
-            <p className="text-muted-foreground">N</p>
+            <p className="text-muted-foreground">Na první místo stavím důvěru mezi Vámi a mnou. Proto trvám při spolupráci na vzájemn</p>
           </div>
 
           <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
