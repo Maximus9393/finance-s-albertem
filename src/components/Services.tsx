@@ -28,7 +28,7 @@ const Services = () => {
       icon: TrendingUp,
       title: "Investice",
       description: "Růst vašeho kapitálu do budoucnosti",
-      features: ["Dlouhodobé investování", "Pravidelné investování", "Penzijní připojištění", "Investiční poradenství", "Správa majetku a portfolia"],
+      features: ["Jednorázové investování", "Pravidelné investování", "Renta k důchodu", "Investice pro náročné", "Správa majetku a portfolia"],
       gradient: "from-green-500/10 to-green-600/10"
     },
     {
