@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 const Services = () => {
   const navigate = useNavigate();
-  
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -12,7 +11,6 @@ const Services = () => {
       });
     }
   };
-
   const navigateToReality = () => {
     navigate('/reality');
   };
@@ -88,7 +86,7 @@ const Services = () => {
           <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 transition-all duration-300 cursor-pointer" onClick={navigateToReality}>
             <Home className="w-8 h-8 text-white mb-4" />
             <h4 className="text-lg font-semibold text-white mb-2">Reality</h4>
-            <p className="text-white/90 text-sm">Ve spolupráci s renomovanými realitními makléřy jsme Vám schopni zajistit profesionální servis při prodeji nebo pronájmu Vaší nemovitosti.</p>
+            <p className="text-white/90 text-sm">Ve spolupráci s renomovanými realitními makléři jsme Vám schopni zajistit profesionální servis při prodeji nebo pronájmu Vaší nemovitosti.</p>
           </div>
           
           <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 transition-all duration-300">
