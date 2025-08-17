@@ -19,6 +19,7 @@ export interface ContactFormData {
   phone: string
   service: string
   message: string
+  referral_source: string
   gdpr_consent: boolean
   created_at?: string
 }

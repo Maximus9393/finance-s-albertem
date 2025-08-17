@@ -18,6 +18,7 @@ const Contact = () => {
     phone: "",
     service: "",
     message: "",
+    referralSource: "",
     gdprConsent: false
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -39,6 +40,7 @@ const Contact = () => {
         phone: formData.phone,
         service: formData.service,
         message: formData.message,
+        referral_source: formData.referralSource,
         gdpr_consent: formData.gdprConsent
       };
       const {
@@ -59,6 +61,7 @@ const Contact = () => {
         phone: "",
         service: "",
         message: "",
+        referralSource: "",
         gdprConsent: false
       });
     } catch (error) {
@@ -144,6 +147,26 @@ const Contact = () => {
                     </SelectContent>
                   </Select>
                 </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-white mb-2">
+                  Jak jste se o mně dozvěděli? *
+                </label>
+                <Select value={formData.referralSource} onValueChange={value => handleInputChange('referralSource', value)} required>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Vyberte možnost" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="web">Webové stránky</SelectItem>
+                    <SelectItem value="facebook">Facebook</SelectItem>
+                    <SelectItem value="instagram">Instagram</SelectItem>
+                    <SelectItem value="google">Google vyhledávání</SelectItem>
+                    <SelectItem value="doporuceni">Doporučení známého</SelectItem>
+                    <SelectItem value="reklama">Reklama</SelectItem>
+                    <SelectItem value="jine">Jiné</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
 
               <div>
