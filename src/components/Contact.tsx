@@ -213,9 +213,7 @@ const Contact = () => {
 
             <div className="bg-gradient-primary rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Ozvěte se pro nezávaznou konzultaci!</h3>
-              <p className="text-white/90 mb-6">
-                Využijte naší nabídky bezplatné konzultace a zjistěte, jak můžeme pomoci s vašimi financemi.
-              </p>
+              <p className="text-white/90 mb-6">Využijte mojí nabídku bezplatné konzultace a zjistěte, jak Vám mohu pomoci s vašimi financemi.</p>
               <div className="flex items-center space-x-2 text-white/80">
                 <div className="w-2 h-2 bg-white/60 rounded-full"></div>
                 <span>Bez závazků</span>
