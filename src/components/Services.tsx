@@ -1,47 +1,40 @@
 import { Shield, TrendingUp, Home, Calculator, PiggyBank, FileText, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Services = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  const services = [
-    {
-      icon: CreditCard,
-      title: "Úvěry",
-      description: "Rychlé řešení pro vaše potřeby",
-      features: ["Spotřebitelské úvěry", "Úvěr s dotacemi", "Refinancování", "Výhodné podmínky", "Poradenství při výběru úvěru"],
-      gradient: "from-orange-500/10 to-orange-600/10"
-    },
-    {
-      icon: Shield,
-      title: "Pojištění",
-      description: "Komplexní ochrana vás a vaší rodiny",
-      features: ["Životní pojištění", "Pojištění vozidel", "Majetkové pojištění", "Pojištění odpovědnosti", "Cestovní pojištění"],
-      gradient: "from-blue-500/10 to-blue-600/10"
-    },
-    {
-      icon: TrendingUp,
-      title: "Investice",
-      description: "Růst vašeho kapitálu do budoucnosti",
-      features: ["Jednorázové investování", "Pravidelné investování", "Renta k důchodu", "Investice pro náročné", "Správa majetku a portfolia"],
-      gradient: "from-green-500/10 to-green-600/10"
-    },
-    {
-      icon: Home,
-      title: "Hypotéky",
-      description: "Cesta k vašemu vlastnímu bydlení",
-      features: ["Hypoteční kalkulace", "Refinancování", "Pomoc s vyřízením", "Výhodné úrokové sazby", "Poradenství při výběru hypotéky"],
-      gradient: "from-purple-500/10 to-purple-600/10"
-    }
-  ];
-
-  return (
-    <section id="services" className="py-20">
+  const services = [{
+    icon: CreditCard,
+    title: "Úvěry",
+    description: "Rychlé řešení pro vaše potřeby",
+    features: ["Spotřebitelské úvěry", "Úvěr s dotacemi", "Refinancování", "Výhodné podmínky", "Poradenství při výběru úvěru"],
+    gradient: "from-orange-500/10 to-orange-600/10"
+  }, {
+    icon: Shield,
+    title: "Pojištění",
+    description: "Komplexní ochrana vás a vaší rodiny",
+    features: ["Životní pojištění", "Pojištění vozidel", "Majetkové pojištění", "Pojištění odpovědnosti", "Cestovní pojištění"],
+    gradient: "from-blue-500/10 to-blue-600/10"
+  }, {
+    icon: TrendingUp,
+    title: "Investice",
+    description: "Růst vašeho kapitálu do budoucnosti",
+    features: ["Jednorázové investování", "Pravidelné investování", "Renta k důchodu", "Investice pro náročné", "Správa majetku a portfolia"],
+    gradient: "from-green-500/10 to-green-600/10"
+  }, {
+    icon: Home,
+    title: "Hypotéky",
+    description: "Cesta k vašemu vlastnímu bydlení",
+    features: ["Hypoteční kalkulace", "Refinancování", "Pomoc s vyřízením", "Výhodné úrokové sazby", "Poradenství při výběru hypotéky"],
+    gradient: "from-purple-500/10 to-purple-600/10"
+  }];
+  return <section id="services" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-6">
@@ -54,12 +47,9 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-card rounded-2xl p-6 shadow-card hover:shadow-elegant transition-all duration-300 group animate-scale-in border border-border/50 text-white h-full flex flex-col"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+          {services.map((service, index) => <div key={index} className="bg-card rounded-2xl p-6 shadow-card hover:shadow-elegant transition-all duration-300 group animate-scale-in border border-border/50 text-white h-full flex flex-col" style={{
+          animationDelay: `${index * 0.1}s`
+        }}>
               <div className={`inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br ${service.gradient} rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
                 <service.icon className="w-6 h-6 text-white" />
               </div>
@@ -68,23 +58,16 @@ const Services = () => {
               <p className="text-white/90 mb-4 leading-relaxed text-sm flex-grow">{service.description}</p>
               
               <ul className="space-y-2 mb-6 flex-grow">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-start space-x-2">
+                {service.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-start space-x-2">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-white text-sm leading-relaxed">{feature}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
               
-              <Button 
-                variant="secondary" 
-                className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300 mt-auto"
-                onClick={scrollToContact}
-              >
+              <Button variant="secondary" className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300 mt-auto" onClick={scrollToContact}>
                 Zjistit více
               </Button>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Additional Services */}
@@ -97,8 +80,8 @@ const Services = () => {
           
           <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 transition-all duration-300">
             <PiggyBank className="w-8 h-8 text-white mb-4" />
-            <h4 className="text-lg font-semibold text-white mb-2">Spoření</h4>
-            <p className="text-white/90 text-sm">Efektivní spořicí produkty pro různé životní situace.</p>
+            <h4 className="text-lg font-semibold text-white mb-2">Reality</h4>
+            <p className="text-white/90 text-sm">Ve spolupráci s renomovanými realitními makléřy jsme Vám schopni zajistit profesionální servis při prodeji nebo pronájmu Vaší nemovitosti.</p>
           </div>
           
           <div className="bg-card/50 rounded-xl p-6 border border-border/30 hover:border-primary/30 transition-all duration-300">
@@ -108,8 +91,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Services;
