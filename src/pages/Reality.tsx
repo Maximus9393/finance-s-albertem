@@ -6,23 +6,29 @@ import { ExternalLink, Phone, Mail, Home, Calculator, Building, Shield, Star, Aw
 import vladimirPhoto from "@/assets/vladimir-rehak.jpg";
 import martinPhoto from "@/assets/martin-petrik.jpg";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Reality = () => {
+  const navigate = useNavigate();
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.offsetTop - offset;
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    } else {
-      window.location.href = '/#contact';
-    }
+  
+  const navigateToContact = () => {
+    navigate('/#contact');
+    // Use setTimeout to ensure navigation happens before scrolling
+    setTimeout(() => {
+      const element = document.getElementById('contact');
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.offsetTop - offset;
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
   };
 
   return (
@@ -52,7 +58,7 @@ const Reality = () => {
                 <Button 
                   variant="cta" 
                   size="lg" 
-                  onClick={scrollToContact}
+                  onClick={navigateToContact}
                   className="animate-scale-in text-lg px-8 py-4"
                 >
                   Nezávazná konzultace
@@ -254,7 +260,7 @@ const Reality = () => {
                   <Button 
                     variant="default" 
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3"
-                    onClick={scrollToContact}
+                    onClick={navigateToContact}
                   >
                     Nezávazná konzultace
                   </Button>
@@ -290,7 +296,7 @@ const Reality = () => {
                   <Button 
                     variant="default" 
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3"
-                    onClick={scrollToContact}
+                    onClick={navigateToContact}
                   >
                     Nezávazná konzultace
                   </Button>
@@ -366,7 +372,7 @@ const Reality = () => {
                 <Button 
                   variant="cta" 
                   size="lg" 
-                  onClick={scrollToContact}
+                  onClick={navigateToContact}
                   className="text-lg px-8 py-4"
                 >
                   Nezávazná konzultace

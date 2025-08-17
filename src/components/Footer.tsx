@@ -1,7 +1,18 @@
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ExternalLink } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+  
+  const isOnReality = location.pathname === '/reality';
+  
+  const createLink = (hash: string) => {
+    if (isOnReality) {
+      return `/${hash}`;
+    }
+    return hash;
+  };
 
   return (
     <footer className="bg-foreground text-background py-16">
@@ -34,11 +45,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Naše služby</h4>
             <ul className="space-y-3">
-              <li><a href="#services" className="text-background/80 hover:text-primary transition-colors">Pojištění</a></li>
-              <li><a href="#services" className="text-background/80 hover:text-primary transition-colors">Investice</a></li>
-              <li><a href="#services" className="text-background/80 hover:text-primary transition-colors">Hypotéky</a></li>
-              <li><a href="#services" className="text-background/80 hover:text-primary transition-colors">Finanční plánování</a></li>
-              <li><a href="#services" className="text-background/80 hover:text-primary transition-colors">Spoření</a></li>
+              <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors">Pojištění</a></li>
+              <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors">Investice</a></li>
+              <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors">Hypotéky</a></li>
+              <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors">Finanční plánování</a></li>
+              <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors">Spoření</a></li>
             </ul>
           </div>
 
@@ -46,9 +57,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Rychlé odkazy</h4>
             <ul className="space-y-3">
-              <li><a href="#about" className="text-background/80 hover:text-primary transition-colors">O nás</a></li>
-              <li><a href="#testimonials" className="text-background/80 hover:text-primary transition-colors">Reference</a></li>
-              <li><a href="#contact" className="text-background/80 hover:text-primary transition-colors">Kontakt</a></li>
+              <li><a href={createLink("#about")} className="text-background/80 hover:text-primary transition-colors">O nás</a></li>
+              <li><a href={createLink("#testimonials")} className="text-background/80 hover:text-primary transition-colors">Reference</a></li>
+              <li><a href={createLink("#contact")} className="text-background/80 hover:text-primary transition-colors">Kontakt</a></li>
               <li><a href="https://www.4fin.cz/ochrana-osobnich-udaju" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-primary transition-colors">Zásady ochrany osobních údajů</a></li>
             </ul>
           </div>
