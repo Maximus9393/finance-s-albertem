@@ -7,14 +7,11 @@ import vladimirPhoto from "@/assets/vladimir-rehak.jpg";
 import martinPhoto from "@/assets/martin-petrik.jpg";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
 const Reality = () => {
   const navigate = useNavigate();
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
   const navigateToContact = () => {
     navigate('/#contact');
     // Use setTimeout to ensure navigation happens before scrolling
@@ -30,9 +27,7 @@ const Reality = () => {
       }
     }, 100);
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Reality a Hypotéky | Finance s Albertem</title>
         <meta name="description" content="Specializujeme se na hypotéky a realitní služby. Spolupracujeme s renomovanými realitními makléři z Century 21. Zajistíme vám kompletní služby od hypotéky po výběr nemovitosti." />
@@ -52,15 +47,8 @@ const Reality = () => {
                 <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
                   Reality a <span className="text-primary">Hypotéky</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
-                  Komplexní služby pro váš realitní sen - od hypotéky po klíče od nového domova
-                </p>
-                <Button 
-                  variant="cta" 
-                  size="lg" 
-                  onClick={navigateToContact}
-                  className="animate-scale-in text-lg px-8 py-4"
-                >
+                <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">Uvažujete o prodeji nebo pronájmu Vaší nemovitosti? Ozvěte se mi a můj kolega se o Vás postará.</p>
+                <Button variant="cta" size="lg" onClick={navigateToContact} className="animate-scale-in text-lg px-8 py-4">
                   Nezávazná konzultace
                 </Button>
               </div>
@@ -84,11 +72,7 @@ const Reality = () => {
                   {/* Vladimír Řehák */}
                   <div className="bg-card rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50 overflow-hidden">
                     <div className="aspect-[4/3] relative overflow-hidden">
-                      <img 
-                        src={vladimirPhoto} 
-                        alt="Vladimír Řehák - realitní makléř"
-                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                      />
+                      <img src={vladimirPhoto} alt="Vladimír Řehák - realitní makléř" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
                     </div>
                     <div className="p-6 md:p-8">
@@ -134,12 +118,7 @@ const Reality = () => {
                       </div>
 
                       <Button asChild variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground border-0 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] font-semibold">
-                        <a 
-                          href="https://www.century21.cz/makler/vladimir-rehak" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2"
-                        >
+                        <a href="https://www.century21.cz/makler/vladimir-rehak" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
                           Zobrazit profil
                           <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                         </a>
@@ -150,11 +129,7 @@ const Reality = () => {
                   {/* Martin Petřík */}
                   <div className="bg-card rounded-2xl shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50 overflow-hidden">
                     <div className="aspect-[4/3] relative overflow-hidden">
-                      <img 
-                        src={martinPhoto} 
-                        alt="Martin Petřík - realitní makléř"
-                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                      />
+                      <img src={martinPhoto} alt="Martin Petřík - realitní makléř" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
                     </div>
                     <div className="p-6 md:p-8">
@@ -200,12 +175,7 @@ const Reality = () => {
                       </div>
 
                       <Button asChild variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground border-0 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] font-semibold">
-                        <a 
-                          href="https://www.century21.cz/makler/martin-petrik" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center justify-center gap-2"
-                        >
+                        <a href="https://www.century21.cz/makler/martin-petrik" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
                           Zobrazit profil
                           <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                         </a>
@@ -257,11 +227,7 @@ const Reality = () => {
                       <span className="text-card-foreground text-sm md:text-base">Poradenství při výběru hypotéky</span>
                     </li>
                   </ul>
-                  <Button 
-                    variant="default" 
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3"
-                    onClick={navigateToContact}
-                  >
+                  <Button variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3" onClick={navigateToContact}>
                     Nezávazná konzultace
                   </Button>
                 </div>
@@ -293,11 +259,7 @@ const Reality = () => {
                       <span className="text-card-foreground text-sm md:text-base">Bez starostí a poplatků</span>
                     </li>
                   </ul>
-                  <Button 
-                    variant="default" 
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3"
-                    onClick={navigateToContact}
-                  >
+                  <Button variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3" onClick={navigateToContact}>
                     Nezávazná konzultace
                   </Button>
                 </div>
@@ -318,12 +280,7 @@ const Reality = () => {
                 </p>
                 
                 <Button asChild variant="cta" size="lg" className="mb-8 md:mb-12 text-base md:text-lg px-6 md:px-8 py-3 md:py-4">
-                  <a 
-                    href="https://www.century21.cz/vyhledat-nemovitosti" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2"
-                  >
+                  <a href="https://www.century21.cz/vyhledat-nemovitosti" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                     Prohlédnout nabídku nemovitostí
                     <ExternalLink className="w-4 md:w-5 h-4 md:h-5" />
                   </a>
@@ -369,12 +326,7 @@ const Reality = () => {
                   Kontaktujte nás pro nezávaznou konzultaci. Pomůžeme vám s hypotékou i výběrem nemovitosti 
                   a provedeme vás celým procesem od A do Z.
                 </p>
-                <Button 
-                  variant="cta" 
-                  size="lg" 
-                  onClick={navigateToContact}
-                  className="text-lg px-8 py-4"
-                >
+                <Button variant="cta" size="lg" onClick={navigateToContact} className="text-lg px-8 py-4">
                   Nezávazná konzultace
                 </Button>
               </div>
@@ -384,8 +336,6 @@ const Reality = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default Reality;
