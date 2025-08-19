@@ -86,7 +86,7 @@ const Reality = () => {
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Phone className="w-4 h-4 text-primary" />
+                            <Phone className="w-5 h-5 text-primary" />
                           </div>
                           <a href="tel:+420731334373" className="text-card-foreground hover:text-primary transition-colors font-medium text-sm md:text-base">
                             +420 731 334 373
@@ -94,7 +94,7 @@ const Reality = () => {
                         </div>
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Mail className="w-4 h-4 text-primary" />
+                            <Mail className="w-5 h-5 text-primary" />
                           </div>
                           <a href="mailto:vladimir.rehak@century21.cz" className="text-card-foreground hover:text-primary transition-colors font-medium text-xs md:text-sm break-all">
                             vladimir.rehak@century21.cz
@@ -143,7 +143,7 @@ const Reality = () => {
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Phone className="w-4 h-4 text-primary" />
+                            <Phone className="w-5 h-5 text-primary" />
                           </div>
                           <a href="tel:+420725813283" className="text-card-foreground hover:text-primary transition-colors font-medium text-sm md:text-base">
                             +420 725 813 283
@@ -151,7 +151,7 @@ const Reality = () => {
                         </div>
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Mail className="w-4 h-4 text-primary" />
+                            <Mail className="w-5 h-5 text-primary" />
                           </div>
                           <a href="mailto:martin.petrik@century21.cz" className="text-card-foreground hover:text-primary transition-colors font-medium text-xs md:text-sm break-all">
                             martin.petrik@century21.cz
