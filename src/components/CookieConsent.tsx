@@ -98,7 +98,7 @@ const CookieConsent = () => {
                 <Button variant="outline" size="sm" onClick={() => setShowSettings(true)}>
                   Nastavení
                 </Button>
-                <Button variant="default" size="sm" onClick={acceptAll}>
+                <Button variant="cta" size="sm" onClick={acceptAll}>
                   Přijmout vše
                 </Button>
               </div>

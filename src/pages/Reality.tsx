@@ -226,6 +226,14 @@ const Reality = () => {
                       <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Poradenství při výběru hypotéky</span>
                     </li>
+                    <li className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <span className="text-card-foreground text-sm md:text-base">Refinancování Vaší stávající hypotéky</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <span className="text-card-foreground text-sm md:text-base">Úvěry ze stavebního spoření</span>
+                    </li>
                   </ul>
                   <Button variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3" onClick={navigateToContact}>
                     Nezávazná konzultace
@@ -236,27 +244,35 @@ const Reality = () => {
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
                     <Calculator className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-card-foreground mb-4">Refinancování</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-card-foreground mb-4">Služby realitních makléřů</h3>
                   <p className="text-card-foreground/90 mb-6 leading-relaxed text-sm md:text-base">
-                    Máte již hypotéku a chcete ušetřit? Pomůžeme vám s refinancováním 
-                    a převedením k výhodnější bance s lepšími podmínkami a nižším úrokem.
+                    Naši partneři z Century 21 poskytují kompletní realitní služby od prodeje a pronájmu 
+                    až po právní poradenství a správu nemovitostí po celé České republice.
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-card-foreground text-sm md:text-base">Analýza současné hypotéky</span>
+                      <span className="text-card-foreground text-sm md:text-base">Profesionální prodej a pronájem Vašich nemovitostí</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-card-foreground text-sm md:text-base">Výpočet možných úspor</span>
+                      <span className="text-card-foreground text-sm md:text-base">Poradenství a zastoupení při koupi domu, bytu či pozemku</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-card-foreground text-sm md:text-base">Kompletní vyřízení přechodu</span>
+                      <span className="text-card-foreground text-sm md:text-base">Odhady tržní ceny a řešení dědického řízení</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-card-foreground text-sm md:text-base">Bez starostí a poplatků</span>
+                      <span className="text-card-foreground text-sm md:text-base">Zajistíme vyklizení, výmalba a úklid Vašeho domu nebo bytu</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <span className="text-card-foreground text-sm md:text-base">Reality a finance pod jednou střechou</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <span className="text-card-foreground text-sm md:text-base">Postaráme se o Vaše nemovitosti po celé České republice</span>
                     </li>
                   </ul>
                   <Button variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3" onClick={navigateToContact}>
