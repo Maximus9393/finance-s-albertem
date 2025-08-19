@@ -86,7 +86,7 @@ const Reality = () => {
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Phone className="w-5 h-5 text-primary" />
+                            <Phone className="w-4 h-4 text-primary" />
                           </div>
                           <a href="tel:+420731334373" className="text-card-foreground hover:text-primary transition-colors font-medium text-sm md:text-base">
                             +420 731 334 373
@@ -94,7 +94,7 @@ const Reality = () => {
                         </div>
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Mail className="w-5 h-5 text-primary" />
+                            <Mail className="w-4 h-4 text-primary" />
                           </div>
                           <a href="mailto:vladimir.rehak@century21.cz" className="text-card-foreground hover:text-primary transition-colors font-medium text-xs md:text-sm break-all">
                             vladimir.rehak@century21.cz
@@ -117,15 +117,12 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <a 
-                        href="https://www.century21.cz/makler/vladimir-rehak" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 bg-card border-2 border-primary text-primary font-semibold rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
-                      >
-                        Zobrazit profil
-                        <ExternalLink className="w-4 h-4 transition-transform duration-300 hover:translate-x-1" />
-                      </a>
+                      <Button asChild variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground border-0 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] font-semibold">
+                        <a href="https://www.century21.cz/makler/vladimir-rehak" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
+                          Zobrazit profil
+                          <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                        </a>
+                      </Button>
                     </div>
                   </div>
 
@@ -146,7 +143,7 @@ const Reality = () => {
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Phone className="w-5 h-5 text-primary" />
+                            <Phone className="w-4 h-4 text-primary" />
                           </div>
                           <a href="tel:+420725813283" className="text-card-foreground hover:text-primary transition-colors font-medium text-sm md:text-base">
                             +420 725 813 283
@@ -154,7 +151,7 @@ const Reality = () => {
                         </div>
                         <div className="flex items-center gap-3">
                           <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Mail className="w-5 h-5 text-primary" />
+                            <Mail className="w-4 h-4 text-primary" />
                           </div>
                           <a href="mailto:martin.petrik@century21.cz" className="text-card-foreground hover:text-primary transition-colors font-medium text-xs md:text-sm break-all">
                             martin.petrik@century21.cz
@@ -177,15 +174,12 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <a 
-                        href="https://www.century21.cz/makler/martin-petrik" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 bg-card border-2 border-primary text-primary font-semibold rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
-                      >
-                        Zobrazit profil
-                        <ExternalLink className="w-4 h-4 transition-transform duration-300 hover:translate-x-1" />
-                      </a>
+                      <Button asChild variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground border-0 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] font-semibold">
+                        <a href="https://www.century21.cz/makler/martin-petrik" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
+                          Zobrazit profil
+                          <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                        </a>
+                      </Button>
                     </div>
                   </div>
                 </div>
