@@ -117,12 +117,10 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <Button asChild variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground border-0 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] font-semibold">
-                        <a href="https://www.century21.cz/makler/vladimir-rehak" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
-                          Zobrazit profil
-                          <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-                        </a>
-                      </Button>
+                      <a href="https://www.century21.cz/makler/vladimir-rehak" target="_blank" rel="noopener noreferrer" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3 inline-flex items-center justify-center gap-2 rounded-md">
+                        Zobrazit profil
+                        <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                      </a>
                     </div>
                   </div>
 
@@ -174,12 +172,10 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <Button asChild variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground border-0 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] font-semibold">
-                        <a href="https://www.century21.cz/makler/martin-petrik" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
-                          Zobrazit profil
-                          <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-                        </a>
-                      </Button>
+                      <a href="https://www.century21.cz/makler/martin-petrik" target="_blank" rel="noopener noreferrer" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3 inline-flex items-center justify-center gap-2 rounded-md">
+                        Zobrazit profil
+                        <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                      </a>
                     </div>
                   </div>
                 </div>
