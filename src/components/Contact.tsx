@@ -183,7 +183,7 @@ const Contact = () => {
               }))} className="mt-1 border-2 border-foreground data-[state=checked]:bg-primary data-[state=checked]:border-primary" />
                 <label htmlFor="gdpr" className="text-sm text-foreground leading-relaxed cursor-pointer">
                   Souhlasím se zpracováním osobních údajů za účelem kontaktování a poskytnutí nabídky služeb. 
-                  Více informací v našich <span className="text-primary font-medium cursor-pointer hover:underline hover:text-primary-hover">zásadách ochrany osobních údajů</span>.
+                  Více informací v našich <a href="https://www.4fin.cz/ochrana-osobnich-udaju" target="_blank" rel="noopener noreferrer" className="text-primary font-medium cursor-pointer hover:underline hover:text-primary-hover">zásadách ochrany osobních údajů</a>.
                 </label>
               </div>
 
