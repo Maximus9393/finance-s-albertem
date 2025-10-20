@@ -117,7 +117,7 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <a href="https://www.century21.cz/makler/vladimir-rehak" target="_blank" rel="noopener noreferrer" className="w-full bg-muted hover:bg-muted/80 text-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3 inline-flex items-center justify-center gap-2 rounded-md">
+                      <a href="https://www.century21.cz/makler/vladimir-rehak" target="_blank" rel="noopener noreferrer" className="w-full bg-muted hover:bg-muted/80 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3 inline-flex items-center justify-center gap-2 rounded-md">
                         Zobrazit profil
                         <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                       </a>
@@ -172,7 +172,7 @@ const Reality = () => {
                         </span>
                       </div>
 
-                      <a href="https://www.century21.cz/makler/martin-petrik" target="_blank" rel="noopener noreferrer" className="w-full bg-muted hover:bg-muted/80 text-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3 inline-flex items-center justify-center gap-2 rounded-md">
+                      <a href="https://www.century21.cz/makler/martin-petrik" target="_blank" rel="noopener noreferrer" className="w-full bg-muted hover:bg-muted/80 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3 inline-flex items-center justify-center gap-2 rounded-md">
                         Zobrazit profil
                         <ExternalLink className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                       </a>
