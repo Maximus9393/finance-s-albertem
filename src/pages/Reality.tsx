@@ -271,7 +271,7 @@ const Reality = () => {
                       <span className="text-card-foreground text-sm md:text-base">Postaráme se o Vaše nemovitosti po celé České republice</span>
                     </li>
                   </ul>
-                  <Button variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3" onClick={navigateToContact}>
+                  <Button variant="default" className="w-full bg-muted hover:bg-muted/80 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 font-semibold py-3" onClick={navigateToContact}>
                     Nezávazná konzultace
                   </Button>
                 </div>
