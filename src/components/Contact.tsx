@@ -8,6 +8,17 @@ import { Phone, Mail, MapPin, Equal, ChevronRight, Plus, BarChart3 } from "lucid
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import type { ContactFormData } from "@/lib/supabase";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  name: z.string().trim().min(1, 'Jméno je povinné').max(100, 'Jméno musí být kratší než 100 znaků'),
+  email: z.string().trim().email('Neplatná emailová adresa').max(255, 'Email musí být kratší než 255 znaků'),
+  phone: z.string().trim().max(20, 'Telefon musí být kratší než 20 znaků').optional().or(z.literal('')),
+  service: z.string().max(50, 'Služba musí být kratší než 50 znaků').optional().or(z.literal('')),
+  message: z.string().trim().max(1000, 'Zpráva musí být kratší než 1000 znaků').optional().or(z.literal('')),
+  referralSource: z.string().min(1, 'Prosím vyberte, jak jste se o nás dozvěděli').max(50, 'Volba musí být kratší než 50 znaků'),
+  gdprConsent: z.boolean().refine(val => val === true, 'Souhlas je povinný')
+});
 const Contact = () => {
   const {
     toast
@@ -24,24 +35,29 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.gdprConsent) {
+    
+    // Validate form data with Zod
+    const result = contactSchema.safeParse(formData);
+    if (!result.success) {
+      const errors = result.error.errors;
       toast({
-        title: "GDPR souhlas",
-        description: "Prosím, odsouhlaste zpracování osobních údajů.",
+        title: "Chyba ve formuláři",
+        description: errors[0].message,
         variant: "destructive"
       });
       return;
     }
+
     setIsSubmitting(true);
     try {
       const contactData: Omit<ContactFormData, 'created_at'> = {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        service: formData.service,
-        message: formData.message,
-        referral_source: formData.referralSource,
-        gdpr_consent: formData.gdprConsent
+        name: result.data.name,
+        email: result.data.email,
+        phone: result.data.phone || '',
+        service: result.data.service || '',
+        message: result.data.message || '',
+        referral_source: result.data.referralSource,
+        gdpr_consent: result.data.gdprConsent
       };
       const {
         error
