@@ -40,7 +40,7 @@ const Hero = () => {
             <div className="flex items-center space-x-8 pt-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">
-                  <CountUp end={200} suffix="+" />
+                  <CountUp end={150} suffix="+" />
                 </div>
                 <div className="text-sm text-muted-foreground">Spokojených klientů</div>
               </div>
