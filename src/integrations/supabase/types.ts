@@ -50,6 +50,45 @@ export type Database = {
         }
         Relationships: []
       }
+      cookie_consents: {
+        Row: {
+          analytics_consent: boolean
+          consent_date: string
+          created_at: string
+          id: string
+          ip_address: string | null
+          marketing_consent: boolean
+          preferences_consent: boolean
+          session_id: string
+          user_agent: string | null
+          user_id: string | null
+        }
+        Insert: {
+          analytics_consent?: boolean
+          consent_date?: string
+          created_at?: string
+          id?: string
+          ip_address?: string | null
+          marketing_consent?: boolean
+          preferences_consent?: boolean
+          session_id: string
+          user_agent?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          analytics_consent?: boolean
+          consent_date?: string
+          created_at?: string
+          id?: string
+          ip_address?: string | null
+          marketing_consent?: boolean
+          preferences_consent?: boolean
+          session_id?: string
+          user_agent?: string | null
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string
