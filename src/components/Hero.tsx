@@ -64,9 +64,9 @@ const Hero = () => {
             <div className="flip-card relative max-w-md mx-auto group">
               {/* Hover hint */}
               <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-sm animate-bounce opacity-90 group-hover:opacity-0 transition-opacity duration-300 z-10">
-                <span className="bg-card text-card-foreground px-4 py-2 rounded-full shadow-elegant border border-border/20">
+                <span className="bg-card text-card-foreground px-4 py-2 rounded-full shadow-elegant border border-border/20 whitespace-nowrap">
                   <span className="hidden sm:inline">✨ Najeď myší pro citát</span>
-                  <span className="sm:hidden">✨ Klikni na fotku pro citát</span>
+                  <span className="inline sm:hidden">✨ Klikni na fotku pro citát</span>
                 </span>
               </div>
               <div className="flip-card-inner">
