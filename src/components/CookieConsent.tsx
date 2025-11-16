@@ -3,6 +3,8 @@ import { X, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 interface CookiePreferences {
   necessary: boolean;
@@ -12,9 +14,11 @@ interface CookiePreferences {
 }
 
 const CookieConsent = () => {
+  const { toast } = useToast();
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
+  const [sessionId, setSessionId] = useState<string>("");
   const [preferences, setPreferences] = useState<CookiePreferences>({
     necessary: true,
     preferences: false,
@@ -23,6 +27,14 @@ const CookieConsent = () => {
   });
 
   useEffect(() => {
+    // Generate or retrieve session ID
+    let storedSessionId = localStorage.getItem('cookie-session-id');
+    if (!storedSessionId) {
+      storedSessionId = generateConsentId();
+      localStorage.setItem('cookie-session-id', storedSessionId);
+    }
+    setSessionId(storedSessionId);
+
     const consent = localStorage.getItem('cookie-consent');
     if (!consent) {
       setShowBanner(true);
@@ -40,12 +52,38 @@ const CookieConsent = () => {
     return () => window.removeEventListener('openCookieSettings', handleOpenSettings);
   }, []);
 
-  const savePreferences = (prefs: CookiePreferences) => {
+  const savePreferences = async (prefs: CookiePreferences) => {
     localStorage.setItem('cookie-consent', JSON.stringify(prefs));
     localStorage.setItem('cookie-consent-date', new Date().toISOString());
     setPreferences(prefs);
     setShowBanner(false);
     setShowSettings(false);
+
+    // Save to Supabase
+    try {
+      const { data: { user } } = await supabase.auth.getUser();
+      
+      const { error } = await supabase.from('cookie_consents').insert({
+        user_id: user?.id || null,
+        session_id: sessionId,
+        analytics_consent: prefs.statistics,
+        marketing_consent: prefs.marketing,
+        preferences_consent: prefs.preferences,
+        ip_address: null, // Client-side can't reliably get IP
+        user_agent: navigator.userAgent,
+      });
+
+      if (error) {
+        console.error('Error saving cookie consent:', error);
+        toast({
+          title: "Upozornění",
+          description: "Nepodařilo se uložit souhlas s cookies, ale vaše preference byly uloženy lokálně.",
+          variant: "destructive",
+        });
+      }
+    } catch (err) {
+      console.error('Error saving cookie consent:', err);
+    }
   };
 
   const acceptAll = () => {
