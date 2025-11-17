@@ -70,7 +70,7 @@ const Testimonials = () => {
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="animate-fade-in">
               <div className="text-4xl font-bold mb-2">
-                <CountUp end={200} suffix="+" />
+                <CountUp end={150} suffix="+" />
               </div>
               <div className="text-white/80">Spokojených klientů</div>
             </div>
