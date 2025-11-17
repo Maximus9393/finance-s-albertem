@@ -46,7 +46,7 @@ const Services = () => {
             Co pro vás <span className="text-primary">mohu udělat</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Jako člen týmu 4fin s.r.o. poskytuju kompletní spektrum finančních služeb. 
+            Jako člen týmu 4fin Better Together a.s. poskytuju kompletní spektrum finančních služeb. 
             Od komplexní analýzy současného stavu až po optimalizaci a nové produkty.
           </p>
         </div>

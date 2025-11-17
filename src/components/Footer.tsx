@@ -22,7 +22,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-6 text-primary">Finance s Albertem</h3>
             <p className="text-background/80 mb-6 leading-relaxed">
-              Albert Gurdžjan - váš osobní finanční poradce pod záštitou 4fin s.r.o. 
+              Albert Gurdžjan - váš osobní finanční poradce pod záštitou 4fin Better Together a.s. 
               Komplexní analýza a optimalizace rodinných financí.
             </p>
             <div className="flex space-x-4">
@@ -90,7 +90,7 @@ const Footer = () => {
         <div className="border-t border-background/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-background/60 text-sm">
-              © {currentYear} Finance s Albertem | 4fin s.r.o. Všechna práva vyhrazena.
+              © {currentYear} Finance s Albertem | 4fin Better Together a.s. Všechna práva vyhrazena.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <button 

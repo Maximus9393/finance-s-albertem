@@ -24,7 +24,7 @@ const Hero = () => {
               <span className="text-primary">s Albertem</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground leading-relaxed">Albert Gurdžjan - váš osobní finanční poradce. Komplexní analýza a optimalizace rodinných financí pod záštitou společnosti 4fin s.r.o.</p>
+            <p className="text-xl text-muted-foreground leading-relaxed">Albert Gurdžjan - váš osobní finanční poradce. Komplexní analýza a optimalizace rodinných financí pod záštitou společnosti 4fin Better Together a.s.</p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button variant="hero" size="lg" onClick={scrollToContact} className="animate-scale-in">

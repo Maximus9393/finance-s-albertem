@@ -106,7 +106,7 @@ const About = () => {
             </div>
             <div className="flex items-center justify-center h-full">
               <div className="inline-block p-12 bg-primary/5 rounded-full">
-                <img src="/4FIN_H_Bold_Negativ.png" alt="4fin s.r.o. logo" className="w-[170px] h-[80px] mx-auto" style={{
+                <img src="/4FIN_H_Bold_Negativ.png" alt="4fin Better Together a.s. logo" className="w-[170px] h-[80px] mx-auto" style={{
                 objectFit: 'contain'
               }} />
               </div>
