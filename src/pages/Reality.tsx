@@ -85,17 +85,17 @@ const Reality = () => {
 
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Phone className="w-4 h-4 text-white" />
-                          </div>
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                          <Phone className="w-4 h-4 text-white" />
+                        </div>
                           <a href="tel:+420731334373" className="text-card-foreground hover:text-primary transition-colors font-medium text-sm md:text-base">
                             +420 731 334 373
                           </a>
                         </div>
                         <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Mail className="w-4 h-4 text-white" />
-                          </div>
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                          <Mail className="w-4 h-4 text-white" />
+                        </div>
                           <a href="mailto:vladimir.rehak@century21.cz" className="text-card-foreground hover:text-primary transition-colors font-medium text-xs md:text-sm break-all">
                             vladimir.rehak@century21.cz
                           </a>
@@ -103,15 +103,15 @@ const Reality = () => {
                       </div>
 
                       <div className="flex flex-wrap gap-2 mb-6">
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-white/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1 backdrop-blur-sm">
                           <Star className="w-3 h-3 text-white" />
                           Klienti doporučují
                         </span>
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-white/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1 backdrop-blur-sm">
                           <Shield className="w-3 h-3 text-white" />
                           Partner při koupi
                         </span>
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-white/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1 backdrop-blur-sm">
                           <Award className="w-3 h-3 text-white" />
                           Zkušený makléř
                         </span>
@@ -140,17 +140,17 @@ const Reality = () => {
 
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Phone className="w-4 h-4 text-white" />
-                          </div>
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                          <Phone className="w-4 h-4 text-white" />
+                        </div>
                           <a href="tel:+420725813283" className="text-card-foreground hover:text-primary transition-colors font-medium text-sm md:text-base">
                             +420 725 813 283
                           </a>
                         </div>
                         <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Mail className="w-4 h-4 text-white" />
-                          </div>
+                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                          <Mail className="w-4 h-4 text-white" />
+                        </div>
                           <a href="mailto:martin.petrik@century21.cz" className="text-card-foreground hover:text-primary transition-colors font-medium text-xs md:text-sm break-all">
                             martin.petrik@century21.cz
                           </a>
@@ -158,15 +158,15 @@ const Reality = () => {
                       </div>
 
                       <div className="flex flex-wrap gap-2 mb-6">
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-white/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1 backdrop-blur-sm">
                           <Shield className="w-3 h-3 text-white" />
                           Makléř pojištěn
                         </span>
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-white/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1 backdrop-blur-sm">
                           <Star className="w-3 h-3 text-white" />
                           Klienti doporučují
                         </span>
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-white/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1 backdrop-blur-sm">
                           <Award className="w-3 h-3 text-white" />
                           Certifikovaný
                         </span>
@@ -197,7 +197,7 @@ const Reality = () => {
               
               <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
                 <div className="bg-card rounded-2xl p-6 md:p-8 shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm">
                     <Home className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl md:text-2xl font-bold text-card-foreground mb-4">Výhodné hypotéky</h3>
@@ -237,7 +237,7 @@ const Reality = () => {
                 </div>
 
                 <div className="bg-card rounded-2xl p-6 md:p-8 shadow-card hover:shadow-elegant transition-all duration-300 group border border-border/50">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-white/20 rounded-xl mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm">
                     <Calculator className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl md:text-2xl font-bold text-card-foreground mb-4">Služby realitních makléřů</h3>
