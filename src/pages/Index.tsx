@@ -15,7 +15,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
   "name": "Albert Gurdžjan - Finanční Poradce",
-  "description": "Komplexní analýza a optimalizace rodinných financí pod záštitou 4fin s.r.o.",
+  "description": "Komplexní analýza a optimalizace rodinných financí pod záštitou 4fin Better Together a.s.",
   "url": "https://albert.4fin.cz",
   "telephone": "+420 123 456 789",
   "email": "albert@4fin.cz",
