@@ -32,7 +32,7 @@ const Cooperation = () => {
             <h3 className="text-2xl font-semibold text-white mb-3">Leadař (doporučitel)</h3>
             <p className="text-white/80 mb-6">
               Leadař je ten, kdo doporučí finančnímu poradci člověka, který řeší finance. 
-              Odbornou část a servis zajistí náš tým, vy získáte odměnu za doporučení.
+              Odbornou část a servis zajistí tým 4fin, vy získáte odměnu za doporučení.
             </p>
             <ul className="list-disc pl-5 space-y-2 text-white/70">
               <li>Bez nutnosti odborných zkoušek</li>
