@@ -21,10 +21,19 @@ const Cooperation = () => {
             <p className="text-white/80 mb-6">
               Budujte vlastní klientské portfolio, poskytujte komplexní finanční řešení a získávejte odpovídající odměnu i kariérní růst.
             </p>
-            <ul className="list-disc pl-5 space-y-2 text-white/70">
-              <li>Mentoring a zázemí silné značky 4fin</li>
-              <li>Široké produktové portfolio (pojištění, investice, hypotéky…)</li>
-              <li>Transparentní a férový provizní systém</li>
+            <ul className="space-y-2 text-white/90">
+              <li className="flex items-start space-x-2">
+                <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                <span>Mentoring a zázemí silné značky 4fin</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                <span>Široké produktové portfolio (pojištění, investice, hypotéky…)</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                <span>Transparentní a férový provizní systém</span>
+              </li>
             </ul>
           </article>
 
@@ -34,10 +43,19 @@ const Cooperation = () => {
               Leadař je ten, kdo doporučí finančnímu poradci člověka, který řeší finance. 
               Odbornou část a servis zajistí tým 4fin, vy získáte odměnu za doporučení.
             </p>
-            <ul className="list-disc pl-5 space-y-2 text-white/70">
-              <li>Bez nutnosti odborných zkoušek</li>
-              <li>Flexibilní spolupráce – jen doporučujete</li>
-              <li>Odměna za úspěšně zrealizované obchody</li>
+            <ul className="space-y-2 text-white/90">
+              <li className="flex items-start space-x-2">
+                <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                <span>Bez nutnosti odborných zkoušek</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                <span>Flexibilní spolupráce – jen doporučujete</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                <span>Odměna za úspěšně zrealizované obchody</span>
+              </li>
             </ul>
           </article>
         </div>
