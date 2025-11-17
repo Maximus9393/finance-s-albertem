@@ -33,7 +33,7 @@ const Hero = () => {
               <Button variant="outline" size="lg" onClick={() => document.getElementById('services')?.scrollIntoView({
               behavior: 'smooth'
             })}>
-                Naše služby
+                Moje služby
               </Button>
             </div>
 

@@ -43,7 +43,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Naše služby</h4>
+            <h4 className="text-lg font-semibold mb-6">Moje služby</h4>
             <ul className="space-y-3">
               <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors">Pojištění</a></li>
               <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors">Investice</a></li>
@@ -57,7 +57,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Rychlé odkazy</h4>
             <ul className="space-y-3">
-              <li><a href={createLink("#about")} className="text-background/80 hover:text-primary transition-colors">O nás</a></li>
+              <li><a href={createLink("#about")} className="text-background/80 hover:text-primary transition-colors">O mně</a></li>
               <li><a href={createLink("#testimonials")} className="text-background/80 hover:text-primary transition-colors">Reference</a></li>
               <li><a href={createLink("#contact")} className="text-background/80 hover:text-primary transition-colors">Kontakt</a></li>
               <li><a href="https://www.4fin.cz/ochrana-osobnich-udaju" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-primary transition-colors">Zásady ochrany osobních údajů</a></li>

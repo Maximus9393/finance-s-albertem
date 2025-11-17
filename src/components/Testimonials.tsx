@@ -29,10 +29,10 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Co říkají naši <span className="text-primary">klienti</span>
+            Co říkají moji <span className="text-primary">klienti</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Důvěra našich klientů je pro nás nejcennější odměnou. Přečtěte si jejich zkušenosti s našimi službami.
+            Důvěra mých klientů je pro mě nejcennější odměnou. Přečtěte si jejich zkušenosti s mými službami.
           </p>
         </div>
 
