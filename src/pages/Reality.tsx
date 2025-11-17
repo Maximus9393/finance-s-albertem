@@ -103,15 +103,15 @@ const Reality = () => {
                       </div>
 
                       <div className="flex flex-wrap gap-2 mb-6">
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-primary text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
                           <Star className="w-3 h-3 text-white" />
                           Klienti doporučují
                         </span>
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-primary text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
                           <Shield className="w-3 h-3 text-white" />
                           Partner při koupi
                         </span>
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-primary text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
                           <Award className="w-3 h-3 text-white" />
                           Zkušený makléř
                         </span>
@@ -158,15 +158,15 @@ const Reality = () => {
                       </div>
 
                       <div className="flex flex-wrap gap-2 mb-6">
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-primary text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
                           <Shield className="w-3 h-3 text-white" />
                           Makléř pojištěn
                         </span>
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-primary text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
                           <Star className="w-3 h-3 text-white" />
                           Klienti doporučují
                         </span>
-                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-primary text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
+                        <span className="px-2 md:px-3 py-1 bg-primary/20 text-white text-xs md:text-sm rounded-full font-medium flex items-center gap-1">
                           <Award className="w-3 h-3 text-white" />
                           Certifikovaný
                         </span>
