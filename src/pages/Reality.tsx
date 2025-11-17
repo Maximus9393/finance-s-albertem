@@ -207,27 +207,27 @@ const Reality = () => {
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Porovnání všech bank na trhu</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Individuální posouzení vaší situace</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Asistence při vyřizování</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Poradenství při výběru hypotéky</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Refinancování Vaší stávající hypotéky</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Úvěry ze stavebního spoření</span>
                     </li>
                   </ul>
@@ -247,27 +247,27 @@ const Reality = () => {
                   </p>
                   <ul className="space-y-3 mb-6">
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Profesionální prodej a pronájem Vašich nemovitostí</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Poradenství a zastoupení při koupi domu, bytu či pozemku</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Odhady tržní ceny a řešení dědického řízení</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Zajistíme vyklizení, výmalba a úklid Vašeho domu nebo bytu</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Reality a finance pod jednou střechou</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
                       <span className="text-card-foreground text-sm md:text-base">Postaráme se o Vaše nemovitosti po celé České republice</span>
                     </li>
                   </ul>
