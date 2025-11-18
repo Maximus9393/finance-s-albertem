@@ -8,7 +8,7 @@ const About = () => {
           <h2 className="text-4xl font-bold text-foreground mb-6">
             Proč si vybrat <span className="text-primary">Alberta Gurdžjana</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">Jako poradce společnosti 4fin s.r.o. nabízím transparentní, srozumitelné a profesionální poradenství. Specializuji se nejen na rodinné finance včetně komplexní analýzy, ale i na firemní klientelu, pojištění firem, flotily a provozní úvěry. </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">Jako poradce společnosti 4fin Better Together a.s. nabízím transparentní, srozumitelné a profesionální poradenství. Specializuji se nejen na rodinné finance včetně komplexní analýzy, ale i na firemní klientelu, pojištění firem, flotily a provozní úvěry. </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
