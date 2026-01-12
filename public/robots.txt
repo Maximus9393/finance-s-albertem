@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://albert.4fin.cz/sitemap.xml
+Sitemap: https://financesalbertem.cz/sitemap.xml
