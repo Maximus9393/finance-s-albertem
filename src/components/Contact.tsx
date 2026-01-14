@@ -97,20 +97,20 @@ const Contact = () => {
       [field]: value
     }));
   };
-  return <section id="contact" className="py-20">
+  return <section id="contact" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-foreground mb-6">
+        <div className="text-center mb-10 md:mb-16 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 md:mb-6">
             Kontaktujte <span className="text-primary">Alberta</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
             Rád si s vámi promluvím o vašich finančních cílech a najdeme nejlepší řešení pro vaši situaci.
           </p>
         </div>
 
         {/* Values Section */}
-        <div className="mb-16 w-full animate-scale-in">
-          <div className="flex justify-center">
+        <div className="mb-10 md:mb-16 w-full animate-scale-in">
+          <div className="flex justify-center overflow-hidden">
             <img src="/cara_kontakt2.png" alt="Naše hodnoty - partnerství, inovace, kvalita, růst" className="max-w-none w-full max-w-6xl h-auto rounded-lg shadow-soft" loading="lazy" decoding="async" width="1200" height="600" onError={e => {
             console.log('Image failed to load:', e.currentTarget.src);
             e.currentTarget.style.display = 'none';
@@ -118,13 +118,13 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
           {/* Contact Form */}
-          <div className="bg-card rounded-2xl p-8 shadow-card animate-scale-in">
-            <h3 className="text-2xl font-bold text-white mb-6">Nezávazná konzultace</h3>
+          <div className="bg-card rounded-xl md:rounded-2xl p-5 md:p-8 shadow-card animate-scale-in">
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">Nezávazná konzultace</h3>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+              <div className="grid sm:grid-cols-2 gap-3 md:gap-4">
                 <div>
                   <label className="block text-sm font-medium text-white mb-2">
                     Jméno a příjmení *
@@ -210,59 +210,58 @@ const Contact = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-8 animate-fade-in">
-            <div className="bg-card rounded-2xl p-8 shadow-card">
-              <h3 className="text-2xl font-bold text-white mb-6">Kontaktní údaje</h3>
+          <div className="space-y-6 md:space-y-8 animate-fade-in">
+            <div className="bg-card rounded-xl md:rounded-2xl p-5 md:p-8 shadow-card">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">Kontaktní údaje</h3>
               
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg">
-                    <Phone className="w-6 h-6 text-white" />
+              <div className="space-y-4 md:space-y-6">
+                <a href="tel:+420728271275" className="flex items-start space-x-3 md:space-x-4 p-3 md:p-0 rounded-lg hover:bg-primary/5 md:hover:bg-transparent transition-colors">
+                  <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex-shrink-0">
+                    <Phone className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">Telefon</h4>
-                    <p className="text-white/80">+420 728 271 275</p>
-                    
+                    <h4 className="font-semibold text-white mb-0.5 md:mb-1 text-sm md:text-base">Telefon</h4>
+                    <p className="text-white/80 text-sm md:text-base">+420 728 271 275</p>
                   </div>
-                </div>
+                </a>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg">
-                    <Mail className="w-6 h-6 text-white" />
+                <a href="mailto:albert.gurdzjan@4fin.cz" className="flex items-start space-x-3 md:space-x-4 p-3 md:p-0 rounded-lg hover:bg-primary/5 md:hover:bg-transparent transition-colors">
+                  <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex-shrink-0">
+                    <Mail className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">E-mail</h4>
-                    <p className="text-white/80">albert.gurdzjan@4fin.cz</p>
-                    <p className="text-sm text-white/60">Odpovídám do 24 hodin</p>
+                    <h4 className="font-semibold text-white mb-0.5 md:mb-1 text-sm md:text-base">E-mail</h4>
+                    <p className="text-white/80 text-sm md:text-base break-all">albert.gurdzjan@4fin.cz</p>
+                    <p className="text-xs md:text-sm text-white/60">Odpovídám do 24 hodin</p>
                   </div>
-                </div>
+                </a>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg">
-                    <MapPin className="w-6 h-6 text-white" />
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-0">
+                  <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex-shrink-0">
+                    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">Adresa</h4>
-                    <p className="text-white/80">Chrastavská 231/32A<br />460 01 Liberec</p>
+                    <h4 className="font-semibold text-white mb-0.5 md:mb-1 text-sm md:text-base">Adresa</h4>
+                    <p className="text-white/80 text-sm md:text-base">Chrastavská 231/32A<br />460 01 Liberec</p>
                   </div>
                 </div>
 
               </div>
             </div>
 
-            <div className="bg-gradient-primary rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Ozvěte se pro nezávaznou konzultaci!</h3>
-              <p className="text-white/90 mb-6">Využijte mojí nabídku bezplatné konzultace a zjistěte, jak Vám mohu pomoci s vašimi financemi.</p>
-              <div className="flex items-center space-x-2 text-white/80">
-                <div className="w-2 h-2 bg-white/60 rounded-full"></div>
+            <div className="bg-gradient-primary rounded-xl md:rounded-2xl p-5 md:p-8 text-white">
+              <h3 className="text-lg md:text-2xl font-bold mb-3 md:mb-4">Ozvěte se pro nezávaznou konzultaci!</h3>
+              <p className="text-white/90 mb-4 md:mb-6 text-sm md:text-base">Využijte mojí nabídku bezplatné konzultace a zjistěte, jak Vám mohu pomoci s vašimi financemi.</p>
+              <div className="flex items-center space-x-2 text-white/80 text-sm md:text-base">
+                <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/60 rounded-full"></div>
                 <span>Bez závazků</span>
               </div>
-              <div className="flex items-center space-x-2 text-white/80">
-                <div className="w-2 h-2 bg-white/60 rounded-full"></div>
+              <div className="flex items-center space-x-2 text-white/80 text-sm md:text-base">
+                <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/60 rounded-full"></div>
                 <span>Individuální přístup</span>
               </div>
-              <div className="flex items-center space-x-2 text-white/80">
-                <div className="w-2 h-2 bg-white/60 rounded-full"></div>
+              <div className="flex items-center space-x-2 text-white/80 text-sm md:text-base">
+                <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white/60 rounded-full"></div>
                 <span>Profesionální poradenství</span>
               </div>
             </div>
