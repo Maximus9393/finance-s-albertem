@@ -40,15 +40,15 @@ const Reality = () => {
         
         <main className="pt-24">
           {/* Hero Section */}
-          <section className="relative overflow-hidden py-20 bg-gradient-to-br from-background via-background to-primary/5">
+          <section className="relative overflow-hidden py-12 md:py-20 bg-gradient-to-br from-background via-background to-primary/5">
             <div className="absolute inset-0 bg-gradient-subtle opacity-30"></div>
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center animate-fade-in">
-                <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
                   Reality a <span className="text-primary">Hypotéky</span>
                 </h1>
-                <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">Uvažujete o prodeji nebo pronájmu Vaší nemovitosti? Ozvěte se mi a můj kolega se o Vás postará.</p>
-                <Button variant="cta" size="lg" onClick={navigateToContact} className="animate-scale-in text-lg px-8 py-4">
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto px-2">Uvažujete o prodeji nebo pronájmu Vaší nemovitosti? Ozvěte se mi a můj kolega se o Vás postará.</p>
+                <Button variant="cta" size="lg" onClick={navigateToContact} className="animate-scale-in text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto">
                   Nezávazná konzultace
                 </Button>
               </div>
@@ -328,17 +328,17 @@ const Reality = () => {
           </section>
 
           {/* CTA Section */}
-          <section className="py-20 bg-gradient-to-br from-primary/5 to-primary/10">
+          <section className="py-12 md:py-20 bg-gradient-to-br from-primary/5 to-primary/10">
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto text-center animate-fade-in">
-                <h2 className="text-4xl font-bold text-foreground mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 md:mb-6">
                   Potřebujete poradit s <span className="text-primary">nemovitostí?</span>
                 </h2>
-                <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
+                <p className="text-base md:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto px-2">
                   Kontaktujte nás pro nezávaznou konzultaci. Pomůžeme vám s hypotékou i výběrem nemovitosti 
                   a provedeme vás celým procesem od A do Z.
                 </p>
-                <Button variant="cta" size="lg" onClick={navigateToContact} className="text-lg px-8 py-4">
+                <Button variant="cta" size="lg" onClick={navigateToContact} className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto">
                   Nezávazná konzultace
                 </Button>
               </div>
