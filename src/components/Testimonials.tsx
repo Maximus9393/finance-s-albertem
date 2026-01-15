@@ -58,8 +58,8 @@ const Testimonials = () => {
               <p className="text-muted-foreground mb-4 md:mb-6 leading-relaxed italic text-sm md:text-base">"{testimonial.content}"</p>
 
               <div className="border-t border-border pt-3 md:pt-4">
-                <h4 className="text-base md:text-lg font-semibold text-white">{testimonial.name}</h4>
-                <p className="text-xs md:text-sm text-muted-foreground">{testimonial.role}</p>
+                <h4 className="text-base md:text-lg font-semibold text-card-foreground">{testimonial.name}</h4>
+                <p className="text-xs md:text-sm text-card-foreground/70">{testimonial.role}</p>
               </div>
             </div>
           ))}

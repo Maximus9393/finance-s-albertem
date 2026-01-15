@@ -102,7 +102,7 @@ const Footer = () => {
               >
                 Cookies
               </button>
-              <a href="#" className="text-background/60 hover:text-primary transition-colors text-xs md:text-sm">
+              <a href="/sitemap.xml" className="text-background/60 hover:text-primary transition-colors text-xs md:text-sm">
                 Mapa stránek
               </a>
             </div>

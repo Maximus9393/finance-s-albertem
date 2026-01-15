@@ -120,19 +120,19 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
           {/* Contact Form */}
-          <div className="bg-card rounded-xl md:rounded-2xl p-5 md:p-8 shadow-card animate-scale-in">
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">Nezávazná konzultace</h3>
+          <div className="bg-card rounded-xl md:rounded-2xl p-5 md:p-8 shadow-card animate-scale-in border border-border/50">
+            <h3 className="text-xl md:text-2xl font-bold text-card-foreground mb-4 md:mb-6">Nezávazná konzultace</h3>
             
             <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
               <div className="grid sm:grid-cols-2 gap-3 md:gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
+                  <label className="block text-sm font-medium text-card-foreground mb-2">
                     Jméno a příjmení *
                   </label>
                   <Input value={formData.name} onChange={e => handleInputChange('name', e.target.value)} required placeholder="Vaše jméno" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
+                  <label className="block text-sm font-medium text-card-foreground mb-2">
                     E-mail *
                   </label>
                   <Input type="email" value={formData.email} onChange={e => handleInputChange('email', e.target.value)} required placeholder="vas@email.cz" />
@@ -141,13 +141,13 @@ const Contact = () => {
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
+                  <label className="block text-sm font-medium text-card-foreground mb-2">
                     Telefon
                   </label>
                   <Input value={formData.phone} onChange={e => handleInputChange('phone', e.target.value)} placeholder="+420 123 456 789" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-white mb-2">
+                  <label className="block text-sm font-medium text-card-foreground mb-2">
                     Oblast zájmu
                   </label>
                   <Select value={formData.service} onValueChange={value => handleInputChange('service', value)}>
@@ -166,7 +166,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium text-card-foreground mb-2">
                   Jak jste se o mně dozvěděli? *
                 </label>
                 <Select value={formData.referralSource} onValueChange={value => handleInputChange('referralSource', value)} required>
@@ -186,7 +186,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-white mb-2">
+                <label className="block text-sm font-medium text-card-foreground mb-2">
                   Zpráva
                 </label>
                 <Textarea value={formData.message} onChange={e => handleInputChange('message', e.target.value)} placeholder="Popište nám svou situaci a požadavky..." rows={4} />
@@ -211,38 +211,38 @@ const Contact = () => {
 
           {/* Contact Information */}
           <div className="space-y-6 md:space-y-8 animate-fade-in">
-            <div className="bg-card rounded-xl md:rounded-2xl p-5 md:p-8 shadow-card">
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">Kontaktní údaje</h3>
+            <div className="bg-card rounded-xl md:rounded-2xl p-5 md:p-8 shadow-card border border-border/50">
+              <h3 className="text-xl md:text-2xl font-bold text-card-foreground mb-4 md:mb-6">Kontaktní údaje</h3>
               
               <div className="space-y-4 md:space-y-6">
-                <a href="tel:+420728271275" className="flex items-start space-x-3 md:space-x-4 p-3 md:p-0 rounded-lg hover:bg-primary/5 md:hover:bg-transparent transition-colors">
+                <a href="tel:+420728271275" className="flex items-start space-x-3 md:space-x-4 p-3 md:p-0 rounded-lg hover:bg-primary/5 md:hover:bg-transparent active:bg-primary/10 transition-colors">
                   <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex-shrink-0">
-                    <Phone className="w-5 h-5 md:w-6 md:h-6 text-white" />
+                    <Phone className="w-5 h-5 md:w-6 md:h-6 text-card-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-0.5 md:mb-1 text-sm md:text-base">Telefon</h4>
-                    <p className="text-white/80 text-sm md:text-base">+420 728 271 275</p>
+                    <h4 className="font-semibold text-card-foreground mb-0.5 md:mb-1 text-sm md:text-base">Telefon</h4>
+                    <p className="text-card-foreground/80 text-sm md:text-base">+420 728 271 275</p>
                   </div>
                 </a>
 
-                <a href="mailto:albert.gurdzjan@4fin.cz" className="flex items-start space-x-3 md:space-x-4 p-3 md:p-0 rounded-lg hover:bg-primary/5 md:hover:bg-transparent transition-colors">
+                <a href="mailto:albert.gurdzjan@4fin.cz" className="flex items-start space-x-3 md:space-x-4 p-3 md:p-0 rounded-lg hover:bg-primary/5 md:hover:bg-transparent active:bg-primary/10 transition-colors">
                   <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex-shrink-0">
-                    <Mail className="w-5 h-5 md:w-6 md:h-6 text-white" />
+                    <Mail className="w-5 h-5 md:w-6 md:h-6 text-card-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-0.5 md:mb-1 text-sm md:text-base">E-mail</h4>
-                    <p className="text-white/80 text-sm md:text-base break-all">albert.gurdzjan@4fin.cz</p>
-                    <p className="text-xs md:text-sm text-white/60">Odpovídám do 24 hodin</p>
+                    <h4 className="font-semibold text-card-foreground mb-0.5 md:mb-1 text-sm md:text-base">E-mail</h4>
+                    <p className="text-card-foreground/80 text-sm md:text-base break-all">albert.gurdzjan@4fin.cz</p>
+                    <p className="text-xs md:text-sm text-card-foreground/60">Odpovídám do 24 hodin</p>
                   </div>
                 </a>
 
                 <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-0">
                   <div className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-lg flex-shrink-0">
-                    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-white" />
+                    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-card-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-0.5 md:mb-1 text-sm md:text-base">Adresa</h4>
-                    <p className="text-white/80 text-sm md:text-base">Chrastavská 231/32A<br />460 01 Liberec</p>
+                    <h4 className="font-semibold text-card-foreground mb-0.5 md:mb-1 text-sm md:text-base">Adresa</h4>
+                    <p className="text-card-foreground/80 text-sm md:text-base">Chrastavská 231/32A<br />460 01 Liberec</p>
                   </div>
                 </div>
 
