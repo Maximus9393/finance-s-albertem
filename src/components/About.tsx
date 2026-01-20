@@ -1,18 +1,22 @@
+import { memo } from "react";
 import { CheckCircle, Users, Shield, TrendingUp } from "lucide-react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-import logo4fin from "@/assets/4fin-logo.png";
-const About = () => {
-  return <section id="about" className="py-12 md:py-20">
+
+const About = memo(() => {
+  return (
+    <section id="about" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 md:mb-16 animate-fade-in">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 md:mb-6">
             Proč si vybrat <span className="text-primary">Alberta Gurdžjana</span>
           </h2>
-          <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">Jako poradce společnosti 4fin Better Together a.s. nabízím transparentní, srozumitelné a profesionální poradenství. Specializuji se nejen na rodinné finance včetně komplexní analýzy, ale i na firemní klientelu, pojištění firem, flotily a provozní úvěry. </p>
+          <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
+            Jako poradce společnosti 4fin Better Together a.s. nabízím transparentní, srozumitelné a profesionální poradenství. Specializuji se nejen na rodinné finance včetně komplexní analýzy, ale i na firemní klientelu, pojištění firem, flotily a provozní úvěry.
+          </p>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300 p-3 md:p-0">
+          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300 p-3 md:p-0 will-change-transform">
             <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full mb-3 md:mb-6 group-hover:bg-primary/20 transition-colors">
               <Users className="w-6 h-6 md:w-8 md:h-8 text-primary" />
             </div>
@@ -22,7 +26,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300 p-3 md:p-0">
+          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300 p-3 md:p-0 will-change-transform">
             <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full mb-3 md:mb-6 group-hover:bg-primary/20 transition-colors">
               <Shield className="w-6 h-6 md:w-8 md:h-8 text-primary" />
             </div>
@@ -30,7 +34,7 @@ const About = () => {
             <p className="text-muted-foreground text-xs md:text-base">Na první místo stavím důvěru mezi Vámi a mnou.</p>
           </div>
 
-          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300 p-3 md:p-0">
+          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300 p-3 md:p-0 will-change-transform">
             <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full mb-3 md:mb-6 group-hover:bg-primary/20 transition-colors">
               <TrendingUp className="w-6 h-6 md:w-8 md:h-8 text-primary" />
             </div>
@@ -40,7 +44,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300 p-3 md:p-0">
+          <div className="text-center group hover:transform hover:scale-105 transition-all duration-300 p-3 md:p-0 will-change-transform">
             <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-full mb-3 md:mb-6 group-hover:bg-primary/20 transition-colors">
               <CheckCircle className="w-6 h-6 md:w-8 md:h-8 text-primary" />
             </div>
@@ -106,14 +110,27 @@ const About = () => {
             </div>
             <div className="flex items-center justify-center h-full mt-4 md:mt-0">
               <div className="inline-block p-6 md:p-12 bg-primary/5 rounded-full">
-                <img src="/4FIN_H_Bold_Negativ.png" alt="4fin Better Together a.s. logo" className="w-[120px] h-[56px] md:w-[170px] md:h-[80px] mx-auto" style={{
-                objectFit: 'contain'
-              }} />
+                <img 
+                  src="/4FIN_H_Bold_Negativ.png" 
+                  alt="4fin Better Together a.s. logo" 
+                  className="w-[120px] h-[56px] md:w-[170px] md:h-[80px] mx-auto" 
+                  loading="lazy"
+                  decoding="async"
+                  width="170"
+                  height="80"
+                  style={{
+                    objectFit: 'contain'
+                  }} 
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>;
-};
+    </section>
+  );
+});
+
+About.displayName = 'About';
+
 export default About;

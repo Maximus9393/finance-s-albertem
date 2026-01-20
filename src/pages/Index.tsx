@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, memo } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -35,11 +35,13 @@ const structuredData = {
   "priceRange": "Nezávazná konzultace zdarma"
 };
 
-const LoadingSpinner = () => (
+// Minimal loading indicator - optimized for performance
+const LoadingSpinner = memo(() => (
   <div className="flex items-center justify-center p-8">
     <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
   </div>
-);
+));
+LoadingSpinner.displayName = 'LoadingSpinner';
 
 const Index = () => {
   return (
@@ -55,20 +57,15 @@ const Index = () => {
         <main>
           <Hero />
           <About />
+          {/* Single Suspense boundary for all lazy-loaded below-the-fold content */}
           <Suspense fallback={<LoadingSpinner />}>
             <Services />
-          </Suspense>
-          <Suspense fallback={<LoadingSpinner />}>
             <Cooperation />
-          </Suspense>
-          <Suspense fallback={<LoadingSpinner />}>
             <Testimonials />
-          </Suspense>
-          <Suspense fallback={<LoadingSpinner />}>
             <Contact />
           </Suspense>
         </main>
-        <Suspense fallback={<LoadingSpinner />}>
+        <Suspense fallback={null}>
           <Footer />
         </Suspense>
       </div>
