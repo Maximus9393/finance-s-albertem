@@ -1,29 +1,32 @@
+import { memo } from "react";
 import { Star, Quote } from "lucide-react";
 import CountUp from "@/components/CountUp";
-const Testimonials = () => {
-  const testimonials = [
-    {
-      name: "Hana Svobodová",
-      role: "Učitelka v důchodu",
-      content:
-        "Jsem už řadu let klientkou pana Alberta Gurdžjana. Bez jeho odborné péče bych si v dnešním finančním světě nevěděla rady. Vždy mi dobře poradil, vše mi trpělivě vysvětlil. Cením si i jeho lidských kvalit. Je to milý, slušný, snaživý a informovaný člověk, který svou práci vykonává s láskou a plným nasazením. Děkuji, Hana Svobodová..",
-      rating: 5,
-    },
-    {
-      name: "Veronika Kellerová",
-      role: "Na mateřské dovolené",
-      content:
-        "Se službami společnosti 4Fin jsme velmi spokojení. Náš finanční poradce - pan Albert Gurdžian, je profík. Je vidět, že své práci rozumí, je férový, vždy na příjmu a k dispozici, vždy nám se vším pomůže, poradí. Děkujeme !",
-      rating: 5,
-    },
-    {
-      name: "Miroslav Svoboda",
-      role: "Manažer",
-      content:
-        "S Albertem Gurdžjanem se mi perfektně spolupracuje, ať už se jedná o finanční analytiku, či cokoliv jiného. Je to přesně ten pravý člověk na svém místě, který má nejen neskutečný tah na branku, ale také odborné znalosti, které neustále rozšiřuje. Vřele doporučuji.",
-      rating: 5,
-    },
-  ];
+
+const testimonials = [
+  {
+    name: "Hana Svobodová",
+    role: "Učitelka v důchodu",
+    content:
+      "Jsem už řadu let klientkou pana Alberta Gurdžjana. Bez jeho odborné péče bych si v dnešním finančním světě nevěděla rady. Vždy mi dobře poradil, vše mi trpělivě vysvětlil. Cením si i jeho lidských kvalit. Je to milý, slušný, snaživý a informovaný člověk, který svou práci vykonává s láskou a plným nasazením. Děkuji, Hana Svobodová..",
+    rating: 5,
+  },
+  {
+    name: "Veronika Kellerová",
+    role: "Na mateřské dovolené",
+    content:
+      "Se službami společnosti 4Fin jsme velmi spokojení. Náš finanční poradce - pan Albert Gurdžian, je profík. Je vidět, že své práci rozumí, je férový, vždy na příjmu a k dispozici, vždy nám se vším pomůže, poradí. Děkujeme !",
+    rating: 5,
+  },
+  {
+    name: "Miroslav Svoboda",
+    role: "Manažer",
+    content:
+      "S Albertem Gurdžjanem se mi perfektně spolupracuje, ať už se jedná o finanční analytiku, či cokoliv jiného. Je to přesně ten pravý člověk na svém místě, který má nejen neskutečný tah na branku, ale také odborné znalosti, které neustále rozšiřuje. Vřele doporučuji.",
+    rating: 5,
+  },
+];
+
+const Testimonials = memo(() => {
   return (
     <section id="testimonials" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
@@ -40,7 +43,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl md:rounded-2xl p-5 md:p-8 shadow-card hover:shadow-elegant transition-all duration-300 relative animate-scale-in border border-border/50"
+              className="bg-card rounded-xl md:rounded-2xl p-5 md:p-8 shadow-card hover:shadow-elegant transition-all duration-300 relative animate-scale-in border border-border/50 will-change-transform"
               style={{
                 animationDelay: `${index * 0.2}s`,
               }}
@@ -112,5 +115,8 @@ const Testimonials = () => {
       </div>
     </section>
   );
-};
+});
+
+Testimonials.displayName = 'Testimonials';
+
 export default Testimonials;

@@ -1,7 +1,8 @@
+import { memo } from "react";
 import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ExternalLink } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
-const Footer = () => {
+const Footer = memo(() => {
   const currentYear = new Date().getFullYear();
   const location = useLocation();
   
@@ -111,6 +112,8 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
+
+Footer.displayName = 'Footer';
 
 export default Footer;
