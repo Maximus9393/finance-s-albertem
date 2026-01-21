@@ -2,7 +2,9 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo4fin from "@/assets/4fin-logo.png";
+import logo4finWebp from "@/assets/4fin-logo-optimized.webp";
 import prihlasitIcon from "@/assets/prihlasit-icon.png";
+import prihlasitIconWebp from "@/assets/prihlasit-icon-optimized.webp";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,9 +37,12 @@ const Header = () => {
       <div className={`container mx-auto px-3 md:px-4 transition-all duration-300 ${isScrolled ? 'py-1 md:py-2' : 'py-2 md:py-4'}`}>
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2 md:space-x-3">
-            <img src={logo4fin} alt="4fin logo" className={`transition-all duration-300 ${isScrolled ? 'w-[60px] h-[28px] md:w-[85px] md:h-[40px]' : 'w-[75px] h-[35px] md:w-[113px] md:h-[53px]'}`} decoding="async" loading="eager" width="113" height="53" style={{
-            objectFit: 'contain'
-          }} />
+            <picture>
+              <source srcSet={logo4finWebp} type="image/webp" />
+              <img src={logo4fin} alt="4fin logo" className={`transition-all duration-300 ${isScrolled ? 'w-[60px] h-[28px] md:w-[85px] md:h-[40px]' : 'w-[75px] h-[35px] md:w-[113px] md:h-[53px]'}`} decoding="async" loading="eager" width="113" height="53" style={{
+              objectFit: 'contain'
+            }} />
+            </picture>
             <div className={`font-bold text-primary transition-all duration-300 ${isScrolled ? 'text-sm md:text-lg' : 'text-base md:text-xl'}`}>
               Finance s Albertem
             </div>
@@ -68,7 +73,10 @@ const Header = () => {
               Nezávazná konzultace
             </Button>
             <a href="https://crm.4fin.cz" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors duration-300" title="Přihlásit se do CRM">
-              <img src={prihlasitIcon} alt="Přihlásit se do CRM" className="w-5 h-5" decoding="async" loading="lazy" width="20" height="20" />
+              <picture>
+                <source srcSet={prihlasitIconWebp} type="image/webp" />
+                <img src={prihlasitIcon} alt="Přihlásit se do CRM" className="w-5 h-5" decoding="async" loading="lazy" width="20" height="20" />
+              </picture>
             </a>
           </div>
 

@@ -111,7 +111,7 @@ const Contact = () => {
         {/* Values Section */}
         <div className="mb-10 md:mb-16 w-full animate-scale-in">
           <div className="flex justify-center overflow-hidden">
-            <img src="/cara_kontakt2.png" alt="Naše hodnoty - partnerství, inovace, kvalita, růst" className="max-w-none w-full max-w-6xl h-auto rounded-lg shadow-soft" loading="lazy" decoding="async" width="1200" height="600" onError={e => {
+            <img src="/cara_kontakt2.png" alt="Naše hodnoty - partnerství, inovace, kvalita, růst" className="max-w-none w-full max-w-6xl h-auto rounded-lg shadow-soft" loading="lazy" decoding="async" width="1368" height="37" onError={e => {
             console.log('Image failed to load:', e.currentTarget.src);
             e.currentTarget.style.display = 'none';
           }} />
