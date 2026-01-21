@@ -124,7 +124,6 @@ const Hero = memo(() => {
                     className={`rounded-2xl shadow-elegant w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                     loading="eager"
                     decoding="async"
-                    fetchPriority="high"
                     width="400"
                     height="500"
                     onLoad={() => setImageLoaded(true)}
