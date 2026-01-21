@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
 import albertPhoto from "@/assets/albert-photo.jpg";
-import albertPhotoWebp from "@/assets/albert-photo-optimized.webp";
 import CountUp from "@/components/CountUp";
 import { useState, useMemo, memo } from "react";
 
@@ -119,21 +118,18 @@ const Hero = memo(() => {
                     </div>
                   )}
                   
-                  <picture>
-                    <source srcSet={albertPhotoWebp} type="image/webp" />
-                    <img 
-                      src={albertPhoto} 
-                      alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
-                      className={`rounded-2xl shadow-elegant w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-                      loading="eager"
-                      decoding="async"
-                      fetchPriority="high"
-                      width="500"
-                      height="500"
-                      onLoad={() => setImageLoaded(true)}
-                      onError={() => setImageLoaded(true)}
-                    />
-                  </picture>
+                  <img 
+                    src={albertPhoto} 
+                    alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
+                    className={`rounded-2xl shadow-elegant w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
+                    width="400"
+                    height="500"
+                    onLoad={() => setImageLoaded(true)}
+                    onError={() => setImageLoaded(true)}
+                  />
                 </div>
                 <div className="flip-card-back">
                   <div className="bg-gradient-primary rounded-2xl shadow-elegant w-full h-full flex items-center justify-center p-4 md:p-8">

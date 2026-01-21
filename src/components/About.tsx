@@ -113,11 +113,11 @@ const About = memo(() => {
                 <img 
                   src="/4FIN_H_Bold_Negativ.png" 
                   alt="4fin Better Together a.s. logo" 
-                  className="w-[120px] h-auto md:w-[170px] mx-auto" 
+                  className="w-[120px] h-[56px] md:w-[170px] md:h-[80px] mx-auto" 
                   loading="lazy"
                   decoding="async"
                   width="170"
-                  height="45"
+                  height="80"
                   style={{
                     objectFit: 'contain'
                   }} 
