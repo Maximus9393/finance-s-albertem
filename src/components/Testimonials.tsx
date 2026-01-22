@@ -43,26 +43,26 @@ const Testimonials = memo(() => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl md:rounded-2xl p-5 md:p-8 shadow-card hover:shadow-elegant transition-all duration-300 relative animate-scale-in border border-border/50 will-change-transform"
+              className="bg-foreground text-background rounded-xl md:rounded-2xl p-5 md:p-8 shadow-card hover:shadow-elegant transition-all duration-300 relative animate-scale-in border border-background/20 will-change-transform"
               style={{
                 animationDelay: `${index * 0.2}s`,
               }}
             >
-              <div className="absolute top-4 right-4 md:top-6 md:right-6 text-primary/20">
+              <div className="absolute top-4 right-4 md:top-6 md:right-6 text-background/15">
                 <Quote className="w-6 h-6 md:w-8 md:h-8" />
               </div>
 
               <div className="flex items-center mb-3 md:mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 md:w-5 md:h-5 text-accent fill-current" />
+                  <Star key={i} className="w-4 h-4 md:w-5 md:h-5 text-background/90 fill-current" />
                 ))}
               </div>
 
-              <p className="text-muted-foreground mb-4 md:mb-6 leading-relaxed italic text-sm md:text-base">"{testimonial.content}"</p>
+              <p className="text-background/80 mb-4 md:mb-6 leading-relaxed italic text-sm md:text-base">"{testimonial.content}"</p>
 
-              <div className="border-t border-border pt-3 md:pt-4">
-                <h4 className="text-base md:text-lg font-semibold text-card-foreground">{testimonial.name}</h4>
-                <p className="text-xs md:text-sm text-card-foreground/70">{testimonial.role}</p>
+              <div className="border-t border-background/20 pt-3 md:pt-4">
+                <h4 className="text-base md:text-lg font-semibold text-background">{testimonial.name}</h4>
+                <p className="text-xs md:text-sm text-background/70">{testimonial.role}</p>
               </div>
             </div>
           ))}
