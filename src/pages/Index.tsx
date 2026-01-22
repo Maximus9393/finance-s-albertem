@@ -6,6 +6,7 @@ import About from "@/components/About";
 // Lazy load below-the-fold components
 const Services = lazy(() => import("@/components/Services"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
+const FAQ = lazy(() => import("@/components/FAQ"));
 const Contact = lazy(() => import("@/components/Contact"));
 const Footer = lazy(() => import("@/components/Footer"));
 const Cooperation = lazy(() => import("@/components/Cooperation"));
@@ -62,6 +63,7 @@ const Index = () => {
             <Services />
             <Cooperation />
             <Testimonials />
+             <FAQ />
             <Contact />
           </Suspense>
         </main>
