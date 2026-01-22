@@ -112,14 +112,14 @@ const FAQ = memo(() => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-card rounded-2xl shadow-card border border-border/50 overflow-hidden">
+          <div className="bg-foreground text-background rounded-2xl shadow-card border border-background/20 overflow-hidden">
             <Accordion type="single" collapsible className="px-4 md:px-6">
               {faqs.map((item, idx) => (
-                <AccordionItem key={item.question} value={`faq-${idx}`} className="border-border/60">
-                  <AccordionTrigger className="text-left text-base md:text-lg py-5">
+                <AccordionItem key={item.question} value={`faq-${idx}`} className="border-background/20">
+                  <AccordionTrigger className="text-left text-base md:text-lg py-5 text-background">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  <AccordionContent className="text-sm md:text-base text-background/80 leading-relaxed">
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>
