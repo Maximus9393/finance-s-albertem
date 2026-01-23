@@ -103,23 +103,23 @@ const FAQ = memo(() => {
 
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 md:mb-16 animate-fade-in">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 md:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
             Často kladené <span className="text-primary">otázky</span>
           </h2>
-          <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
+          <p className="text-base md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed px-2">
             Nejčastější dotazy, které od klientů dostávám – stručně a srozumitelně.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-card rounded-2xl shadow-card border border-border/50 overflow-hidden">
+          <div className="bg-card rounded-2xl shadow-card border border-white/20 overflow-hidden">
             <Accordion type="single" collapsible className="px-5 md:px-8">
               {faqs.map((item, idx) => (
-                <AccordionItem key={item.question} value={`faq-${idx}`} className="border-border/50">
-                  <AccordionTrigger className="text-left text-sm md:text-base font-semibold py-5 text-foreground">
+                <AccordionItem key={item.question} value={`faq-${idx}`} className="border-white/20">
+                  <AccordionTrigger className="text-left text-sm md:text-base font-semibold py-5 text-white">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  <AccordionContent className="text-sm md:text-base text-white/80 leading-relaxed">
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>

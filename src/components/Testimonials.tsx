@@ -31,10 +31,10 @@ const Testimonials = memo(() => {
     <section id="testimonials" className="py-12 md:py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10 md:mb-16 animate-fade-in">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 md:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6">
             Co říkají moji <span className="text-primary">klienti</span>
           </h2>
-          <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
+          <p className="text-base md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed px-2">
             Důvěra mých klientů je pro mě nejcennější odměnou. Přečtěte si jejich zkušenosti s mými službami.
           </p>
         </div>
@@ -48,21 +48,21 @@ const Testimonials = memo(() => {
                 animationDelay: `${index * 0.2}s`,
               }}
             >
-              <div className="absolute top-4 right-4 md:top-6 md:right-6 text-muted-foreground/30">
+              <div className="absolute top-4 right-4 md:top-6 md:right-6 text-white/20">
                 <Quote className="w-6 h-6 md:w-8 md:h-8" />
               </div>
 
               <div className="flex items-center mb-3 md:mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 md:w-5 md:h-5 text-primary fill-current" />
+                  <Star key={i} className="w-4 h-4 md:w-5 md:h-5 text-white fill-current" />
                 ))}
               </div>
 
-              <p className="text-muted-foreground mb-4 md:mb-6 leading-relaxed italic text-sm md:text-base">"{testimonial.content}"</p>
+              <p className="text-white/80 mb-4 md:mb-6 leading-relaxed italic text-sm md:text-base">"{testimonial.content}"</p>
 
-              <div className="border-t border-border/50 pt-3 md:pt-4">
-                <h4 className="text-base md:text-lg font-semibold text-foreground">{testimonial.name}</h4>
-                <p className="text-xs md:text-sm text-muted-foreground">{testimonial.role}</p>
+              <div className="border-t border-white/20 pt-3 md:pt-4">
+                <h4 className="text-base md:text-lg font-semibold text-white">{testimonial.name}</h4>
+                <p className="text-xs md:text-sm text-white/70">{testimonial.role}</p>
               </div>
             </div>
           ))}
