@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
-import albertPhoto from "@/assets/albert-photo.jpg";
+import albertPhotoWebp from "@/assets/albert-photo-optimized.webp";
+import albertPhotoJpg from "@/assets/albert-photo.jpg";
 import CountUp from "@/components/CountUp";
 import { useState, useMemo, memo } from "react";
 
@@ -118,17 +119,23 @@ const Hero = memo(() => {
                     </div>
                   )}
                   
-                  <img 
-                    src={albertPhoto} 
-                    alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
-                    className={`rounded-2xl shadow-elegant w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-                    loading="eager"
-                    decoding="async"
-                    width="400"
-                    height="500"
-                    onLoad={() => setImageLoaded(true)}
-                    onError={() => setImageLoaded(true)}
-                  />
+                  <picture>
+                    <source 
+                      srcSet={albertPhotoWebp} 
+                      type="image/webp"
+                    />
+                    <img 
+                      src={albertPhotoJpg} 
+                      alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
+                      className={`rounded-2xl shadow-elegant w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                      loading="eager"
+                      decoding="async"
+                      width="400"
+                      height="500"
+                      onLoad={() => setImageLoaded(true)}
+                      onError={() => setImageLoaded(true)}
+                    />
+                  </picture>
                 </div>
                 <div className="flip-card-back">
                   <div className="bg-gradient-primary rounded-2xl shadow-elegant w-full h-full flex items-center justify-center p-4 md:p-8">

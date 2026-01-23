@@ -23,14 +23,31 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom'],
-          ui: ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-popover'],
-          utils: ['clsx', 'tailwind-merge', 'class-variance-authority']
+          // Core React - loaded first
+          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+          // UI components - chunked separately
+          'vendor-ui': [
+            '@radix-ui/react-accordion',
+            '@radix-ui/react-dialog',
+            '@radix-ui/react-dropdown-menu',
+            '@radix-ui/react-popover',
+            '@radix-ui/react-select',
+            '@radix-ui/react-tabs',
+            '@radix-ui/react-toast',
+            '@radix-ui/react-tooltip',
+          ],
+          // Forms - lazy loaded when needed
+          'vendor-forms': ['react-hook-form', 'zod', '@hookform/resolvers'],
+          // Charts - lazy loaded
+          'vendor-charts': ['recharts'],
+          // Utilities
+          'vendor-utils': ['clsx', 'tailwind-merge', 'class-variance-authority', 'date-fns']
         }
       }
     },
     target: 'es2015',
-    minify: 'esbuild'
+    minify: 'esbuild',
+    chunkSizeWarningLimit: 500,
   },
   optimizeDeps: {
     include: ['react', 'react-dom', '@radix-ui/react-accordion']
