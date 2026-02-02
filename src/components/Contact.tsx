@@ -65,6 +65,18 @@ const Contact = () => {
       if (error) {
         throw error;
       }
+
+      // Send email notification (non-blocking - don't fail if email fails)
+      try {
+        await supabase.functions.invoke('send-contact-notification', {
+          body: contactData
+        });
+        console.log('Email notification sent successfully');
+      } catch (emailError) {
+        console.error('Failed to send email notification:', emailError);
+        // Continue anyway - data is safely stored in DB
+      }
+
       toast({
         title: "Formulář odeslán",
         description: "Děkujeme za vaši zprávu. Ozveme se vám co nejdříve."
