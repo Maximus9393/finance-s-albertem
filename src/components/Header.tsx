@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo4fin from "@/assets/4fin-logo.png";
-import prihlasitIcon from "@/assets/prihlasit-icon.png";
+import prihlasitIcon from "@/assets/prihlasit-icon-40.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);

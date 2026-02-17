@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
-import albertPhotoWebp from "@/assets/albert-photo-optimized.webp";
+import albertPhotoWebp from "@/assets/albert-photo-500w.webp";
 import albertPhotoJpg from "@/assets/albert-photo.jpg";
 import CountUp from "@/components/CountUp";
 import { useState, useMemo, memo } from "react";
@@ -130,8 +130,8 @@ const Hero = memo(() => {
                       className={`rounded-2xl shadow-elegant w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                       loading="eager"
                       decoding="async"
-                      width="400"
-                      height="500"
+                      width="448"
+                      height="614"
                       onLoad={() => setImageLoaded(true)}
                       onError={() => setImageLoaded(true)}
                     />

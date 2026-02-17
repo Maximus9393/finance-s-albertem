@@ -27,16 +27,16 @@ const Footer = memo(() => {
               Komplexní analýza a optimalizace rodinných financí.
             </p>
             <div className="flex space-x-3 md:space-x-4">
-              <a href="https://www.facebook.com/albi.gurdzjan/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 md:w-10 md:h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 active:scale-95 transition-all">
+              <a href="https://www.facebook.com/albi.gurdzjan/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-9 h-9 md:w-10 md:h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 active:scale-95 transition-all">
                 <Facebook className="w-4 h-4 md:w-5 md:h-5 text-primary" />
               </a>
-              <a href="https://www.instagram.com/albert_gurdzjan_finance/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 md:w-10 md:h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 active:scale-95 transition-all">
+              <a href="https://www.instagram.com/albert_gurdzjan_finance/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 md:w-10 md:h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 active:scale-95 transition-all">
                 <Instagram className="w-4 h-4 md:w-5 md:h-5 text-primary" />
               </a>
-              <a href="https://www.linkedin.com/in/albert-gurdzjan/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 md:w-10 md:h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 active:scale-95 transition-all">
+              <a href="https://www.linkedin.com/in/albert-gurdzjan/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-9 h-9 md:w-10 md:h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 active:scale-95 transition-all">
                 <Linkedin className="w-4 h-4 md:w-5 md:h-5 text-primary" />
               </a>
-              <a href="https://linktr.ee/albertgurdzjan" target="_blank" rel="noopener noreferrer" className="w-9 h-9 md:w-10 md:h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 active:scale-95 transition-all">
+              <a href="https://linktr.ee/albertgurdzjan" target="_blank" rel="noopener noreferrer" aria-label="Linktree" className="w-9 h-9 md:w-10 md:h-10 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 active:scale-95 transition-all">
                 <ExternalLink className="w-4 h-4 md:w-5 md:h-5 text-primary" />
               </a>
             </div>
