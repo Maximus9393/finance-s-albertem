@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { LogIn } from "lucide-react";
 import logo4fin from "@/assets/4fin-logo.png";
-import prihlasitIcon from "@/assets/prihlasit-icon-40.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -70,8 +70,8 @@ const Header = () => {
             <Button variant="cta" onClick={() => scrollToSection('contact')} className="animate-scale-in">
               Nezávazná konzultace
             </Button>
-            <a href="https://crm.4fin.cz" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors duration-300" title="Přihlásit se do CRM">
-              <img src={prihlasitIcon} alt="Přihlásit se do CRM" className="w-5 h-5" decoding="async" loading="lazy" width="20" height="20" />
+            <a href="https://crm.4fin.cz" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-primary/10 transition-colors duration-300" title="Přihlásit se do CRM" aria-label="Přihlásit se do CRM">
+              <LogIn className="w-5 h-5 text-foreground" />
             </a>
           </div>
 
@@ -115,8 +115,8 @@ const Header = () => {
                 <Button variant="cta" onClick={() => scrollToSection('contact')} className="flex-1" size="lg">
                   Nezávazná konzultace
                 </Button>
-                <a href="https://crm.4fin.cz" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 hover:bg-primary/20 transition-colors duration-300" title="Přihlásit se do CRM">
-                  <img src={prihlasitIcon} alt="CRM" className="w-5 h-5" />
+                <a href="https://crm.4fin.cz" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-12 h-12 rounded-lg hover:bg-primary/10 transition-colors duration-300" title="Přihlásit se do CRM" aria-label="Přihlásit se do CRM">
+                  <LogIn className="w-5 h-5 text-foreground" />
                 </a>
               </div>
             </div>
