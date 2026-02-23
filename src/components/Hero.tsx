@@ -132,6 +132,7 @@ const Hero = memo(() => {
                       decoding="async"
                       width="448"
                       height="614"
+                      sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, 448px"
                       onLoad={() => setImageLoaded(true)}
                       onError={() => setImageLoaded(true)}
                     />
