@@ -35,7 +35,7 @@ const Header = () => {
       <div className={`container mx-auto px-3 md:px-4 transition-all duration-300 ${isScrolled ? 'py-1 md:py-2' : 'py-2 md:py-4'}`}>
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2 md:space-x-3">
-            <img src={logo4fin} alt="4fin logo" className={`transition-all duration-300 ${isScrolled ? 'w-[60px] h-[28px] md:w-[85px] md:h-[40px]' : 'w-[75px] h-[35px] md:w-[113px] md:h-[53px]'}`} decoding="async" loading="eager" width="113" height="53" style={{
+            <img src={logo4fin} alt="4fin logo" className={`transition-all duration-300 ${isScrolled ? 'w-[60px] h-[28px] md:w-[85px] md:h-[40px]' : 'w-[75px] h-[35px] md:w-[113px] md:h-[53px]'}`} decoding="async" loading="eager" width="113" height="53" sizes="(max-width: 768px) 75px, 113px" style={{
             objectFit: 'contain'
           }} />
             <div className={`font-bold text-primary transition-all duration-300 ${isScrolled ? 'text-sm md:text-lg' : 'text-base md:text-xl'}`}>
