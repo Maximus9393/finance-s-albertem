@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-image.jpg";
-import albertPhotoWebp from "@/assets/albert-photo-448w.webp";
+import albertPhotoWebp from "@/assets/albert-photo-optimized.webp";
 import albertPhotoJpg from "@/assets/albert-photo.jpg";
 import CountUp from "@/components/CountUp";
 import { useState, useMemo, memo } from "react";
