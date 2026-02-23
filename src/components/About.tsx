@@ -118,6 +118,7 @@ const About = memo(() => {
                   decoding="async"
                   width="170"
                   height="45"
+                  sizes="170px"
                   style={{
                     objectFit: 'contain'
                   }} 
