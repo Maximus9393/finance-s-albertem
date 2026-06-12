@@ -29,10 +29,14 @@ const Reality = () => {
   };
   return <>
       <Helmet>
-        <title>Reality a Hypotéky | Finance s Albertem</title>
-        <meta name="description" content="Specializujeme se na hypotéky a realitní služby. Spolupracujeme s renomovanými realitními makléři z Century 21. Zajistíme vám kompletní služby od hypotéky po výběr nemovitosti." />
+        <title>Reality a Hypotéky v Liberci | Finance s Albertem</title>
+        <meta name="description" content="Hypotéky a realitní služby v Liberci. Spolupracuji s makléři Century 21 – kompletní servis od financování po výběr nemovitosti." />
         <meta name="keywords" content="hypotéky, reality, nemovitosti, realitní makléř, Century 21, financování nemovitostí" />
-        <link rel="canonical" href="/reality" />
+        <link rel="canonical" href="https://financesalbertem.cz/reality" />
+        <meta property="og:title" content="Reality a Hypotéky v Liberci | Finance s Albertem" />
+        <meta property="og:description" content="Hypotéky a realitní služby v Liberci. Spolupracuji s makléři Century 21 – kompletní servis od financování po výběr nemovitosti." />
+        <meta property="og:url" content="https://financesalbertem.cz/reality" />
+        <meta property="og:type" content="website" />
       </Helmet>
       
       <div className="min-h-screen">
