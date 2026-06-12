@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -166,11 +165,7 @@ const Auth = () => {
   };
 
   return (
-    <>
-      <Helmet>
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/5 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/5 px-4">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <h1 className="text-2xl font-bold text-center">Přihlášení a registrace</h1>
@@ -260,7 +255,6 @@ const Auth = () => {
         </CardContent>
       </Card>
     </div>
-    </>
   );
 };
 

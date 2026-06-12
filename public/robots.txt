@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://lovable-finance-solutions.lovable.app/sitemap.xml
+Sitemap: https://financesalbertem.cz/sitemap.xml

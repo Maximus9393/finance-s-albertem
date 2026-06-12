@@ -32,10 +32,10 @@ const Reality = () => {
         <title>Reality a Hypotéky v Liberci | Finance s Albertem</title>
         <meta name="description" content="Hypotéky a realitní služby v Liberci. Spolupracuji s makléři Century 21 – kompletní servis od financování po výběr nemovitosti." />
         <meta name="keywords" content="hypotéky, reality, nemovitosti, realitní makléř, Century 21, financování nemovitostí" />
-        <link rel="canonical" href="https://lovable-finance-solutions.lovable.app/reality" />
+        <link rel="canonical" href="https://financesalbertem.cz/reality" />
         <meta property="og:title" content="Reality a Hypotéky v Liberci | Finance s Albertem" />
         <meta property="og:description" content="Hypotéky a realitní služby v Liberci. Spolupracuji s makléři Century 21 – kompletní servis od financování po výběr nemovitosti." />
-        <meta property="og:url" content="https://lovable-finance-solutions.lovable.app/reality" />
+        <meta property="og:url" content="https://financesalbertem.cz/reality" />
         <meta property="og:type" content="website" />
       </Helmet>
       

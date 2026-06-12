@@ -131,7 +131,6 @@ const Hero = memo(() => {
                       alt="Albert Gurdžjan - certifikovaný finanční poradce s 5+ lety zkušeností" 
                       className={`rounded-2xl shadow-elegant w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                       loading="eager"
-                      fetchPriority="high"
                       decoding="async"
                       width="448"
                       height="614"
