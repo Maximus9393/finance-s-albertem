@@ -168,9 +168,9 @@ const Auth = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/5 px-4">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold text-center">4FIN</CardTitle>
+          <h1 className="text-2xl font-bold text-center">Přihlášení a registrace</h1>
           <CardDescription className="text-center">
-            Přihlaste se ke svému účtu nebo se zaregistrujte
+            Přihlaste se ke svému účtu 4fin nebo si vytvořte nový
           </CardDescription>
         </CardHeader>
         <CardContent>

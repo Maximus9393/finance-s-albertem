@@ -59,8 +59,10 @@ const Hero = memo(() => {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="space-y-5 md:space-y-8 animate-fade-in order-2 lg:order-1 will-change-transform">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-center lg:text-left">
-              Vaše finance{" "}
-              <span className="text-primary">s Albertem</span>
+              Vaše finance <span className="text-primary">s Albertem</span>
+              <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-semibold mt-2">
+                Profesionální finanční poradenství v Liberci
+              </span>
             </h1>
             
             <p className="text-base md:text-xl text-muted-foreground leading-relaxed text-center lg:text-left">
