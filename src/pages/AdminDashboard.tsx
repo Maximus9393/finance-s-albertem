@@ -131,7 +131,11 @@ const AdminDashboard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background p-8">
+    <>
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+      <div className="min-h-screen bg-background p-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <div>
@@ -193,7 +197,7 @@ const AdminDashboard = () => {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </>
   );
 };
 
