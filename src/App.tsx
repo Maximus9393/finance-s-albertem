@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Reality from "./pages/Reality";
+import BlogHypoteka from "./pages/BlogHypoteka";
 import Auth from "./pages/Auth";
 import AdminDashboard from "./pages/AdminDashboard";
 
@@ -22,6 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/reality" element={<Reality />} />
+          <Route path="/blog/jak-se-pripravit-na-hypoteku" element={<BlogHypoteka />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/admin" element={<AdminDashboard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
