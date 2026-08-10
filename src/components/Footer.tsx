@@ -46,9 +46,9 @@ const Footer = memo(() => {
           <div>
             <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-6">Moje služby</h4>
             <ul className="space-y-2 md:space-y-3">
-              <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Pojištění</a></li>
-              <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Investice</a></li>
-              <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Hypotéky</a></li>
+              <li><a href="/pojisteni-liberec" className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Pojištění Liberec</a></li>
+              <li><a href="/investice-liberec" className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Investice Liberec</a></li>
+              <li><a href="/hypoteky-liberec" className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Hypotéky Liberec</a></li>
               <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Finanční plánování</a></li>
               <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Spoření</a></li>
             </ul>
