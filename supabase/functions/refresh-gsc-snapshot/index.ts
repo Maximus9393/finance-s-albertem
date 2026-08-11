@@ -171,14 +171,20 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    const serviceClient = createClient(env.SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY, {
-      auth: { persistSession: false },
+    const userClient = createClient(env.SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY, {
+      auth: {
+        persistSession: false,
+        autoRefreshToken: false,
+      },
+      global: {
+        headers: { Authorization: `Bearer ${jwt}` },
+      },
     });
 
     const today = new Date().toISOString().split("T")[0];
 
     // For manual refresh, delete existing snapshots for today
-    await serviceClient.from("gsc_snapshots").delete().eq("snapshot_date", today);
+    await userClient.from("gsc_snapshots").delete().eq("snapshot_date", today);
 
     // Fetch site summary
     const summaryRows = await queryGsc([], 1, env);
@@ -237,7 +243,7 @@ const handler = async (req: Request): Promise<Response> => {
       })),
     ];
 
-    const { error } = await serviceClient.from("gsc_snapshots").insert(inserts);
+    const { error } = await userClient.from("gsc_snapshots").insert(inserts);
     if (error) throw error;
 
     return new Response(
