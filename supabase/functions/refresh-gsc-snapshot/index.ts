@@ -138,28 +138,47 @@ const handler = async (req: Request): Promise<Response> => {
       throw new Error("Missing Supabase credentials");
     }
 
-    const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY, {
+    const authHeader = req.headers.get("authorization");
+    const jwt = authHeader?.replace("Bearer ", "");
+    if (!jwt) {
+      return new Response(
+        JSON.stringify({ success: false, error: "Unauthorized" }),
+        { status: 401, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    const authClient = createClient(env.SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY, {
+      auth: { persistSession: false },
+    });
+
+    const { data: userData, error: userError } = await authClient.auth.getUser(jwt);
+    if (userError || !userData.user) {
+      return new Response(
+        JSON.stringify({ success: false, error: "Invalid token" }),
+        { status: 401, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    const { data: isAdmin, error: roleError } = await authClient.rpc("has_role", {
+      _user_id: userData.user.id,
+      _role: "admin",
+    });
+
+    if (roleError || !isAdmin) {
+      return new Response(
+        JSON.stringify({ success: false, error: "Forbidden" }),
+        { status: 403, headers: { "Content-Type": "application/json", ...corsHeaders } }
+      );
+    }
+
+    const serviceClient = createClient(env.SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY, {
       auth: { persistSession: false },
     });
 
     const today = new Date().toISOString().split("T")[0];
 
-    // Prevent duplicate snapshots for the same day
-    const { data: existing } = await supabase
-      .from("gsc_snapshots")
-      .select("id")
-      .eq("snapshot_date", today)
-      .limit(1);
-
-    if (existing && existing.length > 0 && req.method !== "POST") {
-      // For manual refresh, delete existing snapshots for today
-      await supabase.from("gsc_snapshots").delete().eq("snapshot_date", today);
-    } else if (existing && existing.length > 0) {
-      return new Response(
-        JSON.stringify({ success: true, message: "Snapshot for today already exists", refreshedAt: new Date().toISOString() }),
-        { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
-      );
-    }
+    // For manual refresh, delete existing snapshots for today
+    await serviceClient.from("gsc_snapshots").delete().eq("snapshot_date", today);
 
     // Fetch site summary
     const summaryRows = await queryGsc([], 1, env);
@@ -218,7 +237,7 @@ const handler = async (req: Request): Promise<Response> => {
       })),
     ];
 
-    const { error } = await supabase.from("gsc_snapshots").insert(inserts);
+    const { error } = await serviceClient.from("gsc_snapshots").insert(inserts);
     if (error) throw error;
 
     return new Response(
