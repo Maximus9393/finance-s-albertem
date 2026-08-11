@@ -128,13 +128,13 @@ const handler = async (req: Request): Promise<Response> => {
       LOVABLE_API_KEY: Deno.env.get("LOVABLE_API_KEY"),
       GOOGLE_SEARCH_CONSOLE_API_KEY: Deno.env.get("GOOGLE_SEARCH_CONSOLE_API_KEY"),
       SUPABASE_URL: Deno.env.get("SUPABASE_URL"),
-      SUPABASE_SERVICE_ROLE_KEY: Deno.env.get("SUPABASE_SERVICE_ROLE_KEY"),
+      SUPABASE_ANON_KEY: Deno.env.get("SUPABASE_ANON_KEY"),
     };
 
     if (!env.LOVABLE_API_KEY || !env.GOOGLE_SEARCH_CONSOLE_API_KEY) {
       throw new Error("Missing Search Console gateway credentials");
     }
-    if (!env.SUPABASE_URL || !env.SUPABASE_SERVICE_ROLE_KEY) {
+    if (!env.SUPABASE_URL || !env.SUPABASE_ANON_KEY) {
       throw new Error("Missing Supabase credentials");
     }
 
