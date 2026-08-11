@@ -150,7 +150,7 @@ const AdminDashboard = () => {
         .limit(2000);
 
       if (error) throw error;
-      setSnapshots(data || []);
+      setSnapshots((data || []) as GscSnapshot[]);
       if (data && data.length > 0) {
         setLastRefresh(data[0].snapshot_date);
       }
