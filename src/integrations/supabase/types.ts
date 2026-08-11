@@ -50,6 +50,45 @@ export type Database = {
         }
         Relationships: []
       }
+      gsc_snapshots: {
+        Row: {
+          clicks: number
+          created_at: string
+          ctr: number
+          dimension_type: string
+          dimension_value: string
+          id: string
+          impressions: number
+          position: number
+          site_url: string
+          snapshot_date: string
+        }
+        Insert: {
+          clicks?: number
+          created_at?: string
+          ctr?: number
+          dimension_type: string
+          dimension_value: string
+          id?: string
+          impressions?: number
+          position?: number
+          site_url?: string
+          snapshot_date?: string
+        }
+        Update: {
+          clicks?: number
+          created_at?: string
+          ctr?: number
+          dimension_type?: string
+          dimension_value?: string
+          id?: string
+          impressions?: number
+          position?: number
+          site_url?: string
+          snapshot_date?: string
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string
