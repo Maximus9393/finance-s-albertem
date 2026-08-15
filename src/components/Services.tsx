@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { Shield, TrendingUp, Home, Calculator, FileText, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -9,30 +9,35 @@ const services = [
     title: "Úvěry",
     description: "Rychlé řešení pro vaše potřeby",
     features: ["Spotřebitelské úvěry", "Úvěr s dotacemi", "Refinancování", "Výhodné podmínky", "Poradenství při výběru úvěru"],
-    gradient: "from-orange-500/10 to-orange-600/10"
+    gradient: "from-orange-500/10 to-orange-600/10",
+    link: null as string | null,
   },
   {
     icon: Shield,
     title: "Pojištění",
     description: "Komplexní ochrana vás a vaší rodiny",
     features: ["Životní pojištění", "Pojištění vozidel", "Majetkové pojištění", "Pojištění odpovědnosti", "Cestovní pojištění"],
-    gradient: "from-blue-500/10 to-blue-600/10"
+    gradient: "from-blue-500/10 to-blue-600/10",
+    link: "/pojisteni-liberec",
   },
   {
     icon: TrendingUp,
     title: "Investice",
     description: "Růst vašeho kapitálu do budoucnosti",
     features: ["Jednorázové investování", "Pravidelné investování", "Renta k důchodu", "Investice pro náročné", "Správa majetku a portfolia"],
-    gradient: "from-green-500/10 to-green-600/10"
+    gradient: "from-green-500/10 to-green-600/10",
+    link: "/investice-liberec",
   },
   {
     icon: Home,
     title: "Hypotéky",
     description: "Cesta k vašemu vlastnímu bydlení",
     features: ["Hypoteční kalkulace", "Refinancování", "Pomoc s vyřízením", "Výhodné úrokové sazby", "Poradenství při výběru hypotéky"],
-    gradient: "from-purple-500/10 to-purple-600/10"
+    gradient: "from-purple-500/10 to-purple-600/10",
+    link: "/hypoteky-liberec",
   }
 ];
+
 
 const Services = memo(() => {
   const navigate = useNavigate();
@@ -88,13 +93,24 @@ const Services = memo(() => {
                 ))}
               </ul>
               
-              <Button 
-                variant="secondary" 
-                className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300 mt-auto text-sm md:text-base py-2.5" 
-                onClick={scrollToContact}
-              >
-                Zjistit více
-              </Button>
+              {service.link ? (
+                <Button
+                  asChild
+                  variant="secondary"
+                  className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300 mt-auto text-sm md:text-base py-2.5"
+                >
+                  <Link to={service.link}>{service.title} Liberec – více</Link>
+                </Button>
+              ) : (
+                <Button 
+                  variant="secondary" 
+                  className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300 mt-auto text-sm md:text-base py-2.5" 
+                  onClick={scrollToContact}
+                >
+                  Zjistit více
+                </Button>
+              )}
+
             </div>
           ))}
         </div>
