@@ -112,9 +112,19 @@ const Header = () => {
               <button onClick={() => scrollToSection('faq')} className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 py-3 px-4 rounded-lg text-lg">
                 FAQ
               </button>
+              <Link to="/hypoteky-liberec" onClick={() => setIsMenuOpen(false)} className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 py-3 px-4 rounded-lg text-lg">
+                Hypotéky Liberec
+              </Link>
+              <Link to="/pojisteni-liberec" onClick={() => setIsMenuOpen(false)} className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 py-3 px-4 rounded-lg text-lg">
+                Pojištění Liberec
+              </Link>
+              <Link to="/investice-liberec" onClick={() => setIsMenuOpen(false)} className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 py-3 px-4 rounded-lg text-lg">
+                Investice Liberec
+              </Link>
               <Link to="/reality" onClick={() => setIsMenuOpen(false)} className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 py-3 px-4 rounded-lg text-lg">
                 Reality
               </Link>
+
               <button onClick={() => scrollToSection('contact')} className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 py-3 px-4 rounded-lg text-lg">
                 Kontakt
               </button>
