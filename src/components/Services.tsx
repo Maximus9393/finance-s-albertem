@@ -93,13 +93,24 @@ const Services = memo(() => {
                 ))}
               </ul>
               
-              <Button 
-                variant="secondary" 
-                className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300 mt-auto text-sm md:text-base py-2.5" 
-                onClick={scrollToContact}
-              >
-                Zjistit více
-              </Button>
+              {service.link ? (
+                <Button
+                  asChild
+                  variant="secondary"
+                  className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300 mt-auto text-sm md:text-base py-2.5"
+                >
+                  <Link to={service.link}>{service.title} Liberec – více</Link>
+                </Button>
+              ) : (
+                <Button 
+                  variant="secondary" 
+                  className="w-full bg-pink-800 text-white border-pink-800 hover:bg-pink-900 hover:text-white transition-all duration-300 mt-auto text-sm md:text-base py-2.5" 
+                  onClick={scrollToContact}
+                >
+                  Zjistit více
+                </Button>
+              )}
+
             </div>
           ))}
         </div>
