@@ -180,3 +180,125 @@ export const investiceLiberec: ServiceLandingContent = {
     { to: "/blog/jak-se-pripravit-na-hypoteku", label: "Jak se připravit na hypotéku" },
   ],
 };
+
+export const refinancovaniHypotekyLiberec: ServiceLandingContent = {
+  slug: "/refinancovani-hypoteky-liberec",
+  title: "Refinancování hypotéky Liberec – ušetřete na splátce | 4fin",
+  description:
+    "Končí vám fixace? Refinancování hypotéky v Liberci: porovnám nabídky bank, spočítám úsporu na splátce a vyřídím převod za vás. Konzultace zdarma.",
+  keywords:
+    "refinancování hypotéky Liberec, konec fixace hypotéky, převod hypotéky k jiné bance, snížení splátky hypotéky, hypoteční poradce Liberec",
+  h1: "Refinancování hypotéky v Liberci",
+  h1Highlight: "bez papírování na vaší straně",
+  serviceName: "Refinancování hypotéky Liberec",
+  intro:
+    "Konec fixace je jediný moment, kdy můžete hypotéku změnit bez sankcí. Přepočítám vaši stávající smlouvu, porovnám ji s aktuálními nabídkami bank a řeknu vám na koruny, kolik můžete ušetřit.",
+  sections: [
+    {
+      heading: "Jak refinancování probíhá",
+      paragraphs: [
+        "Ideální je začít tři až čtyři měsíce před koncem fixace. Máme tak dost času porovnat trh, vyjednat sazbu a stihnout převod bez jediné dražší splátky.",
+      ],
+      bullets: [
+        "Kontrola vaší současné smlouvy, sazby a data konce fixace",
+        "Porovnání nabídek bank včetně poplatků za odhad a vedení účtu",
+        "Vyjednání lepší sazby i u vaší stávající banky",
+        "Kompletní vyřízení převodu a nové zástavní dokumentace",
+      ],
+    },
+    {
+      heading: "Kolik se dá reálně ušetřit",
+      paragraphs: [
+        "Rozdíl půl procenta na sazbě znamená u hypotéky tři miliony korun úsporu ve tisících ročně. K tomu se často dá zkrátit splatnost nebo naopak snížit splátka, když potřebujete uvolnit rozpočet.",
+      ],
+    },
+    {
+      heading: "Refinancování a navýšení hypotéky",
+      paragraphs: [
+        "Při refinancování se dá hypotéku zároveň navýšit – například na rekonstrukci. Vyjde to výrazně levněji než spotřebitelský úvěr a řešíte jen jednu splátku.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Kdy začít řešit refinancování?",
+      a: "Tři až čtyři měsíce před koncem fixace. Banka vám obvykle pošle nabídku nové sazby a v té chvíli je nejlepší čas ji porovnat s trhem.",
+    },
+    {
+      q: "Kolik refinancování stojí?",
+      a: "Na konci fixace je převod k jiné bance zdarma. Nová banka většinou hradí i odhad nemovitosti, mé poradenství je pro vás bez poplatku.",
+    },
+    {
+      q: "Mohu refinancovat i uprostřed fixace?",
+      a: "Ano, ale banka může účtovat náhradu nákladů. Vždy nejdřív spočítám, zda úspora tuto sankci převáží.",
+    },
+    {
+      q: "Zůstane mi stejná splatnost?",
+      a: "Nemusí. Podle vašich cílů lze splatnost zkrátit a ušetřit na úrocích, nebo prodloužit a snížit měsíční splátku.",
+    },
+  ],
+  related: [
+    { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
+    { to: "/blog/jak-se-pripravit-na-hypoteku", label: "Jak se připravit na hypotéku" },
+    { to: "/zivotni-pojisteni-liberec", label: "Životní pojištění Liberec" },
+  ],
+};
+
+export const zivotniPojisteniLiberec: ServiceLandingContent = {
+  slug: "/zivotni-pojisteni-liberec",
+  title: "Životní pojištění Liberec – nastavení podle rizik | 4fin",
+  description:
+    "Životní a rizikové pojištění v Liberci. Nastavím krytí podle vašich příjmů a hypotéky, zrevidujeme starou smlouvu a pomůžu i s pojistnou událostí.",
+  keywords:
+    "životní pojištění Liberec, rizikové životní pojištění, pojištění k hypotéce Liberec, revize životního pojištění, pojištění invalidity",
+  h1: "Životní pojištění v Liberci",
+  h1Highlight: "nastavené podle skutečných rizik",
+  serviceName: "Životní pojištění Liberec",
+  intro:
+    "Životní pojištění má chránit rozpočet vaší rodiny, když vypadne váš příjem. Nastavím krytí podle toho, co reálně hrozí – invalidita, dlouhá pracovní neschopnost, vážná nemoc – a ne podle toho, co se právě prodává.",
+  sections: [
+    {
+      heading: "Rizika, která řeším nejdřív",
+      paragraphs: [
+        "Nejdražší rizika nejsou ta nejpravděpodobnější, ale ta, která by vás finančně položila. Podle toho stavíme pojistné částky.",
+      ],
+      bullets: [
+        "Invalidita a trvalé následky úrazu",
+        "Vážná onemocnění a dlouhodobá pracovní neschopnost",
+        "Krytí zůstatku hypotéky pro případ úmrtí živitele",
+        "Pojištění dětí a jejich úrazů",
+      ],
+    },
+    {
+      heading: "Revize starých smluv",
+      paragraphs: [
+        "Smlouvy z dřívějších let často míchají spoření s pojištěním a mají nízké pojistné částky. Přepočítám je a ukážu vám, kolik krytí za stejné peníze získáte dnes.",
+      ],
+    },
+    {
+      heading: "Pomoc při pojistné události",
+      paragraphs: [
+        "Hlášení škody a jednání s pojišťovnou vedu za vás. Právě v této chvíli se pozná, jestli byla smlouva nastavená dobře – a jestli máte poradce, nebo jen srovnávač.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Jak vysoké krytí potřebuji?",
+      a: "U invalidity se orientačně vychází z několika ročních příjmů plus zůstatku hypotéky. Přesnou částku spočítáme podle vašich závazků a rodinné situace.",
+    },
+    {
+      q: "Je lepší rizikové, nebo investiční životní pojištění?",
+      a: "Pro většinu klientů doporučuji čistě rizikové pojištění a investovat samostatně. Vyjde to transparentněji a obvykle i výhodněji.",
+    },
+    {
+      q: "Vyžaduje banka pojištění k hypotéce?",
+      a: "Pojištění nemovitosti ano, životní pojištění zpravidla jen doporučuje – u vysokých hypoték ale bývá podmínkou pro lepší sazbu.",
+    },
+  ],
+  related: [
+    { to: "/pojisteni-liberec", label: "Pojištění Liberec" },
+    { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
+    { to: "/investice-liberec", label: "Investice Liberec" },
+  ],
+};
