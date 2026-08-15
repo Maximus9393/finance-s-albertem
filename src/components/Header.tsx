@@ -58,9 +58,16 @@ const Header = () => {
             <button onClick={() => scrollToSection('faq')} className="text-foreground hover:text-primary transition-colors duration-300">
               FAQ
             </button>
+            <Link to="/hypoteky-liberec" className="text-foreground hover:text-primary transition-colors duration-300">
+              Hypotéky
+            </Link>
+            <Link to="/pojisteni-liberec" className="text-foreground hover:text-primary transition-colors duration-300">
+              Pojištění
+            </Link>
             <Link to="/reality" className="text-foreground hover:text-primary transition-colors duration-300">
               Reality
             </Link>
+
             <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors duration-300">
               Kontakt
             </button>
