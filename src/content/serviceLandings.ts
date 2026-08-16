@@ -57,9 +57,9 @@ export const hypotekyLiberec: ServiceLandingContent = {
     },
   ],
   related: [
+    { to: "/refinancovani-hypoteky-liberec", label: "Refinancování hypotéky Liberec" },
     { to: "/blog/jak-se-pripravit-na-hypoteku", label: "Jak se připravit na hypotéku" },
     { to: "/reality", label: "Reality a nemovitosti" },
-    { to: "/pojisteni-liberec", label: "Pojištění Liberec" },
   ],
 };
 
@@ -116,9 +116,9 @@ export const pojisteniLiberec: ServiceLandingContent = {
     },
   ],
   related: [
+    { to: "/zivotni-pojisteni-liberec", label: "Životní pojištění Liberec" },
     { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
     { to: "/investice-liberec", label: "Investice Liberec" },
-    { to: "/reality", label: "Reality a nemovitosti" },
   ],
 };
 
