@@ -49,8 +49,6 @@ const Footer = memo(() => {
               <li><a href="/pojisteni-liberec" className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Pojištění Liberec</a></li>
               <li><a href="/investice-liberec" className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Investice Liberec</a></li>
               <li><a href="/hypoteky-liberec" className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Hypotéky Liberec</a></li>
-              <li><a href="/refinancovani-hypoteky-liberec" className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Refinancování hypotéky Liberec</a></li>
-              <li><a href="/zivotni-pojisteni-liberec" className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Životní pojištění Liberec</a></li>
               <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Finanční plánování</a></li>
               <li><a href={createLink("#services")} className="text-background/80 hover:text-primary transition-colors text-sm md:text-base">Spoření</a></li>
             </ul>
