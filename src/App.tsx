@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound";
 import Reality from "./pages/Reality";
 import BlogHypoteka from "./pages/BlogHypoteka";
 import ServiceLanding from "./pages/ServiceLanding";
-import { hypotekyLiberec, pojisteniLiberec, investiceLiberec } from "./content/serviceLandings";
+import { hypotekyLiberec, pojisteniLiberec, investiceLiberec, refinancovaniHypotekyLiberec, zivotniPojisteniLiberec } from "./content/serviceLandings";
 import Auth from "./pages/Auth";
 import AdminDashboard from "./pages/AdminDashboard";
 
@@ -29,6 +29,8 @@ const App = () => (
           <Route path="/hypoteky-liberec" element={<ServiceLanding content={hypotekyLiberec} />} />
           <Route path="/pojisteni-liberec" element={<ServiceLanding content={pojisteniLiberec} />} />
           <Route path="/investice-liberec" element={<ServiceLanding content={investiceLiberec} />} />
+          <Route path="/refinancovani-hypoteky-liberec" element={<ServiceLanding content={refinancovaniHypotekyLiberec} />} />
+          <Route path="/zivotni-pojisteni-liberec" element={<ServiceLanding content={zivotniPojisteniLiberec} />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/admin" element={<AdminDashboard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
