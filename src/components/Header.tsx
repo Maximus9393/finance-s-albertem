@@ -46,9 +46,20 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors duration-300">O mně</button>
-            <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors duration-300">
-              Služby
-            </button>
+            <div className="relative group">
+              <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors duration-300" aria-haspopup="true">
+                Služby
+              </button>
+              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
+                <div className="min-w-[240px] rounded-xl border border-border bg-background/98 backdrop-blur-sm shadow-elegant p-2">
+                  {serviceLinks.map((item) => (
+                    <Link key={item.to} to={item.to} className="block px-3 py-2 rounded-lg text-sm text-foreground hover:text-primary hover:bg-primary/10 transition-colors duration-200">
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
             <button onClick={() => scrollToSection('cooperation')} className="text-foreground hover:text-primary transition-colors duration-300">
               Spolupráce
             </button>
@@ -65,6 +76,7 @@ const Header = () => {
               Kontakt
             </button>
           </nav>
+
 
           <div className="hidden md:flex items-center space-x-3">
             <Button variant="cta" onClick={() => scrollToSection('contact')} className="animate-scale-in">
