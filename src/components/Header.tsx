@@ -3,6 +3,15 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { LogIn } from "lucide-react";
 import logo4fin from "@/assets/4fin-logo.png";
+const serviceLinks = [
+  { to: "/financni-poradce-liberec", label: "Finanční poradce Liberec" },
+  { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
+  { to: "/pojisteni-liberec", label: "Pojištění Liberec" },
+  { to: "/investice-liberec", label: "Investice Liberec" },
+  { to: "/uvery-liberec", label: "Úvěry Liberec" },
+  { to: "/blog/jak-se-pripravit-na-hypoteku", label: "Jak se připravit na hypotéku" },
+];
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,9 +55,20 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <button onClick={() => scrollToSection('about')} className="text-foreground hover:text-primary transition-colors duration-300">O mně</button>
-            <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors duration-300">
-              Služby
-            </button>
+            <div className="relative group">
+              <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors duration-300" aria-haspopup="true">
+                Služby
+              </button>
+              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
+                <div className="min-w-[240px] rounded-xl border border-border bg-background/98 backdrop-blur-sm shadow-elegant p-2">
+                  {serviceLinks.map((item) => (
+                    <Link key={item.to} to={item.to} className="block px-3 py-2 rounded-lg text-sm text-foreground hover:text-primary hover:bg-primary/10 transition-colors duration-200">
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
             <button onClick={() => scrollToSection('cooperation')} className="text-foreground hover:text-primary transition-colors duration-300">
               Spolupráce
             </button>
@@ -65,6 +85,7 @@ const Header = () => {
               Kontakt
             </button>
           </nav>
+
 
           <div className="hidden md:flex items-center space-x-3">
             <Button variant="cta" onClick={() => scrollToSection('contact')} className="animate-scale-in">
@@ -96,6 +117,13 @@ const Header = () => {
               <button onClick={() => scrollToSection('services')} className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 py-3 px-4 rounded-lg text-lg">
                 Služby
               </button>
+              <div className="flex flex-col border-l border-border/60 ml-6 pl-2">
+                {serviceLinks.map((item) => (
+                  <Link key={item.to} to={item.to} onClick={() => setIsMenuOpen(false)} className="text-left text-muted-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 py-2 px-3 rounded-lg text-base">
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
               <button onClick={() => scrollToSection('cooperation')} className="text-left text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 py-3 px-4 rounded-lg text-lg">
                 Spolupráce
               </button>

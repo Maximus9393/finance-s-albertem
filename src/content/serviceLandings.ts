@@ -180,3 +180,133 @@ export const investiceLiberec: ServiceLandingContent = {
     { to: "/blog/jak-se-pripravit-na-hypoteku", label: "Jak se připravit na hypotéku" },
   ],
 };
+
+export const uveryLiberec: ServiceLandingContent = {
+  slug: "/uvery-liberec",
+  title: "Úvěry Liberec – spotřebitelský úvěr a refinancování | 4fin",
+  description:
+    "Úvěry v Liberci s nezávislým poradcem. Porovnám nabídky bank, spojím drahé půjčky do jedné splátky a spočítám, kolik měsíčně ušetříte. Konzultace zdarma.",
+  keywords:
+    "úvěry Liberec, spotřebitelský úvěr Liberec, konsolidace půjček Liberec, refinancování úvěru Liberec, půjčka Liberec poradce",
+  h1: "Úvěry v Liberci",
+  h1Highlight: "bez drahých překvapení",
+  serviceName: "Úvěry Liberec",
+  intro:
+    "Potřebujete peníze na rekonstrukci, auto nebo chcete spojit několik splátek do jedné? Projdu s vámi nabídky bank i nebankovních poskytovatelů a doporučím jen to, co má pro vaši situaci smysl.",
+  sections: [
+    {
+      heading: "S čím vám u úvěrů pomůžu",
+      paragraphs: [
+        "U úvěru rozhoduje víc než jen reklamní sazba – důležitá je RPSN, možnost předčasného splacení a pojištění schopnosti splácet. Všechno si spolu projdeme ještě před podpisem.",
+      ],
+      bullets: [
+        "Spotřebitelské úvěry na rekonstrukci, auto i vybavení domácnosti",
+        "Konsolidace více půjček do jedné nižší splátky",
+        "Refinancování stávajícího úvěru za lepší sazbu",
+        "Úvěry se státní podporou a dotačními programy na bydlení",
+      ],
+    },
+    {
+      heading: "Konsolidace: jedna splátka místo pěti",
+      paragraphs: [
+        "Když platíte kreditní kartu, kontokorent a dvě půjčky, obvykle jde měsíční zatížení výrazně snížit. Spočítám vám úsporu na konkrétních číslech a vyřídím převod závazků za vás.",
+      ],
+    },
+    {
+      heading: "Kdy úvěr nedoporučím",
+      paragraphs: [
+        "Někdy je lepší cesta úprava rozpočtu, čerpání z rezervy nebo dočerpání hypotéky. Pokud je to váš případ, řeknu vám to na rovinu – dlouhodobá spolupráce je pro mě důležitější než jedna smlouva.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Jak rychle mohu mít úvěr schválený?",
+      a: "U spotřebitelských úvěrů bývá schválení otázkou jednoho až tří pracovních dnů, pokud máte doklady o příjmu připravené. Peníze pak přijdou na účet obvykle do 24 hodin od podpisu.",
+    },
+    {
+      q: "Vyplatí se refinancovat i menší úvěr?",
+      a: "Záleží na zbývající částce, sazbě a době splácení. Propočet vám udělám zdarma a doporučím změnu jen tehdy, když reálně ušetříte.",
+    },
+    {
+      q: "Pracujete i s klienty se záznamem v registru?",
+      a: "Ano, situaci vždy nejdřív posoudím. U zápisů v registrech je řešení individuální a někdy je prvním krokem konsolidace nebo úprava rozpočtu, ne nová půjčka.",
+    },
+  ],
+  related: [
+    { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
+    { to: "/financni-poradce-liberec", label: "Finanční poradce Liberec" },
+    { to: "/pojisteni-liberec", label: "Pojištění Liberec" },
+  ],
+};
+
+export const financniPoradceLiberec: ServiceLandingContent = {
+  slug: "/financni-poradce-liberec",
+  title: "Finanční poradce Liberec – Albert Gurdžjan | 4fin",
+  description:
+    "Finanční poradce v Liberci. Komplexní analýza financí, hypotéky, pojištění, investice i reality na jednom místě. První konzultace nezávazně a zdarma.",
+  keywords:
+    "finanční poradce Liberec, finanční poradenství Liberec, finanční plán Liberec, nezávislý poradce Liberec, analýza financí Liberec",
+  h1: "Finanční poradce v Liberci",
+  h1Highlight: "pro celou vaši rodinu",
+  serviceName: "Finanční poradce Liberec",
+  intro:
+    "Jmenuji se Albert Gurdžjan a pomáhám lidem v Liberci a Libereckém kraji srovnat si finance do jednoho plánu – od rezervy a pojistek přes hypotéku až po investice na penzi.",
+  sections: [
+    {
+      heading: "Jak vypadá spolupráce",
+      paragraphs: [
+        "Začínáme analýzou: co máte, co platíte a kam chcete dojít. Až potom navrhuju konkrétní kroky – v pořadí podle toho, co vám přinese největší efekt.",
+      ],
+      bullets: [
+        "Nezávazná úvodní konzultace osobně v Liberci nebo online",
+        "Analýza příjmů, výdajů, smluv a závazků",
+        "Finanční plán s prioritami na nejbližší roky",
+        "Pravidelná roční revize a úpravy podle změn v životě",
+      ],
+    },
+    {
+      heading: "Oblasti, které s klienty řeším",
+      paragraphs: [
+        "Nejčastěji jde o hypotéku a bydlení, ochranu příjmu, dlouhodobé investice a optimalizaci starých smluv. Vše řešíme na jednom místě, takže spolu jednotlivé části ladí.",
+      ],
+      bullets: [
+        "Hypotéky a refinancování",
+        "Životní, majetkové a vozové pojištění",
+        "Investice, penzijní spoření a DIP",
+        "Úvěry a konsolidace závazků",
+        "Prodej a pronájem nemovitosti se spolupracujícími makléři",
+      ],
+    },
+    {
+      heading: "Proč právě poradce a ne srovnávač",
+      paragraphs: [
+        "Online srovnávač vám ukáže cenu, ale nepomůže při pojistné události ani nevysvětlí, proč vám banka snížila hypotéku. Já jsem u toho od první schůzky až po vyřízení škody.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "Kolik stojí finanční poradenství?",
+      a: "Konzultace, analýza i příprava návrhů jsou pro vás zdarma. Odměnu dostávám od finančních institucí po sjednání produktu, takže mi neplatíte žádný honorář.",
+    },
+    {
+      q: "Kde se můžeme sejít?",
+      a: "Nejčastěji v Liberci, případně v okolí Jablonce nad Nisou. Většinu věcí zvládneme i online, pokud vám to vyhovuje víc.",
+    },
+    {
+      q: "Musím hned něco podepisovat?",
+      a: "Ne. Z první schůzky odcházíte s přehledem a doporučeními. Rozhodnutí je vždy na vás a klidně si ho můžete nechat projít hlavou.",
+    },
+    {
+      q: "Co si mám na první schůzku připravit?",
+      a: "Ideálně stávající smlouvy o pojištění, investicích a úvěrech a přehled měsíčních příjmů a výdajů. Když je nemáte po ruce, nevadí – projdeme to postupně.",
+    },
+  ],
+  related: [
+    { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
+    { to: "/pojisteni-liberec", label: "Pojištění Liberec" },
+    { to: "/investice-liberec", label: "Investice Liberec" },
+    { to: "/uvery-liberec", label: "Úvěry Liberec" },
+  ],
+};
