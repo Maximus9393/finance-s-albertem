@@ -59,10 +59,10 @@ const Header = () => {
               <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors duration-300" aria-haspopup="true">
                 Služby
               </button>
-              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200">
-                <div className="min-w-[240px] rounded-xl border border-border bg-background/98 backdrop-blur-sm shadow-elegant p-2">
-                  {serviceLinks.map((item) => (
-                    <Link key={item.to} to={item.to} className="block px-3 py-2 rounded-lg text-sm text-foreground hover:text-primary hover:bg-primary/10 transition-colors duration-200">
+              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible scale-95 -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:scale-100 group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:scale-100 group-focus-within:translate-y-0 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <div className="min-w-[260px] rounded-xl border border-border bg-background backdrop-blur-md shadow-[0_20px_50px_-12px_hsl(var(--primary)/0.25)] p-2">
+                  {serviceLinks.map((item, index) => (
+                    <Link key={item.to} to={item.to} className="block px-3 py-2.5 rounded-lg text-sm font-medium text-foreground hover:text-primary hover:bg-primary/10 transition-colors duration-200" style={{ animationDelay: `${index * 40}ms` }}>
                       {item.label}
                     </Link>
                   ))}
