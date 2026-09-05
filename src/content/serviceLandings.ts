@@ -67,14 +67,14 @@ export const pojisteniLiberec: ServiceLandingContent = {
   slug: "/pojisteni-liberec",
   title: "Pojištění Liberec – nezávislý poradce na pojistky | 4fin",
   description:
-    "Pojištění v Liberci na míru: životní, majetkové i pojištění auta. Zrevidujeme vaše stávající smlouvy a nastavíme ochranu bez zbytečných přeplatků.",
+    "Pojištění v Liberci na míru: životní, majetkové i pojištění auta. Zrevidujeme vaše smlouvy, nastavíme ochranu a při pojistné události pomůžeme ve spolupráci s EUCS.",
   keywords:
-    "pojištění Liberec, životní pojištění Liberec, pojištění nemovitosti Liberec, pojišťovací poradce Liberec, revize pojistek",
+    "pojištění Liberec, životní pojištění Liberec, pojištění nemovitosti Liberec, pojistná událost Liberec, EUCS, revize pojistek",
   h1: "Pojištění v Liberci",
   h1Highlight: "bez zbytečných přeplatků",
   serviceName: "Pojištění Liberec",
   intro:
-    "Většina lidí platí za pojistky, které si sjednala před lety a nikdy je nepřepočítala. Projdu s vámi stávající smlouvy, ukážu, kde jste nedopojištění a kde naopak platíte za něco, co nepotřebujete.",
+    "Většina lidí platí za pojistky, které si sjednala před lety a nikdy je nepřepočítala. Projdu s vámi stávající smlouvy, ukážu, kde jste nedopojištění a kde naopak platíte za něco, co nepotřebujete. A když nastane pojistná událost, pomůžu vám ji vyřídit ve spolupráci s EUCS.",
   sections: [
     {
       heading: "Co s vámi řeším nejčastěji",
@@ -83,21 +83,21 @@ export const pojisteniLiberec: ServiceLandingContent = {
       ],
       bullets: [
         "Životní a rizikové pojištění pro živitele rodiny",
-        "Pojištění nemovitosti a domácnosti včetně povinného ručení k hypotéce",
+        "Pojištění nemovitosti a domávnosti včetně povinného ručení k hypotéce",
         "Pojištění vozidel – povinné ručení i havarijní",
         "Pojištění pro podnikatele a odpovědnost za škodu",
       ],
     },
     {
-      heading: "Revize stávajících smluv",
+      heading: "Revize stávajících smlův",
       paragraphs: [
         "Přineste mi své smlouvy a já vám v přehledné tabulce ukážu, co je v nich skutečně krytí a co jen dekorace. U klientů se běžně dostaneme na lepší krytí za stejné nebo nižší pojistné.",
       ],
     },
     {
-      heading: "Pomoc při pojistné události",
+      heading: "Pomoc při pojistné události ve spolupráci s EUCS",
       paragraphs: [
-        "Když se něco stane, nezůstanete sami s formuláři. Hlášení škody a komunikaci s pojišťovnou vedu za vás – to je hlavní rozdíl mezi poradcem a srovnávačem na internetu.",
+        "Když se něco stane, nezůstanete sami s formuláři. Hlášení škody a komunikaci s pojišťovnou vedu za vás – a díky spolupráci s EUCS mám k dispozici podporu při řešení pojistných událostí, aby vše proběhlo správně a rychle.",
       ],
     },
   ],
@@ -113,6 +113,10 @@ export const pojisteniLiberec: ServiceLandingContent = {
     {
       q: "Řešíte i pojištění k hypotéce?",
       a: "Ano, pojištění nemovitosti a rizikové pojištění k hypotéce nastavuji rovnou při jejím sjednávání, aby vše ladilo s výší úvěru.",
+    },
+    {
+      q: "Co je EUCS a jak mi pomůže při pojistné události?",
+      a: "EUCS je specialista na řešení pojistných událostí. Ve spolupráci s nimi vám pomůžu správně nahlásit škodu, připravit dokumentaci a komunikovat s pojišťovnou tak, aby postup byl co nejrychlejší a nejsprávnější.",
     },
   ],
   related: [
