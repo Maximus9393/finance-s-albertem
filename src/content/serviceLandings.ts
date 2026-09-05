@@ -83,13 +83,13 @@ export const pojisteniLiberec: ServiceLandingContent = {
       ],
       bullets: [
         "Životní a rizikové pojištění pro živitele rodiny",
-        "Pojištění nemovitosti a domávnosti včetně povinného ručení k hypotéce",
+        "Pojištění nemovitosti a domácnosti včetně povinného ručení k hypotéce",
         "Pojištění vozidel – povinné ručení i havarijní",
         "Pojištění pro podnikatele a odpovědnost za škodu",
       ],
     },
     {
-      heading: "Revize stávajících smlův",
+      heading: "Revize stávajících smluv",
       paragraphs: [
         "Přineste mi své smlouvy a já vám v přehledné tabulce ukážu, co je v nich skutečně krytí a co jen dekorace. U klientů se běžně dostaneme na lepší krytí za stejné nebo nižší pojistné.",
       ],
