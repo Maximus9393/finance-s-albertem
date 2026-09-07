@@ -61,7 +61,7 @@ const Hero = memo(() => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-center lg:text-left">
               Vaše finance <span className="text-primary">s Albertem</span>
               <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-semibold mt-2">
-                Profesionální finanční poradenství v Liberci
+                Profesionální finanční poradenství v Liberci i po celé ČR
               </span>
             </h1>
             

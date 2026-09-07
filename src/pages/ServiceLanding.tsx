@@ -60,6 +60,7 @@ const ServiceLanding = ({ content }: { content: ServiceLandingContent }) => {
       },
     },
     areaServed: [
+      { "@type": "Country", name: "Česká republika" },
       { "@type": "City", name: "Liberec" },
       { "@type": "City", name: "Jablonec nad Nisou" },
       { "@type": "AdministrativeArea", name: "Liberecký kraj" },
@@ -198,10 +199,10 @@ const ServiceLanding = ({ content }: { content: ServiceLandingContent }) => {
               </ul>
               <div className="bg-card border border-border/50 rounded-2xl p-6 md:p-8 shadow-card">
                 <h2 className="text-xl md:text-2xl font-bold text-card-foreground mb-3">
-                  Domluvme si schůzku v Liberci
+                  Domluvme si schůzku v Liberci nebo online
                 </h2>
                 <p className="text-base text-muted-foreground mb-5">
-                  První konzultace je nezávazná a zdarma – osobně v Liberci nebo online.
+                  První konzultace je nezávazná a zdarma – osobně v Liberci nebo online kdekoli v ČR.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button variant="cta" size="lg" onClick={goToContact} className="w-full sm:w-auto">

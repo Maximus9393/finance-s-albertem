@@ -116,7 +116,7 @@ const Contact = () => {
             Kontaktujte <span className="text-primary">Alberta</span>
           </h2>
           <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-2">
-            Rád si s vámi promluvím o vašich finančních cílech a najdeme nejlepší řešení pro vaši situaci.
+            Rád si s vámi promluvím o vašich finančních cílech osobně v Liberci nebo online kdekoli v ČR. Najdeme nejlepší řešení pro vaši situaci.
           </p>
         </div>
 
