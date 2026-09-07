@@ -4,11 +4,11 @@ import { Link, useLocation } from "react-router-dom";
 import { LogIn } from "lucide-react";
 import logo4fin from "@/assets/4fin-logo.png";
 const serviceLinks = [
-  { to: "/financni-poradce-liberec", label: "Finanční poradce Liberec" },
-  { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
-  { to: "/pojisteni-liberec", label: "Pojištění Liberec" },
-  { to: "/investice-liberec", label: "Investice Liberec" },
-  { to: "/uvery-liberec", label: "Úvěry Liberec" },
+  { to: "/financni-poradce-liberec", label: "Finanční poradce" },
+  { to: "/hypoteky-liberec", label: "Hypotéky" },
+  { to: "/pojisteni-liberec", label: "Pojištění" },
+  { to: "/investice-liberec", label: "Investice" },
+  { to: "/uvery-liberec", label: "Úvěry" },
   { to: "/blog/jak-se-pripravit-na-hypoteku", label: "Jak se připravit na hypotéku" },
 ];
 
