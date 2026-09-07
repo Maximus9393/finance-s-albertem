@@ -29,12 +29,12 @@ const Reality = () => {
   };
   return <>
       <Helmet>
-        <title>Reality a Hypotéky v Liberci | Finance s Albertem</title>
-        <meta name="description" content="Hypotéky a realitní služby v Liberci. Spolupracuji s makléři Century 21 – kompletní servis od financování po výběr nemovitosti." />
-        <meta name="keywords" content="hypotéky, reality, nemovitosti, realitní makléř, Century 21, financování nemovitostí" />
+        <title>Reality a Hypotéky v Liberci i po celé ČR | Finance s Albertem</title>
+        <meta name="description" content="Hypotéky a realitní služby v Liberci i po celé ČR. Spolupracuji s makléři Century 21 – kompletní servis od financování po výběr nemovitosti." />
+        <meta name="keywords" content="hypotéky, reality, nemovitosti, realitní makléř, Century 21, financování nemovitostí, reality Liberec, reality ČR" />
         <link rel="canonical" href="https://financesalbertem.cz/reality" />
-        <meta property="og:title" content="Reality a Hypotéky v Liberci | Finance s Albertem" />
-        <meta property="og:description" content="Hypotéky a realitní služby v Liberci. Spolupracuji s makléři Century 21 – kompletní servis od financování po výběr nemovitosti." />
+        <meta property="og:title" content="Reality a Hypotéky v Liberci i po celé ČR | Finance s Albertem" />
+        <meta property="og:description" content="Hypotéky a realitní služby v Liberci i po celé ČR. Spolupracuji s makléři Century 21 – kompletní servis od financování po výběr nemovitosti." />
         <meta property="og:url" content="https://financesalbertem.cz/reality" />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -49,7 +49,7 @@ const Reality = () => {
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-4xl mx-auto text-center animate-fade-in">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
-                  Reality a <span className="text-primary">Hypotéky</span>
+                  Reality a <span className="text-primary">Hypotéky</span> v Liberci i po celé ČR
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto px-2">Uvažujete o prodeji nebo pronájmu Vaší nemovitosti? Ozvěte se mi a můj kolega se o Vás postará.</p>
                 <Button variant="cta" size="lg" onClick={navigateToContact} className="animate-scale-in text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full sm:w-auto">

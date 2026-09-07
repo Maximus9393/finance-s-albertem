@@ -2,16 +2,16 @@ import type { ServiceLandingContent } from "@/pages/ServiceLanding";
 
 export const hypotekyLiberec: ServiceLandingContent = {
   slug: "/hypoteky-liberec",
-  title: "Hypotéky Liberec – poradce pro hypoteční úvěr | 4fin",
+  title: "Hypotéky Liberec i ČR – poradce pro hypoteční úvěr | 4fin",
   description:
-    "Hypotéky v Liberci s osobním poradcem. Porovnám nabídky bank, spočítám splátku i refinancování a provedu vás celým procesem. Konzultace zdarma.",
+    "Hypotéky v Liberci i po celé ČR s osobním poradcem. Porovnám nabídky bank, spočítám splátku i refinancování a provedu vás celým procesem. Konzultace zdarma.",
   keywords:
-    "hypotéky Liberec, hypoteční poradce Liberec, refinancování hypotéky Liberec, hypotéka na byt Liberec, úvěr na nemovitost Liberec",
-  h1: "Hypotéky v Liberci",
+    "hypotéky Liberec, hypotéky ČR, hypoteční poradce Liberec, hypoteční poradce ČR, refinancování hypotéky Liberec, refinancování hypotéky ČR, hypotéka na byt Liberec, úvěr na nemovitost Liberec, úvěr na nemovitost ČR",
+  h1: "Hypotéky v Liberci i po celé ČR",
   h1Highlight: "s poradcem po vašem boku",
-  serviceName: "Hypotéky Liberec",
+  serviceName: "Hypotéky",
   intro:
-    "Jmenuji se Albert Gurdžjan a pomáhám lidem v Liberci a okolí získat hypotéku za podmínek, které jim skutečně vyhovují. Porovnám nabídky bank, připravím podklady a jednám za vás – vy si tak ušetříte obíhání přepážek.",
+    "Jmenuji se Albert Gurdžjan a pomáhám klientům v Liberci i po celé ČR získat hypotéku za podmínek, které jim skutečně vyhovují. Porovnám nabídky bank, připravím podklady a jednám za vás – online nebo osobně.",
   sections: [
     {
       heading: "Jak vybírám hypotéku pro klienty",
@@ -34,7 +34,7 @@ export const hypotekyLiberec: ServiceLandingContent = {
     {
       heading: "Hypotéka a nemovitost pod jednou střechou",
       paragraphs: [
-        "Kupujete nebo prodáváte nemovitost? Spolupracuji s realitními makléři v Liberci, takže financování i samotný obchod běží ruku v ruce a nemusíte to koordinovat sami.",
+        "Kupujete nebo prodáváte nemovitost? Spolupracuji s realitními makléři v Liberci i po celé ČR, takže financování i samotný obchod běží ruku v ruce a nemusíte to koordinovat sami.",
       ],
     },
   ],
@@ -53,28 +53,28 @@ export const hypotekyLiberec: ServiceLandingContent = {
     },
     {
       q: "Jde hypotéku sjednat i online?",
-      a: "Ano. Většinu kroků zvládneme online či telefonicky, osobní schůzku v Liberci si domluvíme jen tam, kde má opravdu smysl.",
+      a: "Ano. Většinu kroků zvládneme online či telefonicky, osobní schůzku si domluvíme v Liberci nebo jinde po dohodě, pokud to dává smysl.",
     },
   ],
   related: [
     { to: "/blog/jak-se-pripravit-na-hypoteku", label: "Jak se připravit na hypotéku" },
     { to: "/reality", label: "Reality a nemovitosti" },
-    { to: "/pojisteni-liberec", label: "Pojištění Liberec" },
+    { to: "/pojisteni-liberec", label: "Pojištění" },
   ],
 };
 
 export const pojisteniLiberec: ServiceLandingContent = {
   slug: "/pojisteni-liberec",
-  title: "Pojištění Liberec – nezávislý poradce na pojistky | 4fin",
+  title: "Pojištění Liberec i ČR – nezávislý poradce na pojistky | 4fin",
   description:
-    "Pojištění v Liberci na míru: životní, majetkové i pojištění auta. Zrevidujeme vaše smlouvy, nastavíme ochranu a při pojistné události pomůžeme ve spolupráci s EUCS.",
+    "Pojištění v Liberci i po celé ČR na míru: životní, majetkové i pojištění auta. Zrevidujeme vaše smlouvy, nastavíme ochranu a při pojistné události pomůžeme ve spolupráci s EUCS.",
   keywords:
-    "pojištění Liberec, životní pojištění Liberec, pojištění nemovitosti Liberec, pojistná událost Liberec, EUCS, revize pojistek",
-  h1: "Pojištění v Liberci",
+    "pojištění Liberec, pojištění ČR, životní pojištění Liberec, životní pojištění ČR, pojištění nemovitosti Liberec, pojištění nemovitosti ČR, pojistná událost Liberec, pojistná událost ČR, EUCS, revize pojistek",
+  h1: "Pojištění v Liberci i po celé ČR",
   h1Highlight: "bez zbytečných přeplatků",
-  serviceName: "Pojištění Liberec",
+  serviceName: "Pojištění",
   intro:
-    "Většina lidí platí za pojistky, které si sjednala před lety a nikdy je nepřepočítala. Projdu s vámi stávající smlouvy, ukážu, kde jste nedopojištění a kde naopak platíte za něco, co nepotřebujete. A když nastane pojistná událost, pomůžu vám ji vyřídit ve spolupráci s EUCS.",
+    "Většina lidí platí za pojistky, které si sjednala před lety a nikdy je nepřepočítala. Projdu s vámi stávající smlouvy, ukážu, kde jste nedopojištění a kde naopak platíte za něco, co nepotřebujete. A když nastane pojistná událost, pomůžu vám ji vyřídit ve spolupráci s EUCS – osobně v Liberci nebo online kdekoli v ČR.",
   sections: [
     {
       heading: "Co s vámi řeším nejčastěji",
@@ -97,7 +97,7 @@ export const pojisteniLiberec: ServiceLandingContent = {
     {
       heading: "Pomoc při pojistné události ve spolupráci s EUCS",
       paragraphs: [
-        "Když se něco stane, nezůstanete sami s formuláři. Hlášení škody a komunikaci s pojišťovnou vedu za vás – a díky spolupráci s EUCS mám k dispozici podporu při řešení pojistných událostí, aby vše proběhlo správně a rychle.",
+        "Když se něco stane, nezůstanete sami s formuláři. Hlášení škody a komunikaci s pojišťovnou vedu za vás – a díky spolupráci s EUCS mám k dispozici podporu při řešení pojistných událostí, aby vše proběhlo správně a rychle. Funguji v Liberci i po celé ČR.",
       ],
     },
   ],
@@ -120,24 +120,24 @@ export const pojisteniLiberec: ServiceLandingContent = {
     },
   ],
   related: [
-    { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
-    { to: "/investice-liberec", label: "Investice Liberec" },
+    { to: "/hypoteky-liberec", label: "Hypotéky" },
+    { to: "/investice-liberec", label: "Investice" },
     { to: "/reality", label: "Reality a nemovitosti" },
   ],
 };
 
 export const investiceLiberec: ServiceLandingContent = {
   slug: "/investice-liberec",
-  title: "Investice Liberec – investiční poradce a spoření | 4fin",
+  title: "Investice Liberec i ČR – investiční poradce a spoření | 4fin",
   description:
-    "Investice a spoření v Liberci. Nastavíme investiční plán podle vašich cílů, rizikového profilu a horizontu – od rezervy po rentu na penzi.",
+    "Investice a spoření v Liberci i po celé ČR. Nastavíme investiční plán podle vašich cílů, rizikového profilu a horizontu – od rezervy po rentu na penzi.",
   keywords:
-    "investice Liberec, investiční poradce Liberec, spoření Liberec, penzijní spoření Liberec, DIP, investiční plán",
-  h1: "Investice a spoření",
+    "investice Liberec, investice ČR, investiční poradce Liberec, investiční poradce ČR, spoření Liberec, spoření ČR, penzijní spoření Liberec, penzijní spoření ČR, DIP, investiční plán",
+  h1: "Investice a spoření v Liberci i po celé ČR",
   h1Highlight: "s jasným plánem",
-  serviceName: "Investice Liberec",
+  serviceName: "Investice",
   intro:
-    "Investování nemusí být hazard ani věda. Sestavíme plán, který odpovídá tomu, kdy budete peníze potřebovat a kolik výkyvů unesete – a pak se ho společně držíme.",
+    "Investování nemusí být hazard ani věda. Pro klienty v Liberci i po celé ČR sestavíme plán, který odpovídá tomu, kdy budete peníze potřebovat a kolik výkyvů unesete – a pak se ho společně držíme. Schůzku můžeme vést osobně nebo online.",
   sections: [
     {
       heading: "Od rezervy k dlouhodobému majetku",
@@ -160,7 +160,7 @@ export const investiceLiberec: ServiceLandingContent = {
     {
       heading: "Pravidelná kontrola",
       paragraphs: [
-        "Investiční plán není jednorázový podpis. Minimálně jednou ročně se sejdeme, projdeme výsledky a upravíme příspěvky podle toho, jak se mění váš život a příjem.",
+        "Investiční plán není jednorázový podpis. Minimálně jednou ročně se sejdeme (osobně v Liberci nebo online), projdeme výsledky a upravíme příspěvky podle toho, jak se mění váš život a příjem.",
       ],
     },
   ],
@@ -179,24 +179,24 @@ export const investiceLiberec: ServiceLandingContent = {
     },
   ],
   related: [
-    { to: "/pojisteni-liberec", label: "Pojištění Liberec" },
-    { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
+    { to: "/pojisteni-liberec", label: "Pojištění" },
+    { to: "/hypoteky-liberec", label: "Hypotéky" },
     { to: "/blog/jak-se-pripravit-na-hypoteku", label: "Jak se připravit na hypotéku" },
   ],
 };
 
 export const uveryLiberec: ServiceLandingContent = {
   slug: "/uvery-liberec",
-  title: "Úvěry Liberec – spotřebitelský úvěr a refinancování | 4fin",
+  title: "Úvěry Liberec i ČR – spotřebitelský úvěr a refinancování | 4fin",
   description:
-    "Úvěry v Liberci s nezávislým poradcem. Porovnám nabídky bank, spojím drahé půjčky do jedné splátky a spočítám, kolik měsíčně ušetříte. Konzultace zdarma.",
+    "Úvěry v Liberci i po celé ČR s nezávislým poradcem. Porovnám nabídky bank, spojím drahé půjčky do jedné splátky a spočítám, kolik měsíčně ušetříte. Konzultace zdarma.",
   keywords:
-    "úvěry Liberec, spotřebitelský úvěr Liberec, konsolidace půjček Liberec, refinancování úvěru Liberec, půjčka Liberec poradce",
-  h1: "Úvěry v Liberci",
+    "úvěry Liberec, úvěry ČR, spotřebitelský úvěr Liberec, spotřebitelský úvěr ČR, konsolidace půjček Liberec, konsolidace půjček ČR, refinancování úvěru Liberec, refinancování úvěru ČR, půjčka Liberec poradce, půjčka ČR poradce",
+  h1: "Úvěry v Liberci i po celé ČR",
   h1Highlight: "bez drahých překvapení",
-  serviceName: "Úvěry Liberec",
+  serviceName: "Úvěry",
   intro:
-    "Potřebujete peníze na rekonstrukci, auto nebo chcete spojit několik splátek do jedné? Projdu s vámi nabídky bank i nebankovních poskytovatelů a doporučím jen to, co má pro vaši situaci smysl.",
+    "Potřebujete peníze na rekonstrukci, auto nebo chcete spojit několik splátek do jedné? Projdu s vámi nabídky bank i nebankovních poskytovatelů a doporučím jen to, co má pro vaši situaci smysl. Funguji v Liberci i po celé ČR.",
   sections: [
     {
       heading: "S čím vám u úvěrů pomůžu",
@@ -238,24 +238,24 @@ export const uveryLiberec: ServiceLandingContent = {
     },
   ],
   related: [
-    { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
-    { to: "/financni-poradce-liberec", label: "Finanční poradce Liberec" },
-    { to: "/pojisteni-liberec", label: "Pojištění Liberec" },
+    { to: "/hypoteky-liberec", label: "Hypotéky" },
+    { to: "/financni-poradce-liberec", label: "Finanční poradce" },
+    { to: "/pojisteni-liberec", label: "Pojištění" },
   ],
 };
 
 export const financniPoradceLiberec: ServiceLandingContent = {
   slug: "/financni-poradce-liberec",
-  title: "Finanční poradce Liberec – Albert Gurdžjan | 4fin",
+  title: "Finanční poradce Liberec i ČR – Albert Gurdžjan | 4fin",
   description:
-    "Finanční poradce v Liberci. Komplexní analýza financí, hypotéky, pojištění, investice i reality na jednom místě. První konzultace nezávazně a zdarma.",
+    "Finanční poradce v Liberci i po celé ČR. Komplexní analýza financí, hypotéky, pojištění, investice i reality na jednom místě. První konzultace nezávazně a zdarma.",
   keywords:
-    "finanční poradce Liberec, finanční poradenství Liberec, finanční plán Liberec, nezávislý poradce Liberec, analýza financí Liberec",
-  h1: "Finanční poradce v Liberci",
+    "finanční poradce Liberec, finanční poradce ČR, finanční poradenství Liberec, finanční poradenství ČR, finanční plán Liberec, finanční plán ČR, nezávislý poradce Liberec, nezávislý poradce ČR, analýza financí Liberec, analýza financí ČR",
+  h1: "Finanční poradce v Liberci i po celé ČR",
   h1Highlight: "pro celou vaši rodinu",
-  serviceName: "Finanční poradce Liberec",
+  serviceName: "Finanční poradce",
   intro:
-    "Jmenuji se Albert Gurdžjan a pomáhám lidem v Liberci a Libereckém kraji srovnat si finance do jednoho plánu – od rezervy a pojistek přes hypotéku až po investice na penzi.",
+    "Jmenuji se Albert Gurdžjan a pomáhám lidem v Liberci i po celé ČR srovnat si finance do jednoho plánu – od rezervy a pojistek přes hypotéku až po investice na penzi. Konzultaci můžeme vést osobně v Liberci nebo online, podle vašich možností.",
   sections: [
     {
       heading: "Jak vypadá spolupráce",
@@ -263,7 +263,7 @@ export const financniPoradceLiberec: ServiceLandingContent = {
         "Začínáme analýzou: co máte, co platíte a kam chcete dojít. Až potom navrhuju konkrétní kroky – v pořadí podle toho, co vám přinese největší efekt.",
       ],
       bullets: [
-        "Nezávazná úvodní konzultace osobně v Liberci nebo online",
+        "Nezávazná úvodní konzultace osobně v Liberci nebo online po celé ČR",
         "Analýza příjmů, výdajů, smluv a závazků",
         "Finanční plán s prioritami na nejbližší roky",
         "Pravidelná roční revize a úpravy podle změn v životě",
@@ -296,7 +296,7 @@ export const financniPoradceLiberec: ServiceLandingContent = {
     },
     {
       q: "Kde se můžeme sejít?",
-      a: "Nejčastěji v Liberci, případně v okolí Jablonce nad Nisou. Většinu věcí zvládneme i online, pokud vám to vyhovuje víc.",
+      a: "Nejčastěji v Liberci, případně v okolí Jablonce nad Nisou. Většinu věcí zvládneme online, takže se můžeme domluvit odkudkoli z ČR.",
     },
     {
       q: "Musím hned něco podepisovat?",
@@ -308,9 +308,9 @@ export const financniPoradceLiberec: ServiceLandingContent = {
     },
   ],
   related: [
-    { to: "/hypoteky-liberec", label: "Hypotéky Liberec" },
-    { to: "/pojisteni-liberec", label: "Pojištění Liberec" },
-    { to: "/investice-liberec", label: "Investice Liberec" },
-    { to: "/uvery-liberec", label: "Úvěry Liberec" },
+    { to: "/hypoteky-liberec", label: "Hypotéky" },
+    { to: "/pojisteni-liberec", label: "Pojištění" },
+    { to: "/investice-liberec", label: "Investice" },
+    { to: "/uvery-liberec", label: "Úvěry" },
   ],
 };

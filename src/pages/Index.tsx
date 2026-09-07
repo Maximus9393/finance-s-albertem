@@ -33,7 +33,11 @@ const structuredData = {
     "longitude": "15.0543"
   },
   "serviceType": ["Finanční poradenství", "Pojištění", "Investice", "Hypotéky"],
-  "priceRange": "Nezávazná konzultace zdarma"
+  "priceRange": "Nezávazná konzultace zdarma",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Česká republika"
+  }
 };
 
 // Minimal loading indicator - optimized for performance
