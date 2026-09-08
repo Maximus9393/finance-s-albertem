@@ -11,7 +11,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Jak se připravit na žádost o hypotéku v roce 2026 – kompletní průvodce",
   description:
-    "Praktický průvodce přípravou na hypotéku: jaké doklady budete potřebovat, jak banka posuzuje bonitu, kolik vlastních zdrojů mít a jak vám pomůže finanční poradce v Liberci.",
+    "Praktický průvodce přípravou na hypotéku: jaké doklady budete potřebovat, jak banka posuzuje bonitu, kolik vlastních zdrojů mít a jak vám pomůže finanční poradce v Liberci i po celé ČR.",
   author: {
     "@type": "Person",
     name: "Albert Gurdžjan",
@@ -31,7 +31,7 @@ const articleJsonLd = {
   image: "https://financesalbertem.cz/og-image.jpg",
   inLanguage: "cs-CZ",
   keywords:
-    "hypotéka, hypotéka Liberec, finanční poradce Liberec, refinancování hypotéky, žádost o hypotéku, bonita, LTV, vlastní zdroje, reality Liberec",
+    "hypotéka, hypotéka Liberec, hypotéka ČR, finanční poradce Liberec, finanční poradce ČR, refinancování hypotéky, žádost o hypotéku, bonita, LTV, vlastní zdroje, reality Liberec, reality ČR",
 };
 
 const breadcrumbsJsonLd = {
@@ -65,14 +65,14 @@ const BlogHypoteka = () => {
   return (
     <>
       <Helmet>
-        <title>Jak se připravit na hypotéku 2026 – průvodce | Finanční poradce Liberec</title>
+        <title>Jak se připravit na hypotéku 2026 – průvodce | Finanční poradce Liberec i ČR</title>
         <meta
           name="description"
-          content="Jak se připravit na žádost o hypotéku v Liberci a okolí: doklady, bonita, vlastní zdroje, LTV i refinancování. Praktický návod od finančního poradce Alberta Gurdžjana."
+          content="Jak se připravit na žádost o hypotéku v Liberci i po celé ČR: doklady, bonita, vlastní zdroje, LTV i refinancování. Praktický návod od finančního poradce Alberta Gurdžjana."
         />
         <meta
           name="keywords"
-          content="hypotéka Liberec, jak získat hypotéku, žádost o hypotéku, refinancování hypotéky, finanční poradce Liberec, bonita, LTV, vlastní zdroje, reality Liberec, nemovitosti Liberec"
+          content="hypotéka Liberec, hypotéka ČR, jak získat hypotéku, žádost o hypotéku, refinancování hypotéky, finanční poradce Liberec, finanční poradce ČR, bonita, LTV, vlastní zdroje, reality Liberec, reality ČR, nemovitosti Liberec, nemovitosti ČR"
         />
         <link rel="canonical" href="https://financesalbertem.cz/blog/jak-se-pripravit-na-hypoteku" />
         <meta property="og:type" content="article" />
@@ -82,7 +82,7 @@ const BlogHypoteka = () => {
         />
         <meta
           property="og:description"
-          content="Vše, co potřebujete vědět před žádostí o hypotéku v Liberci: doklady, bonita, vlastní zdroje, refinancování a role finančního poradce."
+          content="Vše, co potřebujete vědět před žádostí o hypotéku v Liberci i po celé ČR: doklady, bonita, vlastní zdroje, refinancování a role finančního poradce."
         />
         <meta property="og:url" content="https://financesalbertem.cz/blog/jak-se-pripravit-na-hypoteku" />
         <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
@@ -95,14 +95,14 @@ const BlogHypoteka = () => {
           <article className="container mx-auto px-4 max-w-3xl">
             <header className="mb-8 md:mb-12 animate-fade-in">
               <p className="text-sm text-primary uppercase tracking-wider mb-3">
-                Blog · Hypotéky · Liberec
+                Blog · Hypotéky · Liberec i ČR
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
                 Jak se připravit na žádost o <span className="text-primary">hypotéku</span> v roce
                 2026
               </h1>
               <p className="text-base md:text-lg text-white/80 leading-relaxed">
-                Kompletní průvodce přípravou na hypotéku v Liberci a okolí – jaké doklady budete
+                Kompletní průvodce přípravou na hypotéku v Liberci i po celé ČR – jaké doklady budete
                 potřebovat, jak banka posuzuje vaši bonitu, kolik vlastních zdrojů si připravit a
                 jak vám zkušený finanční poradce ušetří desítky tisíc korun.
               </p>
@@ -116,7 +116,7 @@ const BlogHypoteka = () => {
                 </h2>
                 <p className="mb-3">
                   Banka chce co nejpřesněji zjistit, kdo jste, kolik vyděláváte a jakou nemovitost
-                  pořizujete. Většina bank v Liberci a celé ČR vyžaduje:
+                  pořizujete. Většina bank v Liberci i po celé ČR vyžaduje:
                 </p>
                 <ul className="space-y-2 pl-2">
                   {[
@@ -187,13 +187,13 @@ const BlogHypoteka = () => {
 
               <section>
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                  5. Role finančního poradce v Liberci
+                  5. Role finančního poradce v Liberci a po celé ČR
                 </h2>
                 <p>
                   Jako nezávislý finanční poradce ve společnosti 4fin spolupracuji se všemi
                   hlavními bankami v ČR. Pro klienta to znamená jednu schůzku místo pěti, srovnání
                   desítek variant a jednání s bankou za vás. Služba je pro vás bez poplatků –
-                  odměnu mi platí banka.
+                  odměnu mi platí banka. Funguji osobně v Liberci a online po celé ČR.
                 </p>
               </section>
 
@@ -202,7 +202,7 @@ const BlogHypoteka = () => {
                   Chcete projít vaši situaci osobně?
                 </h2>
                 <p className="text-white/80 mb-6">
-                  Nezávazná konzultace zdarma v Liberci nebo online. Spočítáme, na jakou hypotéku
+                  Nezávazná konzultace zdarma v Liberci nebo online po celé ČR. Spočítáme, na jakou hypotéku
                   dosáhnete, a vyberete nemovitost s jistotou financování.
                 </p>
                 <Button variant="cta" size="lg" onClick={goToContact}>
